@@ -10,34 +10,36 @@
             /* If Lato not available, use sans-serif */
             font-size: 3vw;
             /* vw is the size unit, it changes based on your current screen size. The bigger screen the font will be bigger and vice versa. */
-            margin-top: 0;           margin-right: 120px;
-
         }
 
         .titlebox {
-            height: 55vh;
+            padding: 10px;
+            border: 7px black solid;            
+            height: 100;
             /* 20% height of the full page. Again like the vw as above, vw is width, then vh is height */
-            text-align: left;  
+            text-align: left;
+            border-left: 0px;
         }
 
         .container {
             /* Target those elements containing class (dot) called 'container' */
             display: flex;
             /* This is the magic to make the 2 div align horizontally */
-            height: 90vh;
+            height: 80vh;
             /* 80% height of the full page */
-            }
+            width: 89vw;
+            margin-top: 15%;
+        }
 
         .container .box {
             /* All the .box under .container */
-            width: 50%;
+            width: 100%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
             height: 50%;
             display: flex;
             /* refer here to get more details about flex usage: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
             align-items: center;
             /* vertically center */
-            margin-top: 80px;
         }
 
         .box div {
@@ -45,20 +47,23 @@
             width: 90%;
         }
 
-        #box2{
-            
-        }
-
-        #box3 {
+        #box2 {
+            font-size: 1000%;
             text-align: right;
-            margin-top: 155px;
+            margin-left: 80px;
+            margin-top: 4%;
         }
 
         h1 {
-            padding: 10px;
-            border: 7px black solid;
             border-left: 0;
-            padding: 10% 4%;
+            padding: 2% 2%;
+            margin-left: 50px;
+            margin-bottom: 0%;
+        }
+
+        h6{
+            margin-top: 0%;
+            margin-left: 13%;
         }
     </style>
     <!-- this is HTML Comment 
@@ -74,12 +79,13 @@
     <div class="container">
         <div id="box1" class="box">
             <div class="titlebox">
-                <h1>MERLAND FURNITURE</h1>
-                Furniture, decor, and beyond
+               <h1><span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">MERLAND FURNITURE</span></h1>
+                <h6>Furniture, decor, and beyond</h6>
             </div>
         </div>
-        <div id="box3" class="box">
-            <div><img src="../homework/images/Picture3.png" width="95%"/></div>
+        <div id="box2" class="box">
+            <div><img src="../homework/images/Picture3.png" width="120%" />
+            </div>
         </div>
     </div>
 </body>
