@@ -16,36 +16,18 @@
         .titlebox {
             /*有一个titlebox里面还有一个title text*/
             display: flex;
-            height: 20vh;
             /* 20% height of the full page. Again like the vw as above, vw is width, then vh is height */
-            text-align: center;
-            font-size: 60%;
-            justify-content: center;
-            /*把在titlebox里设置好了的titletext移到中间*/
-        }
-
-        .titletext {
-            /*create a class call title text
-            . = class*/
-            border: 7px black solid;
-            border-top: 0px;
-            display: flex;
-            padding: 5% 5%;
-            align-items: center;
-            /*whole center*/
-            font-size: 200%;
-            /*字体的大小*/
-            font-weight: bold;
-            /*厚度*/
+            font-size: 80%;
         }
 
         .container {
+            width: 100%;
             /* Target those elements containing class (dot) called 'container' */
             display: flex;
             /* This is the magic to make the 2 div align horizontally */
-            height: 80vh;
+            height: 90vh;
             /* 80% height of the full page */
-            justify-content: center;
+            text-align: left;
         }
 
         .container .box {
@@ -53,81 +35,103 @@
             width: 100%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
             /* vertically center */
-            margin-top: 8%;
-            text-align: center;
+            margin-top: 4%;
+            border: 3px solid beige;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
         }
 
         .box div {
             /* All the div under .box */
-            width: 100%;
+            width: 90%;
+            margin-left: 0%;
+        }
+
+        #box1 {
+            margin-left: 3%;
+            margin-right: 3%;
+            font-size: 80%;
+            border: 0px;
         }
 
         .cbox {
-            width: 100%;
-            text-align: center;
             font-size: 55%;
+            text-align: left;
         }
 
-        h4 {
-            font-weight: bold;
+        h1 {
+            width: 97%;
         }
+
     </style>
     <!-- this is HTML Comment 
          The 2 lines below is to install Google Fonts. 
          For all font in your homeworks, use Lato (as above)
         -->
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container">
         <div id="box1" class="box">
             <div class="titlebox">
-                <p><h1>Mintmade in the <em>News</em></h1></p>
+                <p>
+                    <h1>Mintmade in the <em>News</em></h1>
+                </p>
             </div>
         </div>
 
         <div id="box2" class="box">
             <div>
-                <img src="images/Picture9.png" width="200">
+                <img src="images/Picture9.png" width="230">
             </div>
-            <div id="box6" class="cbox">
+            <div id="box5" class="cbox">
                 <div class="content">
                     <h2>Araico Asian launch</h2>
-                    <p>
-                        News write-ups offer a great way to let clients know about new products and services, events, awards, and more!
-                    </p>
+                    <div>
+                        <p>
+                            News write-ups offer a great way to let clients know about new products and services, events,
+                            awards, and more!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="box3" class="box">
             <div>
-                <img src="images/Picture10.png" width="200">
+                <img src="images/Picture10.png" width="230">
             </div>
-            <div id="box7" class="cbox">
+            <div id="box6" class="cbox">
                 <div class="content">
                     <h2>Clothing Drive 2020</h2>
-                    <p>
-                        News write-ups offer a great way to let clients know about new products and services, events, awards, and more!
-                    </p>
+                    <div>
+                        <p>
+                            News write-ups offer a great way to let clients know about new products and services, events,
+                            awards, and more!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="box4" class="box">
             <div>
-                <img src="images/Picture11.png" width="200">
+                <img src="images/Picture11.png" width="230">
             </div>
-            <div id="box6" class="cbox">
+            <div id="box7" class="cbox">
                 <div class="content">
                     <h2>F/W 2020 Sneak Peek</h2>
-                    <p>
-                        News write-ups offer a great way to let clients know about new products and services, events, awards, and more!
-                    </p>
+                    <div>
+                        <p>
+                            News write-ups offer a great way to let clients know about new products and services, events,
+                            awards, and more!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
