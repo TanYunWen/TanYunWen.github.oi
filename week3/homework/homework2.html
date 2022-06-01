@@ -34,7 +34,7 @@
             /*whole center*/
             font-size: 200%;
             /*字体的大小*/
-            font-weight: bold; 
+            font-weight: bold;
             /*厚度*/
         }
 
@@ -44,50 +44,33 @@
             /* This is the magic to make the 2 div align horizontally */
             height: 80vh;
             /* 80% height of the full page */
+            justify-content: center;
         }
 
         .container .box {
             /* All the .box under .container */
-            width: 30%;
+            width: 100%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
-            display: flex;
-            /* refer here to get more details about flex usage: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-            align-items: center;
             /* vertically center */
+            margin-top: 8%;
+            text-align: center;
         }
 
         .box div {
             /* All the div under .box */
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
-        div.box {
-            margin: 3px;
-            float: left;
-            width: 180px;
-            position: absolute;
-            /*绝对定位*/
-            top: 50%;
-        }
-
-        div.box img {
+        .cbox{
             width: 100%;
-            height: auto;
-            align-items: center;
-            margin-left: 10%;
-            position: absolute;
-            top: 4%;
+            text-align: center;
+            font-size: 55%;
         }
 
-        div.desc {
-            padding: 15px;
-            align-items: center;
+        h4 {
+            font-weight: bold;
         }
 
-        
     </style>
     <!-- this is HTML Comment 
          The 2 lines below is to install Google Fonts. 
@@ -95,10 +78,6 @@
 
          /*span 跨度 = 可以中途重新定义*/
         -->
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-   
 
 </head>
 
@@ -106,30 +85,50 @@
     <div class="titlebox">
         <div class="titletext">CUSTOMER REVIEWS</div>
     </div>
- 
+
     <div class="container">
         <div id="box1" class="box">
-            <h2>position: absolute;</h2>
-            <img src="images/Picture4.png" alt="Murielle Blake" width="60" height="20">
             <div>
-                <b>Murielle Blake</b>
+                <img src="images/Picture4.png" alt="Murielle Blake" width="200">
+            </div> 
+            <div id="box4" class=" cbox">
+                <div class="content">
+                    <h4>Murielle Blake</h4>
+                    <p style="font: size 55%;">
+                        Testimonials are short quotes from people who love your brand. It's a great way to convince
+                        customers to try your services.</p>
+                </div>
             </div>
-            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince
-                customers to try your services.</p>
         </div>
 
         <div id="box2" class="box">
-            <img src="images/Picture5.png" alt="Inna Tran" width="60" height="20">
-            <b>Inna Tran</b>
-            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince
-                customers to try your services.</p>
+            <div>
+                <img src="images/Picture5.png" alt="Inna Tran" width="200">
+            </div>
+            <div id="box5" class="cbox">
+                <div class="content">
+                    <h4>Inna Tran</h4>
+                    <p>
+                        Testimonials are short quotes from people who love your brand. It's a great way to convince
+                        customers to try your services.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div id="box3" class="box">
-            <img src="images/Picture6.png" alt="Clyde Meily" width="60" height="20">
-            <b>Clyde Meily</b>
-            <div class="desc">Testimonials are short quotes from people who love your brand. It's a great way to
-                convince customers to try your services.</div>
+            <div>
+                <img src="images/Picture6.png" alt="Clyde Meily" width="200">
+            </div>
+            <div id="box6" class="cbox">
+                <div class="content">
+                    <h4>Clyde Meily</h4>
+                    <p>
+                        Testimonials are short quotes from people who love your brand. It's a great way to convince
+                        customers to try your services.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
