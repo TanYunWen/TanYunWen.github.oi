@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html>
-<style>
-    body {
-        background-color: rgba(0, 255, 0, 0.263);
-    }
-</style>
 
 <head>
     <title>My First Page</title>
+    <style>
+        body {
+            background-color: rgba(0, 255, 0, 0.263);
+        }
+
+        .titlebox {
+            display: flex;
+        }
+
+        .container {
+            width: 100%;
+            /* Target those elements containing class (dot) called 'container' */
+            display: flex;
+            /* This is the magic to make the 2 div align horizontally */
+            height: 90vh;
+            /* 80% height of the full page */
+            text-align: left;
+        }
+
+        .container .box {
+            /* All the .box under .container */
+            width: 100%;
+            /* Each column would takes up 50%, so equally sharing spaces left and right */
+            /* vertically center */
+            margin-top: 3%;
+            margin-left: 5%;
+            margin-right: 1%;
+        }
+
+        .box div {
+            /* All the div under .box */
+            width: 100%;
+        }
+
+        h1 {
+            width: 100;
+            margin-left: 5%;
+            align-items: center;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-
-    <img src="week2/images/Picture1.png" width="300" />
-
-    <p>My Name: Tan Yun Wen.</p>
-    <p>My Email: tanyunwen1192@e.newera.edu.my</p>
-
-
-    <ol>
+    <div class="titlebox">
         <p>
-            <li><a href="week2/index.html">Week2</a></li>
+            <h1>My Profile</h1>
         </p>
-
-        <p>
-            <li><a href="week3/apple.html">Week3</a></li>
-        <ul>
-            <li><a href="week3/apple.html">Apple Inc.</a></li>
-            <li><a href="week3/exercise2/jameswoo.github.io-main/index.html">Exercise2</a></li>
-            <li>Homework</li>
-            <ul>
-                <li><a href="week3/homework/homework1.html">Homework1</a></li>
-                <li><a href="week3/homework/homework2.html">Homework2</a></li>
-            </ul>
-        </ul>
-        </p>
-    </ol>
-
+    </div>
+    <div class="container">
+        <div id="box1" class="box">
+            <img src="week2/images/Picture1.png" width="200" />          
+        </div>
+        <div id="box2" class="box">
+            <h2>Introduction</h2>
+            <div>
+                <h4>My Name: </h4> <p>Tan Yun Wen</p>
+            </div>
+            <div>
+                <h4>My Email: </h4> <p>tanyunwen1192@e.newera.edu.my</p>
+            </div>
+            <div>
+                <h4>Subject Code: </h4> <p>BIBWB1114</p>
+                <h4>Subject Name: </h4> <p>Web Design</p>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <h2>Web Design</h2>
+            <ol>
+                <p>
+                    <li><a target="_blank" href="week2/index.html">Week2</a></li>
+                </p>
+        
+                <p>
+                    <li><a target="_blank" href="week3/apple.html">Week3</a></li>
+                <ul>
+                    <li><a target="_blank" href="week3/apple.html">Apple Inc.</a></li>
+                    <li><a target="_blank" href="week3/exercise2/jameswoo.github.io-main/index.html">Exercise2</a></li>
+                    <li>Homework</li>
+                    <ul>
+                        <li><a target="_blank" href="week3/homework/homework1.html">Homework1</a></li>
+                        <li><a target="_blank" href="week3/homework/homework2.html">Homework2</a></li>
+                        <li><a target="_blank" href="week3/homework/homework3.html">Homework3</a></li>
+                        <li><a target="_blank" href="week3/homework/homework4.html">Homework4</a></li>
+                        <li><a target="_blank" href="week3/homework/homework5.html">Homework5</a></li>
+                    </ul>
+                </ul>
+                </p>
+            </ol>        
+        </div>
+    </div>
 </body>
 
 </html>
