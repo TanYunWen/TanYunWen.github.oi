@@ -27,17 +27,12 @@
         .titletext {
             /*create a class call title text
             . = class*/
-            border: 7px black solid;
-            border-top: 0px;
             display: flex;
-            padding: 5% 5%;
             align-items: center;
             /*whole center*/
-            font-size: 200%;
-            /*字体的大小*/
             font-weight: bold;
             /*厚度*/
-        }
+            }
 
         .container {
             /* Target those elements containing class (dot) called 'container' */
@@ -45,16 +40,21 @@
             /* This is the magic to make the 2 div align horizontally */
             height: 80vh;
             /* 80% height of the full page */
-            justify-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         .container .box {
             /* All the .box under .container */
-            width: 100%;
+            width: 50%;
+            height: 100%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
             /* vertically center */
-            margin-top: 8%;
+            margin-top: 4%;
             text-align: center;
+            border: 3px solid beige;
+            border-top: 0px;
+            border-bottom: 0px;
         }
 
         .box div {
@@ -62,10 +62,27 @@
             width: 100%;
         }
 
+        #box1{
+            border-right: 0px;
+            font-size: 200%;
+        }
+
+        #box3{
+            width: 90%;
+            margin-left: 5%;
+            font-size: 39%;
+        }
+
+        #box4{
+            width: 100%;
+            font-size: 39%;
+        }
+
         .cbox {
             width: 100%;
             text-align: center;
             font-size: 55%;
+            margin-top: 10%;
         }
 
     </style>
@@ -75,23 +92,27 @@
 
          /*span 跨度 = 可以中途重新定义*/
         -->
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <div class="container">
         <div id="box1" class="box">
             <div class="titlebox">
-                <div class="titletext">Who We Are</div>
+                <div>
+                    <p>Who <em>We</em> Are</p>
+                </div>
             </div>
             <div id="box3" class=" cbox">
                 <div class="content">
-                    Mintmade Online offers a well-curated range of fashion items for men and women.
+                    <p>Mintmade Online offers a well-curated range of fashion items for men and women.</p>
                 </div>
             </div>
             <div id="box4" class=" cbox">
                 <div class="content">
-                    We aim to provide an enjoyable shopping experience for all our customers.
+                    <p>We aim to provide an enjoyable shopping experience for all our customers.</p>
                 </div>
             </div>
         </div>
