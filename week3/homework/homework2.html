@@ -13,10 +13,29 @@
         }
 
         .titlebox {
+            /*有一个titlebox里面还有一个title text*/
             display: flex;
             height: 20vh;
             /* 20% height of the full page. Again like the vw as above, vw is width, then vh is height */
             text-align: center;
+            font-size: 60%;
+            justify-content: center;
+            /*把在titlebox里设置好了的titletext移到中间*/
+        }
+
+        .titletext {
+            /*create a class call title text
+            . = class*/
+            border: 7px black solid;
+            border-top: 0px;
+            display: flex;
+            padding: 5% 5%;
+            align-items: center;
+            /*whole center*/
+            font-size: 200%;
+            /*字体的大小*/
+            font-weight: bold; 
+            /*厚度*/
         }
 
         .container {
@@ -29,12 +48,8 @@
 
         .container .box {
             /* All the .box under .container */
-            width: 50%;
+            width: 30%;
             /* Each column would takes up 50%, so equally sharing spaces left and right */
-            background-image: url("images/unsplash.jpg");
-            background-size: cover;
-            background-position: center center;
-
             display: flex;
             /* refer here to get more details about flex usage: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
             align-items: center;
@@ -44,62 +59,77 @@
         .box div {
             /* All the div under .box */
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         div.box {
-            margin: 5px;
-            border: 1px solid #ccc;
+            margin: 3px;
             float: left;
             width: 180px;
+            position: absolute;
+            /*绝对定位*/
+            top: 50%;
         }
 
         div.box img {
             width: 100%;
             height: auto;
+            align-items: center;
+            margin-left: 10%;
+            position: absolute;
+            top: 4%;
         }
 
         div.desc {
             padding: 15px;
-            text-align: center;
+            align-items: center;
         }
 
-        h1 {
-            padding: 10px;
-            border: 8px black solid;
-            border-top: 0px;
-            margin-left: 30%;
-            width: 500px;
-            height: 100px;
-            margin-top: 0%;
-        }
+        
     </style>
     <!-- this is HTML Comment 
          The 2 lines below is to install Google Fonts. 
          For all font in your homeworks, use Lato (as above)
+
+         /*span 跨度 = 可以中途重新定义*/
         -->
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+   
 
 </head>
 
 <body>
     <div class="titlebox">
-        <h1>CUSTOMER REVIEWS</h1>
+        <div class="titletext">CUSTOMER REVIEWS</div>
     </div>
+ 
     <div class="container">
         <div id="box1" class="box">
-            <img src="images/Picture4.png" alt="Murielle Blake" width="400" height="200">
-            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+            <h2>position: absolute;</h2>
+            <img src="images/Picture4.png" alt="Murielle Blake" width="60" height="20">
+            <div>
+                <b>Murielle Blake</b>
+            </div>
+            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince
+                customers to try your services.</p>
         </div>
 
         <div id="box2" class="box">
-                <img src="images/Picture5.png" alt="Inna Tran" width="400" height="200">
-            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</p>
+            <img src="images/Picture5.png" alt="Inna Tran" width="60" height="20">
+            <b>Inna Tran</b>
+            <p class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince
+                customers to try your services.</p>
         </div>
 
         <div id="box3" class="box">
-                <img src="images/Picture6.png" alt="Clyde Meily" width="400" height="200">
-            <div class="desc">Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services.</div>
+            <img src="images/Picture6.png" alt="Clyde Meily" width="60" height="20">
+            <b>Clyde Meily</b>
+            <div class="desc">Testimonials are short quotes from people who love your brand. It's a great way to
+                convince customers to try your services.</div>
         </div>
     </div>
 </body>
