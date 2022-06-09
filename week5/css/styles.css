@@ -9,5 +9,19 @@
     background-color: #15f689;
     text-align: center;
     padding: 20px;
+    background-image: url("../images/backgroundimage1.jpg");
+    background-size: cover;
   }
+
+#logo {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0%;
+}
+
+
+
   
