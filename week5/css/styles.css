@@ -1,12 +1,12 @@
 #container {
-    background-color: #F1F1F1;
+    background-color: #01E269;
     max-width: 1024px;
     margin: auto;
     padding: 20px;
 }
 
 #header {
-    background-color: #15f689;
+    background-color: #8CF6A9;
     text-align: center;
     padding: 20px;
     background-image: url("../images/backgroundimage1.jpg");
@@ -42,6 +42,10 @@ h1 {
     text-decoration: underline;
 } 
 
+.content {
+    padding: 20px;
+}
+
  /* Row */
 .row {
     display: flex;
@@ -59,9 +63,41 @@ h1 {
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-  
+
+    .column {
+        width: 100%;
+    }
+
 .row {
     width: 100%;
+    flex-direction: column;
+  }
+}
+
+.footer {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.col {
+    text-align: center;
+    width: 20%;
+    background-color: #F1F1F1;
+    padding: 5%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+
+.col {
+        width: 90%;
+    }
+
+.footer {
+    width: 80%;
     flex-direction: column;
   }
 }
