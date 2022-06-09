@@ -9,7 +9,7 @@
     background-color: #8CF6A9;
     text-align: center;
     padding: 20px;
-    background-image: url("../images/backgroundimage1.jpg");
+    background-image: url("../images/backgroundimage2.jpg");
     background-size: cover;
 }
 
@@ -19,7 +19,8 @@
 }
 
 h1 {
-    margin-top: 0%;
+    margin-top: -3%;
+    color: #F1F1F1;
 }
 
 .topnav {
@@ -42,14 +43,12 @@ h1 {
     text-decoration: underline;
 } 
 
-.content {
-    padding: 20px;
-}
-
  /* Row */
 .row {
     display: flex;
     justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 
 /* Column */
@@ -78,7 +77,6 @@ h1 {
     display: flex;
     max-width: 1024px;
     margin: auto;
-    padding: 20px;
     justify-content: space-between;
 }
 
