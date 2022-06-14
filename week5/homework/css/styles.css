@@ -11,11 +11,15 @@
 }
 
 #logo {
+    background-color: #F1F1F1;
     text-align: left;
-    padding: 20px;
+    padding: 10px 20px;
+    margin-bottom: 2%;
 }
 
 h1 {
+    border: 5px #F1F1F1 solid;
+    margin-top: 3%;
     background-color: dodgerblue;
     text-align: center;
     font-size: 250%;
