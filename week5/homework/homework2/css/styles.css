@@ -1,0 +1,104 @@
+#container {
+    background-color: #0179e2;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    background-color: #F1F1F1;
+    text-align: left;
+    padding: 10px 20px;
+    margin-bottom: 2%;
+}
+
+h1 {
+    border: 5px #F1F1F1 solid;
+    margin-top: 3%;
+    background-color: dodgerblue;
+    text-align: center;
+    font-size: 250%;
+    color: #F1F1F1;
+    padding: 10px 100px;
+}
+
+.topnav {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+
+    .column {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#box1 {
+    width: 650px;
+    border: 3px black solid;
+}
+
+#box2 {
+    width: 350px;
+    border: 3px black solid;
+}
+
+.footer {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.col {
+    text-align: center;
+    width: 20%;
+    background-color: #F1F1F1;
+    padding: 5%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+
+    .col {
+        width: 90%;
+    }
+
+    .footer {
+        width: 80%;
+        flex-direction: column;
+    }
+}
