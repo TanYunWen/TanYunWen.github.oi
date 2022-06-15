@@ -6,78 +6,82 @@
 }
 
 .header {
+    background-color: antiquewhite;
     display: flex;
-    width: 100%;
+    padding: 20px;
 }
 
 .contentContainer {
+    background-color:plum;
     max-width: 1024px;
     margin: auto;
+    padding: 20px 20px;
+    padding-top: 0%;
 }
 
 #logo {
-    width: 50%;
-    text-align: left;
-    margin-bottom: 2%;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.contentContainer {
+    width: 100%;
+    display: flex;
 }
 
 .menu {
-    display: flex;
     background-color: #333;
-    padding: 20px;
-    justify-content: space-between;
+    width: 20%;
+    padding:80px 20px;
+    text-align: center;
 }
 
 .menu a {
     color: #f2f2f2;
-    padding: 8px 12px;
+    font-size: 200%;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
 .menu a:hover {
-    background-color: #ddd;
+    background-color: antiquewhite;
     color: black;
     text-decoration: underline;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-
-    .menu {
-        width: 5%;
-        font-size: 70%;
-        margin-right: 20%;
-        padding: 1%;
-    }
-
-    .box {
-        width: 100%;
-        flex-direction: column;
-    }
+.content {
+    flex-wrap: wrap;
 }
 
 .box {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-top: 0%;
 }
 
 #box1 {
-    width: 65%;
+    width: 60%;
+    padding: 30% 100%;
     border: 3px gray solid;
 }
 
 #box2 {
-    width: 30%;
+    width: 38%;
     border: 3px gray solid;
+    padding: 30% 89%;
+    justify-content: space-around;
+    margin-left: 20%;
 }
 
 .footer {
+    width: 446%;
     display: flex;
-    max-width: 1024px;
-    margin: auto;
-    justify-content: space-between;
+    margin-top: 20%;
+    margin-left: 20%;
     background-color: #333;
 }
 
@@ -91,12 +95,25 @@
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
 
-    .col {
-        width: 90%;
+    .menu {
+        font-size: 70%;
     }
 
+    .box {
+        width: 87%;
+        flex-wrap: wrap;
+    }
+    
     .footer {
-        width: 80%;
-        flex-direction: column;
+        width: 207%;
+        font-size: 72%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 1024px) {
+    
+    .contentContainer {
+        width: 90.6%;
     }
 }
