@@ -12,19 +12,25 @@
 
 #logo {
     background-color: #F1F1F1;
-    text-align: left;
-    padding: 10px 20px;
-    margin-bottom: 2%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 7%;
+    width: 40%;
+}
+
+#phoneNo {
+    width: 40%;
+    border: 5px #F1F1F1 solid;
+    margin-top: 1%;
+    margin-bottom: 10%;
+    background-color: dodgerblue;
+    text-align: center;
+    color: #F1F1F1;
 }
 
 h1 {
-    border: 5px #F1F1F1 solid;
-    margin-top: 3%;
-    background-color: dodgerblue;
-    text-align: center;
-    font-size: 250%;
-    color: #F1F1F1;
-    padding: 10px 100px;
+    margin-top: 12%;
+    font-size: 200%;
 }
 
 .topnav {
@@ -82,12 +88,12 @@ h1 {
 }
 
 #box1 {
-    width: 650px;
+    width: 65%;
     border: 3px black solid;
 }
 
 #box2 {
-    width: 350px;
+    width: 30%;
     border: 3px black solid;
 }
 
