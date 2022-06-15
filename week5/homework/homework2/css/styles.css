@@ -7,36 +7,41 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
 
 #logo {
-    background-color: #F1F1F1;
+    width: 50%;
     text-align: left;
-    padding: 10px 20px;
     margin-bottom: 2%;
 }
 
+.content {
+    width: 50%;
+    text-align: right;
+}
+
 h1 {
+    background-color: #ddd;
     border: 5px black solid;
-    margin-top: 3%;
-    background-color: #F1F1F1;
     text-align: center;
     font-size: 150%;
+    width: 50%;
     color: gray;
-    padding: 10px 100px;
+    padding: 10px 10px;
+    margin-left: 44%;
 }
 
 .topnav {
     display: flex;
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     justify-content: space-between;
 }
 
 .topnav a {
     color: #f2f2f2;
-    padding: 14px 16px;
+    padding: 8px 12px;
     text-decoration: none;
 }
 
@@ -49,11 +54,20 @@ h1 {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
 
-    .column {
-        width: 100%;
+    #phoneNo {
+        width: 90%;
+        font-size: 70%;
+        margin-bottom: 15%;
     }
 
-    .row {
+    .menu {
+        width: 5%;
+        font-size: 70%;
+        margin-right: 20%;
+        padding: 1%;
+    }
+
+    .box {
         width: 100%;
         flex-direction: column;
     }
@@ -62,17 +76,17 @@ h1 {
 .box {
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 2%;
 }
 
 #box1 {
-    width: 650px;
+    width: 65%;
     border: 3px black solid;
 }
 
 #box2 {
-    width: 350px;
+    width: 30%;
     border: 3px black solid;
 }
 
