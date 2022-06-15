@@ -11434,3 +11434,23 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
