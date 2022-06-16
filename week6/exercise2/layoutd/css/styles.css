@@ -43,7 +43,7 @@
     background-color: #2196F3;
     padding: 10px;
     grid-template-rows: 80px 50px 60px 140px 230px 120px;
-    grid-template-columns: 50px 40px 20px 10px 10px 55px 20px 30px 40px 45px;
+    /* grid-template-columns: 50px 40px 20px 10px 10px 55px 20px 30px 40px 45px; */
 }
 
 .grid-container>div {
