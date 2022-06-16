@@ -12,10 +12,11 @@
 }
 
 #logo {
-    background-image: url("../images/logo.png");
-    background-size: cover;
+    background-image: url("../images/logo1.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    margin-top: 13px;
     text-align: left;
-    padding: 30px;
     width: 100px;
 }
 
@@ -26,7 +27,7 @@
 
 .topnav a {
     color: black;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
 }
 
