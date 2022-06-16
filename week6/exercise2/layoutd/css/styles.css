@@ -42,12 +42,13 @@
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-    grid-template-rows: px;
+    grid-template-rows: 80px 50px 60px 140px 230px 120px;
+    grid-template-columns: 50px 40px 20px 10px 10px 55px 20px 30px 40px 45px;
 }
 
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 20px;
 }
