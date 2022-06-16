@@ -45,6 +45,7 @@
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    grid-template-rows: 80px 150px 110px 230px 70px;
 }
 
 .grid-container>div {
