@@ -53,12 +53,13 @@
         'footer footer footer footer footer footer footer footer';
     gap: 10px;
     background-color: #2196F3;
-    padding: 10px;
+    padding: 10px ;
+    grid-template-rows: 70px 65px 150px 110px 230px 70px;
 }
 
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 25px;
 }
