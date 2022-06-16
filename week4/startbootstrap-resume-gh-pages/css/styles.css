@@ -139,6 +139,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  color: aquamarine;
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -7675,7 +7676,13 @@ textarea.form-control-lg {
 }
 
 .text-center {
-  text-align: center !important;
+  display: inline-block;
+  background-image: url("../images/backgroundimage1.jpg");
+  width: 30%;
+  height: 200%;
+  border: 1px #0dcaf0 solid;
+  text-align: center;
+  text-decoration: none;
 }
 
 .text-decoration-none {
@@ -7811,6 +7818,7 @@ textarea.form-control-lg {
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  border-right: 3px black dashed;
 }
 
 .bg-secondary {
@@ -11433,24 +11441,4 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-}
-
-.caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-.caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
 }
