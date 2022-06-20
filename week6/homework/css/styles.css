@@ -1,0 +1,49 @@
+#container {
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;/*vertical*/
+    margin-top: 20px;
+}
+
+h1 {
+    margin-left: 10px;
+    text-align: center;/*horizontal*/
+    margin-bottom: 1%;
+    font-size: 170%;
+    color: #484848;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.topnav a {
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#topbgimg {
+    position: absolute;
+    right: 0%;
+    text-align: right;
+}
+
+#topbgimg img {
+    margin-top: 30%;
+    width: 70%;
+}
