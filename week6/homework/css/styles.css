@@ -141,6 +141,16 @@ h3 {
     padding: 5px;
 }
 
+.second {
+    display: flex;
+    margin-top: 50px;
+}
+
+.content1 {
+    width: 50%;
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
     #container {
@@ -211,7 +221,7 @@ h3 {
         border-radius: 50%;
         box-shadow: 0px 5px 4px 2px rgb(232, 238, 241);
     }
-    
+
     .conimg #tbbgimg img:hover {
         background-image: url("../images/mouse@2x.png");
         background-size: cover;
