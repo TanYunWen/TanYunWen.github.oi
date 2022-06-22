@@ -336,7 +336,7 @@ h4 {
 
 .dot {
     position: absolute;
-    top: 97%;
+    top: 93%;
     left: 49%;
     display: flex;
 }
@@ -358,7 +358,34 @@ h4 {
     border-radius: 50%;
 }
 
+.fifth {
+    text-align: center;
+}
 
+#content4 h3 {
+    font-size: 80%;
+    color: #7E76F9;
+}
+
+#content4 p {
+    margin-top: 1%;
+    font-size: 150%;
+}
+
+#email {
+    font-size: 100%;
+    padding: 1% 5%;
+}
+
+#content4 button {
+    background-image: url("../images/Rectangle\ 8@2x.png");
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+    margin-left: 2%;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
