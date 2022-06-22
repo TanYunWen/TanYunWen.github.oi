@@ -110,7 +110,7 @@ h3 {
 #tbbgimg {
     position: absolute;
     right: 50%;
-    bottom: 78%;
+    top: 18.3%;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -194,7 +194,7 @@ h3 {
 
 .third #crbgimg2 {
     position: absolute;
-    top: 71.2%;
+    top: 54.2%;
     left: 6%;
 }
 
@@ -232,12 +232,14 @@ h3 {
 
 .row-box p {
     font-size: 90%;
+    color: #42495B;
 }
 
-.row-box h4 {
+h4 {
     font-size: 90%;
     font-weight: lighter;
     padding-bottom: 10px;
+    color: #42495B;
 }
 
 .row-box button {
@@ -256,9 +258,106 @@ h3 {
 
 .btnrb {
     position: absolute;
-    right: 5%;
-    bottom: 7%;
+    bottom: 10%;
 }
+
+.fourth {
+    margin-top: 110px;
+}
+
+#ccbgimg{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+#content3 {
+    padding-top: 20px;
+}
+
+.fourth h2 {
+    text-align: center;
+}
+
+.fourth h3 {
+    font-size: 80%;
+    text-align: center;
+    color: #7E76F9;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth .row-box2 {
+    margin: 50px 20px;
+    margin-bottom: 100px;
+    padding: 20px 20px;
+    border-radius: 15%;
+    width: 25%;
+    border: 1px rgba(0, 0, 0, 0.100) solid;
+    box-shadow: 0px 5px 1px 1px rgba(0, 0, 0, 0.010);
+    background-color: #FFFFFF;
+}
+
+.row-box2 h4 {
+    font-size: 150%;
+    text-align: center;
+}
+
+.row-box2 p {
+    color: #7A839E;
+    text-align: center;
+}
+
+.row-box2 .price p {
+    padding: 5%;
+    color: #1000FF;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.row-box2 button {
+    margin-left: 28%;
+    padding: 10px;
+    width: 45%;
+    border-radius: 25px;
+    border-color: #1000FF;
+    background-color: #FFFFFF;
+}
+
+.row-box2 button:hover {
+    background-image: url("../images/Rectangle\ 8@2x.png");
+    background-size: cover;
+    color: #FFFFFF;
+    border: none;
+}
+
+.dot {
+    position: absolute;
+    top: 97%;
+    left: 49%;
+    display: flex;
+}
+
+#dot1 {
+    padding: 0% 10%;
+}
+
+#dot2 {
+    padding: 0% 10%;
+}
+
+#dot3{
+    padding: 0% 10%;
+}
+
+.dot img:hover {
+    background-color: #7E76F9;
+    border-radius: 50%;
+}
+
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
