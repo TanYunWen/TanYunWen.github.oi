@@ -349,6 +349,12 @@ h3 {
         text-align: center;
     }
 
+    #crbgimg {
+        position: absolute;
+        top: 46%;
+        left: 10%;
+    }
+
     .third {
         width: 190%;
         margin-top: 90px;
