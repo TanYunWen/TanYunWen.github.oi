@@ -423,9 +423,8 @@ h4 {
 
     #tbbgimg {
         position: absolute;
+        top: 22.5%;
         right: 0%;
-        bottom: 70%;
-        margin-bottom: 25%;
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -474,9 +473,33 @@ h4 {
         margin-left: 5%;
     }
 
-    .row-box .btnrb {
+    .row-box .btnrb button {
         position: absolute;
-        bottom: 1%;
-        left: 5%;
+        top: 13px;
+        left: 35px;
+    }
+
+    .fourth {
+        margin-left: 20%;
+    }
+
+    #content3 h3 {
+        margin-left: 95%;
+    }
+
+    #content3 h2 {
+        width: 200%;
+    }
+
+    .box2 {
+        flex-direction: row;
+        width: 600%;
+        margin-left: 6%;
+    }
+
+    .dot {
+        position: absolute;
+        top: 98%;
+        left: 95%;
     }
 }
