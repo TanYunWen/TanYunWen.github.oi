@@ -348,4 +348,30 @@ h3 {
         width: 160%;
         text-align: center;
     }
+
+    .third {
+        width: 190%;
+        margin-top: 90px;
+        flex-direction: column;
+    }
+
+    .box {
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .row-box {
+        width: 35%;
+        padding: 3%;
+    }
+
+    .row-box img {
+        margin-left: 5%;
+    }
+
+    .row-box .btnrb {
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+    }
 }
