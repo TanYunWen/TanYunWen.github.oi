@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Week 7_Exercise 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="icon" class="fa-regular fa-bell"></i>
+        </a>
+    </div>
+
+    <div style="padding-left:16px">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav"); /*暂时叫他x*/
+            if (x.className === "topnav") {
+                x.className += " responsive"; /*如果这件事情不成立就出现这个*/
+            } else {
+                x.className = "topnav";
+            }
+
+            var icon = document.getElementById("icon"); /*当什么时候icon变成别的图案*/
+            if (icon.className === "fa-regular fa-bell") {/*原本的*/
+                icon.className = "fa-regular fa-circle-xmark"; /*新的*/
+            } else {
+                icon.className = "fa-regular fa-bell";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
