@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    /*让我知道现在在那一页*/
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none; /*因为一开始不用 menu*/
+}
+
+.overlay {
+    /*整个menu*/
+    height: 100%;
+    /*它出来的时候是多长 有盖过字体 还是盖完整页*/
+    width: 0;
+    /*它有多宽*/
+    position: fixed;
+    /*给他死在那边*/
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    /*0.9 半透明*/
+    overflow-x: hidden;
+    /*不要出来*/
+    transition: 0.5s;
+    /*animation //需要多久的时间展现出来*/
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+} 
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a {
+        text-align: left;
+    }
+
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
+    }
+
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        right: 0;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        /*吃一个位 inline吃旁边*/
+    }
+}
