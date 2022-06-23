@@ -7427,6 +7427,19 @@ textarea.form-control-lg {
   bottom: 20%;
 }
 
+#rabbitimg2 {
+  position: absolute;
+  top: 59%;
+  right: 5%;
+  z-index: -1;
+}
+
+#rabbitimg3 {
+  position: absolute;
+  top: 2.5%;
+  right: 50%;
+}
+
 .p-1 {
   padding: 0.25rem !important;
 }
