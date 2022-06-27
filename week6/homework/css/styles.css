@@ -1,19 +1,13 @@
-.ocontainer {
-    position: relative;
+body {
     margin: auto;
     max-width: 1400px;
 }
 
-#trbgimg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
-    /*img to behind*/
-}
-
-body {
-    margin: 0;
+#box1 {
+    background-image: url("../images/Bg\ Shape@2x.png");
+    background-position: top right; 
+    background-repeat: no-repeat;
+    background-size: 55%;
 }
 
 .header {
@@ -169,16 +163,13 @@ button a {
 }
 
 .second {
+    background-image: url("../images/image1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 53%;
     display: flex;
     justify-content: center;
     margin-top: 150px;
-}
-
-#crbgimg {
-    position: absolute;
-    top: 19.3%;
-    right: 0;
-    z-index: -1;
 }
 
 .content1 {
@@ -205,14 +196,10 @@ button a {
 }
 
 .third {
+    background-image: url("../images/image2.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
     margin-top: 120px;
-}
-
-#crbgimg2 {
-    position: absolute;
-    top: 42.9%;
-    left: 3%;
-    z-index: -1;
 }
 
 #content2 h2 {
@@ -280,14 +267,8 @@ h4 {
 }
 
 .fourth {
+    background-color: #ecebfe;
     margin-top: 110px;
-}
-
-#ccbgimg {
-    position: absolute;
-    top: 63.5%;
-    left: 0;
-    z-index: -1;
 }
 
 #content3 {
@@ -405,6 +386,10 @@ h4 {
 }
 
 .footer {
+    background-image: url("../images/footer.png");
+    background-position: bottom;
+    background-size:80%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -573,7 +558,8 @@ p,
     }
 
     #ccbgimg {
-        top: 67%;
+        width: 130%;
+        top: 69%;
     }
 
     #content4 button {
@@ -734,8 +720,8 @@ p,
     }
 
     #ccbgimg img {
-        margin-top: -53%;
-        width: 1565%;
+        margin-top: -63%;
+        width: 100%;
     }
 
     .fifth {
@@ -752,12 +738,6 @@ p,
 
     .footer h4 {
         color: aqua;
-    }
-
-    #fbbgimg {
-        position: absolute;
-        height: 7%;
-        bottom: 0%;
     }
 
     .sit h3 {
