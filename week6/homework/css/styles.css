@@ -150,8 +150,7 @@ button a {
 
 #tbbgimg {
     position: absolute;
-    right: 50%;
-    top: 15%;
+    margin-top: 10%;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -175,7 +174,7 @@ button a {
 
 #crbgimg {
     position: absolute;
-    top: 19.3%;
+    top: 25.3%;
     right: 0;
     z-index: -1;
 }
@@ -579,7 +578,6 @@ p,
         font-size: 80%;
     }
 
-
     .footer {
         padding: 20px;
     }
@@ -595,5 +593,176 @@ p,
 
     .sit .icon {
         margin-left: 30%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    #container {
+        width: 50%;
+        padding: 20px 5px;
+    }
+
+    #logo {
+        margin-left: 20px;
+    }
+
+    .menu a {
+        color: white;
+        font-size: 13px;
+    }
+
+    .topnav a:hover {
+        color: coral;
+    }
+
+    .title {
+        flex-direction: column-reverse;
+        margin-left: 25px;
+    }
+
+    .title .content {
+        width: 190%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .content h2,
+    h3 {
+        margin-left: -9%;
+    }
+
+    .content p {
+        margin-left: 21%;
+    }
+
+    .title .icon {
+        position: fixed;
+        top: 190px;
+        right: 10px;
+        background-color: #7f76f967;
+    }
+
+    #tbbgimg {
+        top: 13.9%;
+        right: 23%;
+    }
+
+    .conimg #tbbgimg img:hover {
+        background-image: url("../images/mouse@2x.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-color: aqua;
+    }
+
+    .content button {
+        margin-left: -10%;
+    }
+
+    .second {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .second img {
+        width: 500px;
+        margin-top: 20%;
+        margin-left: 4%;
+    }
+
+    .content1 {
+        width: 160%;
+        text-align: center;
+        padding-left: 10%;
+    }
+
+    #crbgimg {
+        top: 28%;
+        left: 10%;
+    }
+
+    .third {
+        width: 190%;
+        margin-top: 90px;
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 0%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .row-box {
+        width: 35.5%;
+        padding: 3%;
+    }
+
+    .row-box .btnrb button {
+        top: 13px;
+        left: -120px;
+    }
+
+    #crbgimg2 {
+        top: 40%;
+    }
+
+    .fourth {
+        margin-left: 20%;
+    }
+
+    #content3 h3 {
+        margin-left: 95%;
+    }
+
+    #content3 h2 {
+        width: 200%;
+    }
+
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        width: 600%;
+        margin-left: 6%;
+    }
+
+    .dot {
+        top: 87.2%;
+        left: 10%;
+    }
+
+    #ccbgimg img {
+        margin-top: -53%;
+        width: 490%;
+    }
+
+    .fifth {
+        width: 190%;
+        margin-left: 9%;
+    }
+
+    .footer {
+        padding-top: 70px;
+        width: 175%;
+        justify-content: space-between;
+        font-size: 70%;
+    }
+
+    .footer h4 {
+        color: aqua;
+    }
+
+    #fbbgimg {
+        position: absolute;
+        height: 7%;
+        bottom: 0%;
+    }
+
+    .sit h3 {
+        width: 200%;
+    }
+
+    .footer .icon {
+        margin-left: 18%;
     }
 }
