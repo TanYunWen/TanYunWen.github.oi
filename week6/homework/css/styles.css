@@ -773,7 +773,7 @@ p,
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less) Dimensions:iphone XR */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
     #logo {
         margin-left: 20px;
@@ -811,7 +811,7 @@ p,
     }
 
     #tbbgimg {
-        top: 54%;
+        top: 109%;
         right: 15%;
     }
 
