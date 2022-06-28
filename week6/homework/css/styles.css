@@ -3,7 +3,7 @@ body {
     max-width: 1400px;
 }
 
-#box1 {
+#boxes {
     background-image: url("../images/Bg\ Shape@2x.png");
     background-position: top right; 
     background-repeat: no-repeat;
@@ -48,6 +48,60 @@ h1 {
     color: #000000ac;
     padding: 8px 12px;
     text-decoration: none;
+}
+
+.topnav .icon {
+    display: none;/*因为一开始不用 menu icon*/
+}
+
+.overlay {
+    /*整个menu*/
+    height: 100%;
+    /*它出来的时候是多长 有盖过字体 还是盖完整页*/
+    width: 0;
+    /*它有多宽*/
+    position: fixed;
+    /*给他死在那边*/
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    /*0.9 半透明*/
+    overflow-x: hidden;
+    /*不要出来*/
+    transition: 0.5s;
+    /*animation //需要多久的时间展现出来*/
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 a {
@@ -115,7 +169,7 @@ h3 {
 .title p,
 .content p,
 .content1 p,
-.box p,
+.box1 p,
 .box2 p {
     color: #7A839E;
 }
@@ -164,7 +218,7 @@ button a {
     background-color: aqua;
 }
 
-.second {
+#second {
     background-image: url("../images/image1.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -194,15 +248,12 @@ button a {
     background-size: 150px 40px;
     background-repeat: no-repeat;
     margin-top: 7%;
-    width: 150px;
+    width: 120px;
     border: none;
-}
-
-.content1 button a {
     font-size: 80%;
 }
 
-.third {
+#third {
     background-image: url("../images/image2.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -218,7 +269,7 @@ button a {
     font-size: 90%;
 }
 
-.box {
+.box1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -273,7 +324,7 @@ h4 {
     background-size: cover;
 }
 
-.fourth {
+#fourth {
     background-color: #ecebfe;
     margin-top: 110px;
 }
@@ -282,12 +333,12 @@ h4 {
     padding-top: 20px;
 }
 
-.fourth h2 {
+#fourth h2 {
     text-align: center;
     margin-top: 0%;
 }
 
-.fourth h3 {
+#fourth h3 {
     text-align: center;
 }
 
@@ -297,7 +348,7 @@ h4 {
     padding: 0% 10%;
 }
 
-.fourth .row-box2 {
+#fourth .row-box2 {
     margin: 20px 20px;
     margin-bottom: 100px;
     padding: 10px 10px;
@@ -364,7 +415,7 @@ h4 {
     padding: 20%;
 }
 
-.fifth {
+#fifth {
     text-align: center;
 }
 
@@ -519,7 +570,7 @@ p,
         top: 75%;
     }
 
-    .second img {
+    #second img {
         width: 120%;
     }
 
@@ -528,10 +579,11 @@ p,
         font-size: 80%;
     }
 
-    .box {
+    .box1 {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: 20px;
     }
 
     .row-box {
@@ -543,7 +595,7 @@ p,
         bottom: 1%;
     }
 
-    .fourth {
+    #fourth {
         margin-top: 50px;
     }
 
@@ -592,169 +644,133 @@ p,
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    #container {
-        width: 50%;
-        padding: 20px 5px;
+    .topnav {
+        flex-direction: column;
     }
 
-    #logo {
-        margin-left: 20px;
+    .topnav a {
+        text-align: left;
+        display:none;
     }
 
-    .menu a {
-        color: white;
-        font-size: 13px;
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
     }
 
-    .topnav a:hover {
-        color: coral;
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        /*吃一个位 inline吃旁边*/
     }
 
     .title {
-        flex-direction: column-reverse;
-        margin-left: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
     }
 
-    .title .content {
-        width: 190%;
-        margin-top: 10%;
-        text-align: center;
+    .title h2 {
+        font-size: 30px;
     }
 
-    .content h2,
-    h3 {
-        margin-left: -9%;
+    .title h3 {
+        font-size: 20px;
     }
 
-    .content p {
-        margin-left: 21%;
-    }
-
-    .title .icon {
-        position: fixed;
-        top: 190px;
-        right: 10px;
-        background-color: #7f76f967;
+    button {
+        width: 130px;
+        font-size: 50%;
     }
 
     #tbbgimg {
-        top: 13.9%;
-        right: 23%;
+        top: 68%;
     }
 
-    .conimg #tbbgimg img:hover {
-        background-image: url("../images/mouse@2x.png");
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-color: aqua;
+    #tbbgimg img {
+        width: 25px;
     }
 
-    .content button {
-        margin-left: -10%;
+    .title .conimg img {
+        width: 120%;
     }
 
-    .second {
-        margin-top: 30px;
-        flex-direction: column;
-    }
-
-    .second img {
-        width: 500px;
-        margin-top: 20%;
-        margin-left: 4%;
+    #second img {
+        width: 110%;
     }
 
     .content1 {
-        width: 160%;
-        text-align: center;
-        padding-left: 10%;
-    }
-
-    #crbgimg {
-        top: 28%;
-        left: 10%;
-    }
-
-    .third {
-        width: 190%;
-        margin-top: 90px;
-        flex-direction: column;
-    }
-
-    .box {
-        margin: 0%;
-        text-align: center;
-        padding: 20px;
+        padding-left: 40px;
+        font-size: 60%;
     }
 
     .row-box {
-        width: 35.5%;
-        padding: 3%;
+        width: 65%;
+        padding: 10%;
     }
 
-    .row-box .btnrb button {
-        top: 13px;
-        left: -120px;
+    .btnrb {
+        bottom: 5%;
     }
 
-    #crbgimg2 {
-        top: 40%;
-    }
-
-    .fourth {
-        margin-left: 20%;
-    }
-
-    #content3 h3 {
-        margin-left: 95%;
-    }
-
-    #content3 h2 {
-        width: 200%;
+    #fourth {
+        margin-top: 30px;
     }
 
     .box2 {
         display: flex;
         flex-direction: column;
-        width: 600%;
-        margin-left: 6%;
+        padding: 0px 30px;
+        width: 90%;
+        align-items: center;
+    }
+
+    #fourth .row-box2 {
+        width: 60%;
+    }
+
+    .row-box button a {
+        font-size: 100%;
+    }
+
+    .box2 .row-box2 button {
+        font-size: 80%;
+    }
+    
+    .text {
+        font-size: 87%;
     }
 
     .dot {
-        top: 87.2%;
-        left: 10%;
-    }
-
-    #ccbgimg img {
-        margin-top: -63%;
-        width: 100%;
-    }
-
-    .fifth {
-        width: 190%;
-        margin-left: 9%;
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: center;
+        top: 965%;
     }
 
     .footer {
-        padding-top: 70px;
-        width: 175%;
-        justify-content: space-between;
-        font-size: 70%;
-    }
-
-    .footer h4 {
-        color: aqua;
-    }
-
-    .sit h3 {
-        width: 200%;
-    }
-
-    .footer .icon {
-        margin-left: 18%;
+        font-size: 85%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
