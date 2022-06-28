@@ -5,7 +5,7 @@ body {
 
 #boxes {
     background-image: url("../images/Bg\ Shape@2x.png");
-    background-position: top right; 
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: 57%;
 }
@@ -51,7 +51,8 @@ h1 {
 }
 
 .topnav .icon {
-    display: none;/*因为一开始不用 menu icon*/
+    display: none;
+    /*因为一开始不用 menu icon*/
 }
 
 .overlay {
@@ -477,7 +478,8 @@ h4 {
     display: flex;
     justify-content: space-between;
     width: 65%;
-    margin: auto; /*中间开始*/
+    margin: auto;
+    /*中间开始*/
     margin-top: 5%;
     padding: 10px;
     align-items: center;
@@ -624,7 +626,7 @@ p,
         margin-top: 20%;
         text-align: center;
     }
-    
+
     .ql {
         width: 15%;
         margin-top: 20%;
@@ -635,22 +637,18 @@ p,
         width: 25%;
         margin-top: 20%;
     }
-    
+
     .cont {
         margin-top: 20%;
         width: 20%;
-    }    
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    .topnav {
-        flex-direction: column;
-    }
-
     .topnav a {
         text-align: left;
-        display:none;
+        display: none;
     }
 
     .topnav a:not(:first-child) {
@@ -744,7 +742,7 @@ p,
     .box2 .row-box2 button {
         font-size: 80%;
     }
-    
+
     .text {
         font-size: 87%;
     }
@@ -772,5 +770,131 @@ p,
         font-size: 40px;
         top: 15px;
         right: 35px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less) Dimensions:iphone XR */
+@media screen and (max-width: 414px) {
+    #logo {
+        margin-left: 20px;
+    }
+
+    .topnav {
+        margin-top: 9%;
+        margin-right: 5%;
+    }
+
+    .topnav .icon:hover {
+        color: coral;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .title .content {
+        width: 60%;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .title .icon {
+        position: fixed;
+        top: 55px;
+        left: 0%;
+        background-color: #7f76f967;
+        background-size: 10%;
+        padding: 1%;
+        padding-top: 2%;
+    }
+
+    #tbbgimg {
+        top: 54%;
+        right: 15%;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30%;
+        margin-left: 0;
+    }
+
+    .content1 {
+        width: 80%;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    #third {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    #content2 {
+        text-align: center;
+    }
+
+    #content2 h2,
+    h3 {
+        margin: 0px 20px;
+    }
+
+    .box1 {
+        margin: 20px;
+    }
+
+    .row-box {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .fourth {
+        margin-left: 20%;
+    }
+
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2%;
+    }
+
+    .btnrb button {
+        position: absolute;
+        right: 6px;
+    }
+
+    .dot {
+        top: 95.2%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-inline {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer {
+        padding-top: 70px;
+        justify-content: space-between;
+        font-size: 50%;
+    }
+
+    .footer h4 {
+        color: aqua;
+    }
+
+    .footer .icon {
+        margin-left: 20%;
     }
 }
