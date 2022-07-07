@@ -1,0 +1,65 @@
+body {
+    max-width: 1024px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+fieldset {
+    background-color: #DDF4EE;
+    padding: 30px;
+}
+
+legend {
+    font-size: 130%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px grey solid;
+}
+
+.box input {
+    width: 45%;
+}
+
+#bemail {
+    margin-right: 10px;
+    width: 48.3%;
+}
+
+#bemail input {
+    width: 93%;
+}
+
+#bphone input {
+    width: 125.5%;
+}
+
+.box2 input {
+    width: 95%;
+}
+
+.button {
+    text-align: center;
+}
+
+.box select {
+    padding: 10px;
+    width: 49.3%;
+}
+
+.button input {
+    padding: 0%;
+    border-radius: 25px;
+    background-color: #23622B;
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: white;
+}
