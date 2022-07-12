@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #C6DCE4;
-}   
+}
 
 #logo {
     margin: 0px 70px;
@@ -141,7 +141,6 @@ h3 {
 }
 
 button {
-    width: 30%;
     padding: 20px;
     border-radius: 10px;
     background-color: #EF6D58;
@@ -152,82 +151,99 @@ button {
 
 .box2 #title button {
     margin: 50px 0px 20px 0px;
-} 
+}
 
 #box-img1 {
     margin-right: 160px;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 1145px) {
+    .box1 {
+        background-color: #c6dce400;
+    }
+
+    #logo {
+        margin: 30px 50px;
+    }
+
+    #logo h1 {
+        color: #FFFFFF;
+    }
+
+    .topnav a {
+        text-align: left;
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
+    }
+
+    .topnav .icon {
+        height: 7%;
+        border: 1px #D8D8D8 solid;
+        border-radius: 15px;
+        font-size: 200%;
+        color: #FFFFFF;
+    }
+
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        right: 5%;
+        margin-right: 20px;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
+    }
+
+    #contact-btn {
+        border: none;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 1100px) {
+    .box2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .box2 #title {
+        width: 95.5%;
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 800px) {
+    .box2 #box-img1 {
+        margin-left: 20px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-.box1 {
-    background-color: #c6dce400;
-}
+    #logo {
+        margin: 20px 20px;
+    }
 
-#logo {
-    width: 80%;
-    margin: 20px 20px;
-}
+    .box2 #title {
+        width: 92.5%;
+        text-align: left;
+    }
 
-#logo h1 {
-    color: #FFFFFF;
-}
-
-.topnav a {
-    text-align: left;
-    display: none;
-}
-
-.topnav a:not(:first-child) {
-    /*expect for the first-child*/
-    display: none;
-}
-
-.topnav .icon {
-    width: 5%;
-    height: 7%;
-    border: 1px #D8D8D8 solid;
-    border-radius: 15px;
-    font-size: 200%;
-    color: #FFFFFF;
-}
-
-.topnav a.icon {
-/*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
-    display: block;
-    /*why will come out beause this display: block*/
-    position: absolute;
-    right: 0;
-    margin-right: 20px;
-}
-
-.topnav.responsive a {
-    display: block;
-    /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
-}
-
-#contact-btn {
-    border: none;
-}
-
-.box2 {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.box2 #title {
-    width: 92.5%;
-    background-color: #00000046;
-    margin: 150px 50px;
-    padding: 20px;
-}
-
-.box2 #title button {
-    margin: 50px 0px 20px 0px;
-} 
-
-#box-img1 {
-    margin-right: 100px;
+    #box-img1 {
+        margin-top: 10%;
+        margin-right: 100px;
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
@@ -244,8 +260,4 @@ button {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
-@media screen and (max-width: 414px) {
-}
-
-
-
+@media screen and (max-width: 414px) {}
