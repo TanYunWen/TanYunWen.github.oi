@@ -145,8 +145,12 @@ button {
     border-radius: 10px;
     background-color: #EF6D58;
     border: none;
-    color: #FFFFFF;
     font-weight: bold;
+}
+
+#title button a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .box2 #title button {
