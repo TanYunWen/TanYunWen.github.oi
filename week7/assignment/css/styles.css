@@ -3,11 +3,16 @@ body {
     margin: auto;
 }
 
+#header {
+    background-image: url(../images/1backgroundimg.jpg);
+    background-size: cover;
+}
+
 .box1 {
     display: flex;
     justify-content: space-between;
     background-color: #C6DCE4;
-}
+}   
 
 #logo {
     margin: 0px 70px;
@@ -22,20 +27,20 @@ body {
     font-size: 200%;
 }
 
-#topnav {
+.topnav {
     display: flex;
     align-items: center;
     width: 80%;
     margin-left: 5%;
 }
 
-#topnav a {
+.topnav a {
     color: #000000;
     text-decoration: none;
     padding: 20px 30px;
 }
 
-#topnav a:hover {
+.topnav a:hover {
     background-color: #EF6D58;
     color: black;
     text-decoration: underline;
@@ -50,19 +55,71 @@ body {
     font-weight: bold;
 }
 
-#topnav #contact-btn a:hover {
+.topnav #contact-btn a:hover {
     background-color: #C6DCE4;
     color: black;
     padding: 10px;
     text-decoration: underline;
 }
 
+.topnav .icon {
+    display: none;
+}
+
+.overlay {
+    /*æ•´ä¸ªmenu*/
+    height: 100%;
+    /*å®ƒå‡ºæ¥çš„æ—¶å€™æ˜¯å¤šé•¿ æœ‰ç›–è¿‡å­—ä½“ è¿˜æ˜¯ç›–å®Œæ•´é¡µ*/
+    width: 0;
+    /*å®ƒæœ‰å¤šå®½*/
+    position: fixed;
+    /*ç»™ä»–æ­»åœ¨é‚£è¾¹*/
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    /*0.9 åŠé€æ˜Ž*/
+    overflow-x: hidden;
+    /*ä¸è¦å‡ºæ¥*/
+    transition: 0.5s;
+    /*animation //éœ€è¦å¤šä¹…çš„æ—¶é—´å±•çŽ°å‡ºæ¥*/
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
 .box2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../images/1backgroundimg.jpg");
-    background-size: cover;
 }
 
 h1 {
@@ -100,4 +157,95 @@ button {
 #box-img1 {
     margin-right: 160px;
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+.box1 {
+    background-color: #c6dce400;
+}
+
+#logo {
+    width: 80%;
+    margin: 20px 20px;
+}
+
+#logo h1 {
+    color: #FFFFFF;
+}
+
+.topnav a {
+    text-align: left;
+    display: none;
+}
+
+.topnav a:not(:first-child) {
+    /*expect for the first-child*/
+    display: none;
+}
+
+.topnav .icon {
+    width: 5%;
+    height: 7%;
+    border: 1px #D8D8D8 solid;
+    border-radius: 15px;
+    font-size: 200%;
+    color: #FFFFFF;
+}
+
+.topnav a.icon {
+/*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+    display: block;
+    /*why will come out beause this display: block*/
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.topnav.responsive a {
+    display: block;
+    /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
+}
+
+#contact-btn {
+    border: none;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.box2 #title {
+    width: 92.5%;
+    background-color: #00000046;
+    margin: 150px 50px;
+    padding: 20px;
+}
+
+.box2 #title button {
+    margin: 50px 0px 20px 0px;
+} 
+
+#box-img1 {
+    margin-right: 100px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
+@media screen and (max-width: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+@media screen and (max-width: 414px) {
+}
+
+
 

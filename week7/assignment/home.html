@@ -13,15 +13,26 @@
         <!-- Container -->
         <div class="container">
             <!-- Header -->
-            <div class="header">
+            <div id="header">
                 <div class="box1">
                     <div id="logo">
-                        <img src="../assignment/images/logo.png" width="25%" height="60%">
+                        <img src="../assignment/images/logo.png" width="35%" height="90%">
                         <h1>陈</h1>
                     </div>
 
-                    <div id="topnav">
-                        <a href="#home" class="active">首页</a>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="#header">首页</a>
+                            <a href="#about">简介</a>
+                            <a href="#myworks">作品集</a>
+                            <a href="myfavourite">我的爱好</a>
+                            <a href="#contact">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="#header">首页</a>
                         <a href="#about">简介</a>
                         <a href="#myworks">作品集</a>
                         <a href="myfavourite">我的爱好</a>
@@ -29,7 +40,20 @@
                         <div id="contact-btn">
                             <a href="#contact">联系</a>
                         </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
                     </div>
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
                 </div>
 
                 <div class="box2">
@@ -42,14 +66,13 @@
                     </div>
 
                     <div id="box-img1">
-                        <img src="../assignment/images/1image.png">
+                        <img src="../assignment/images/1image.png" width="120%">
                     </div>
                 </div>
-
-
-
             </div>
+
         </div>
+    </div>
 </body>
 
 </html>
