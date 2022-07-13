@@ -401,7 +401,8 @@ form h3 {
     font-weight: bold;
 }
 
-form .bemail input, .bmessage textarea {
+form .bemail input,
+.bmessage textarea {
     width: 94%;
     padding: 10px;
 }
@@ -416,7 +417,7 @@ form .b-btn {
 }
 
 form .b-btn input {
-    width: 30%;
+    width: 110px;
     background-color: #EF6D58;
     padding: 15px;
     border-radius: 10px;
@@ -445,16 +446,16 @@ form .b-btn input {
     display: flex;
     align-items: center;
     margin-top: 5%;
-}   
+}
 
 .content5 p {
-    width: 102%;
+    width: 100%;
     color: #FFFFFF;
 }
 
 .c5-img {
     width: 10%;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 
@@ -480,12 +481,12 @@ form .b-btn input {
         text-align: left;
         display: none;
     }
-    
+
     .topnav a:not(:first-child) {
         /*expect for the first-child*/
         display: none;
     }
-    
+
     .topnav .icon {
         height: 7%;
         border: 1px #D8D8D8 solid;
@@ -493,7 +494,7 @@ form .b-btn input {
         font-size: 200%;
         color: #FFFFFF;
     }
-    
+
     .topnav a.icon {
         /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
         display: block;
@@ -502,22 +503,22 @@ form .b-btn input {
         right: 5%;
         margin-right: 20px;
     }
-    
+
     .topnav.responsive a {
         display: block;
         /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
     }
-    
+
     .contact-btn {
         border: none;
     }
-    
+
     .box3 {
         display: flex;
         flex-direction: column;
         margin: 0px 30px;
     }
-    
+
     .box3 .contact-btn {
         margin-top: 0px;
         margin-bottom: 10%;
@@ -528,43 +529,46 @@ form .b-btn input {
         display: flex;
         flex-direction: column;
     }
-    
+
     .b-w {
-        width: 98.1%;
+        width: 97.8%;
         padding: 10px;
     }
-    
+
     .b-w-button {
         margin: 0px;
     }
- 
+
     .b-w-content {
         left: 100px;
     }
-    
+
     .b-w-content h4 {
         width: 90px;
         font-size: 20px;
     }
-    
+
     .b-w-content h3 {
         font-size: 50px;
     }
-    
+
     .b-w-content1 {
         left: 100px;
     }
-    
+
     .b-w-content1 h4 {
         width: 120px;
         font-size: 20px;
     }
-    
+
     .b-w-content1 h3 {
         font-size: 50px;
     }
-}
 
+    form .bsubject select {
+        width: 100%;
+    }
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
@@ -584,8 +588,39 @@ form .b-btn input {
         margin: 0px;
         text-align: center;
     }
+
+    .b-w {
+        width: 97.5%;
+        padding: 10px;
+    }
+
+    .box8 {
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+    }
+
+    .b-contact {
+        width: 90%;
+    }
+
+    form .bsubject select {
+        width: 96.8%;
+    }
+
+    form .b-btn {
+        margin-right: 10px;
+    }
 }
 
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+@media screen and (max-width: 900px) {
+    .b-w {
+        width: 97.2%;
+        padding: 10px;
+    }
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
@@ -607,7 +642,7 @@ form .b-btn input {
     #box-img2 {
         width: 85%;
     }
-    
+
     #content1 {
         width: 80%;
         margin-top: 0%;
@@ -632,8 +667,36 @@ form .b-btn input {
     .box6 button {
         width: 30%;
     }
+
+    .b-w {
+        width: 96.8%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 97.8%;
+    }
+
+    form .b-btn {
+        margin-right: 3px;
+    }
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
+@media screen and (max-width: 700px) {
+    form .bsubject select {
+        width: 98.8%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
+@media screen and (max-width: 663px) {
+    .b-w {
+        width: 96.5%;
+        padding: 10px;
+    }
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
@@ -646,8 +709,20 @@ form .b-btn input {
     .box2 #title {
         width: 93%;
     }
-}
 
+    .b-w {
+        width: 95.8%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 100%;
+    }
+
+    form .b-btn {
+        margin-right: 3px;
+    }
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
@@ -679,8 +754,12 @@ form .b-btn input {
         top: 15px;
         right: 35px;
     }
-}
 
+    .b-w {
+        width: 95.7%;
+        padding: 10px;
+    }
+}
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
@@ -693,8 +772,28 @@ form .b-btn input {
         width: 70%;
         margin-right: 130px;
     }
-    
+
     #content1 {
         margin-left: 5%;
+    }
+
+    .b-w {
+        width: 94.5%;
+        padding: 10px;
+    }
+
+    .b-contact {
+        width: 85%;
+    }
+
+    form .bemail input,
+    .bmessage textarea {
+        width: 89%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 99%;
+        padding: 10px;
     }
 }
