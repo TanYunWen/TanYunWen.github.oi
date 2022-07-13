@@ -60,7 +60,7 @@ body {
 
 .contact-btn {
     margin-left: 23%;
-    width: 15%;
+    width: 150px;
     text-align: center;
     border: 1px #FFFFFF solid;
     padding: 15px;
@@ -213,6 +213,7 @@ button a {
 /* My Works */
 #myworks {
     background-color: #28293E;
+    padding-bottom: 10%;
 }
 
 .box3 {
@@ -231,8 +232,9 @@ button a {
 }
 
 .box3 .contact-btn {
-    height: 20%;
-    margin-top: 6%;
+    height: 20px;
+    margin-top: 70px;
+    border: 1px #FFFFFF solid;
 }
 
 .box3 .contact-btn a {
@@ -272,7 +274,7 @@ button a {
     text-align: center;
     width: 50px;
     border-radius: 25px;
-    font-size: 90%;
+    font-size: 15px;
     padding: 10px;
 }
 
@@ -280,7 +282,7 @@ button a {
     color: #FFFFFF;
     text-align: center;
     font-weight: bold;
-    font-size: 190%;
+    font-size: 30px;
     margin-top: 0;
 }
 
@@ -299,7 +301,7 @@ button a {
     text-align: center;
     width: 90px;
     border-radius: 25px;
-    font-size: 90%;
+    font-size: 15px;
     padding: 10px;
 }
 
@@ -307,7 +309,7 @@ button a {
     color: #FFFFFF;
     text-align: center;
     font-weight: bold;
-    font-size: 190%;
+    font-size: 30px;
     margin-top: 0;
 }
 
@@ -368,6 +370,58 @@ button a {
     .contact-btn {
         border: none;
     }
+    
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+    
+    .box3 .contact-btn {
+        margin-top: 0px;
+        margin-bottom: 10%;
+        margin-left: 0%;
+    }
+
+    .week {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .b-w {
+        width: 98.1%;
+        padding: 10px;
+    }
+    
+    .b-w-button {
+        margin: 0px;
+    }
+ 
+    .b-w-content {
+        left: 100px;
+    }
+    
+    .b-w-content h4 {
+        width: 90px;
+        font-size: 20px;
+    }
+    
+    .b-w-content h3 {
+        font-size: 50px;
+    }
+    
+    .b-w-content1 {
+        left: 100px;
+    }
+    
+    .b-w-content1 h4 {
+        width: 120px;
+        font-size: 20px;
+    }
+    
+    .b-w-content1 h3 {
+        font-size: 50px;
+    }
 }
 
 
@@ -385,7 +439,7 @@ button a {
     }
 
     .box2 #title {
-        width: 95.5%;
+        width: 93.1%;
         margin: 0px;
         text-align: center;
     }
