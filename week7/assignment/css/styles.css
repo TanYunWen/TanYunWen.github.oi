@@ -142,6 +142,7 @@ body {
 }
 
 #header button {
+    width: 140px;
     background-color: #EF6D58;
 }
 
@@ -208,8 +209,7 @@ button a {
 }
 
 
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
 @media screen and (max-width: 1145px) {
     .box1 {
         background-color: #c6dce400;
@@ -219,72 +219,24 @@ button a {
         margin: 30px 50px;
     }
 
-    .box2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    h2 {
-        color: #5C2000;
-    }
-
-    h3 {
-        color: #EF6D58;
-        font-weight: 100;
-    }
-
-    h4 {
-        color: #5C2000;
-    }
-
-    p {
-        color: #391400;
-    }
-
-    button {
-        background-color: #FFFFFF;
-        color: #391400;
-    }
-
-    .box2 #title {
-        width: 40%;
-        background-color: #00000046;
-        margin: 150px 50px;
-        padding: 20px;
-    }
-
-    #header button {
-        padding: 20px;
-        border-radius: 10px;
-        background-color: #EF6D58;
-        border: none;
-        font-weight: bold;
-    }
-
-    .box2 #title button a {
+    #logo h1 {
         color: #FFFFFF;
-        text-decoration: none;
     }
 
-    .box2 #title button {
-        margin: 50px 0px 20px 0px;
-    }
-
-    #box-img1 {
-        margin-right: 160px;
+    .box2 #title h1 {
+        font-size: 50px;
     }
 
     .topnav a {
         text-align: left;
         display: none;
     }
-
+    
     .topnav a:not(:first-child) {
         /*expect for the first-child*/
         display: none;
     }
-
+    
     .topnav .icon {
         height: 7%;
         border: 1px #D8D8D8 solid;
@@ -292,7 +244,7 @@ button a {
         font-size: 200%;
         color: #FFFFFF;
     }
-
+    
     .topnav a.icon {
         /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
         display: block;
@@ -301,20 +253,25 @@ button a {
         right: 5%;
         margin-right: 20px;
     }
-
+    
     .topnav.responsive a {
         display: block;
         /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
     }
-
+    
     #contact-btn {
         border: none;
-        border-radius: 10px;
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
 @media screen and (max-width: 1100px) {
+    #logo {
+        width: 280px;
+        height: 20%;
+    }
+
     .box2 {
         display: flex;
         flex-direction: column-reverse;
@@ -327,37 +284,63 @@ button a {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
 @media screen and (max-width: 800px) {
+    #logo {
+        width: 300px;
+        height: 20%;
+    }
+
     .box2 #box-img1 {
-        margin-left: 20px;
+        margin-left: 40px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #box-img2 {
+        width: 85%;
+    }
+    
+    #content1 {
+        width: 80%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
     #logo {
-        margin: 20px 20px;
-        width: 130%;
-    }
-
-    #logo h1 {
-        font-size: 300%;
+        width: 80%;
+        height: 20%;
     }
 
     .box2 #title {
-        width: 92.5%;
-        text-align: left;
-    }
-
-    #box-img1 {
-        margin-top: 10%;
-        margin-right: 100px;
+        width: 93%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+    #logo {
+        width: 80px;
+    }
+
+    .box2 #title {
+        text-align: left;
+        width: 91.5%;
+    }
+
+    #box-img1 {
+        width: 70%;
+        padding-left: 10%;
+    }
+
+    #content1 {
+        margin-left: 15%;
+    }
+
     .overlay a {
         font-size: 20px
     }
@@ -370,4 +353,17 @@ button a {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
-@media screen and (max-width: 414px) {}
+@media screen and (max-width: 414px) {
+    .topnav .icon {
+        height: 5%;
+    }
+
+    #box-img1 {
+        width: 70%;
+        margin-right: 130px;
+    }
+    
+    #content1 {
+        margin-left: 5%;
+    }
+}
