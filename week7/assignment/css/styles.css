@@ -30,7 +30,7 @@ body {
 
 #header .box2 h1 {
     color: #F2D1D1;
-    line-height: 50%;
+    margin: 20px 0px;
     font-size: 450%;
 }
 
@@ -172,7 +172,7 @@ body {
 h2 {
     color: #5C2000;
     font-size: 300%;
-    line-height: 50%;
+    margin-top: 20px;
 }
 
 h3 {
@@ -191,7 +191,7 @@ p {
 }
 
 button {
-    width: 28%;
+    width: 110px;
     background-color: #FFFFFF;
     margin-top: 20%;
     padding: 20px;
@@ -207,6 +207,8 @@ button a {
     font-weight: bold;
 }
 
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 1145px) {
     .box1 {
@@ -217,63 +219,60 @@ button a {
         margin: 30px 50px;
     }
 
-    #logo h1 {
-.box2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .box2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-h2 {
-    color: #5C2000;
-}
+    h2 {
+        color: #5C2000;
+    }
 
-h3 {
-    color: #EF6D58;
-    font-weight: 100;
-}
+    h3 {
+        color: #EF6D58;
+        font-weight: 100;
+    }
 
-h4 {
-    color: #5C2000;
-}
+    h4 {
+        color: #5C2000;
+    }
 
-p {
-    color: #391400;
-}
+    p {
+        color: #391400;
+    }
 
-button {
-    background-color: #FFFFFF;
-    color: #391400;
-}
+    button {
+        background-color: #FFFFFF;
+        color: #391400;
+    }
 
-.box2 #title {
-    width: 40%;
-    background-color: #00000046;
-    margin: 150px 50px;
-    padding: 20px;
-}
+    .box2 #title {
+        width: 40%;
+        background-color: #00000046;
+        margin: 150px 50px;
+        padding: 20px;
+    }
 
-#header button {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #EF6D58;
-    border: none;
-    font-weight: bold;
-}
+    #header button {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #EF6D58;
+        border: none;
+        font-weight: bold;
+    }
 
-.box2 #title button a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.box2 #title button {
-    margin: 50px 0px 20px 0px;
-}
-
-#box-img1 {
-    margin-right: 160px;
-}
+    .box2 #title button a {
         color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .box2 #title button {
+        margin: 50px 0px 20px 0px;
+    }
+
+    #box-img1 {
+        margin-right: 160px;
     }
 
     .topnav a {
@@ -310,7 +309,7 @@ button {
 
     #contact-btn {
         border: none;
-        border-radius: ;
+        border-radius: 10px;
     }
 }
 
