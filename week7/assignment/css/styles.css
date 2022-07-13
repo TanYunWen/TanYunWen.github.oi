@@ -372,7 +372,89 @@ button a {
 
 .box6 button {
     margin-top: 0%;
-    width: 20%;
+    width: 10%;
+}
+
+/* Contact */
+#contact {
+    background-color: #28293E;
+}
+
+.box8 {
+    display: flex;
+}
+
+.b-contact {
+    margin-top: 10%;
+    width: 45%;
+}
+
+form {
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-left: 50px;
+    padding: 20px 30px;
+}
+
+form h3 {
+    color: #5C2000;
+    font-weight: bold;
+}
+
+form .bemail input, .bmessage textarea {
+    width: 94%;
+    padding: 10px;
+}
+
+form .bsubject select {
+    width: 99%;
+    padding: 10px;
+}
+
+form .b-btn {
+    text-align: right;
+}
+
+form .b-btn input {
+    width: 30%;
+    background-color: #EF6D58;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #FFFFFF;
+}
+
+.content4 {
+    margin: 10%;
+}
+
+.content4 h2 {
+    color: #FFFFFF;
+}
+
+.content4 p {
+    color: #B2B2B9;
+}
+
+.box9 {
+    margin-top: 10%;
+}
+
+.content5 {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}   
+
+.content5 p {
+    width: 102%;
+    color: #FFFFFF;
+}
+
+.c5-img {
+    width: 10%;
+    margin-right: 5%;
 }
 
 
