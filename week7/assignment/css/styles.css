@@ -530,6 +530,26 @@ button a {
         width: 80%;
         margin-top: 0%;
     }
+
+    .box7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content3 {
+        width: 70%;
+        height: 100%;
+        padding: 50px;
+    }
+
+    .content3:hover {
+        height: 120%;
+    }
+
+    .box6 button {
+        width: 30%;
+    }
 }
 
 
