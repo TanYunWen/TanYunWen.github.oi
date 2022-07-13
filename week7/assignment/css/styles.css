@@ -4,6 +4,7 @@ body {
     background-color: #FDF0E9;
 }
 
+/* Header */
 #header {
     background-image: url(../images/1backgroundimg.jpg);
     background-size: cover;
@@ -57,7 +58,7 @@ body {
     text-decoration: underline;
 }
 
-#contact-btn {
+.contact-btn {
     margin-left: 23%;
     width: 15%;
     text-align: center;
@@ -67,7 +68,7 @@ body {
     border-radius: 10px;
 }
 
-.topnav #contact-btn a:hover {
+.topnav .contact-btn a:hover {
     background-color: #C6DCE4;
     color: black;
     padding: 10px;
@@ -159,6 +160,7 @@ body {
     margin-right: 160px;
 }
 
+/* About */
 #about {
     display: flex;
     margin: 120px 40px;
@@ -208,6 +210,110 @@ button a {
     font-weight: bold;
 }
 
+/* My Works */
+#myworks {
+    background-color: #28293E;
+}
+
+.box3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    margin: 20px 90px;
+}
+
+.box4 {
+    width: 50%;
+}
+
+.box4 h2 {
+    color: #FFFFFF;
+}
+
+.box3 .contact-btn {
+    height: 20%;
+    margin-top: 6%;
+}
+
+.box3 .contact-btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.week {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.b-w {
+    width: 34%;
+    border: 1px #6F6F6F solid;
+    border-left: none;
+    padding: 5px;
+}
+
+.b-w-button {
+    position: relative;
+    margin: 10px;
+}
+
+.b-w-img {
+    text-align: center;
+}
+
+.b-w-content {
+    position: absolute;
+    left: 53px;
+    bottom: 40px;
+}
+
+.b-w-content h4 {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 50px;
+    border-radius: 25px;
+    font-size: 90%;
+    padding: 10px;
+}
+
+.b-w-content h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 190%;
+    margin-top: 0;
+}
+
+.b-w-content a {
+    text-decoration: none;
+}
+
+.b-w-content1 {
+    position: absolute;
+    left: 53px;
+    bottom: 40px;
+}
+
+.b-w-content1 h4 {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 90px;
+    border-radius: 25px;
+    font-size: 90%;
+    padding: 10px;
+}
+
+.b-w-content1 h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 190%;
+    margin-top: 0;
+}
+
+.b-w-content1 a {
+    text-decoration: none;
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
 @media screen and (max-width: 1145px) {
@@ -259,10 +365,11 @@ button a {
         /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
     }
     
-    #contact-btn {
+    .contact-btn {
         border: none;
     }
 }
+
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
@@ -283,6 +390,8 @@ button a {
         text-align: center;
     }
 }
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
 @media screen and (max-width: 800px) {
@@ -306,8 +415,11 @@ button a {
     
     #content1 {
         width: 80%;
+        margin-top: 0%;
     }
 }
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
@@ -320,6 +432,8 @@ button a {
         width: 93%;
     }
 }
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
 @media screen and (max-width: 500px) {
@@ -351,6 +465,8 @@ button a {
         right: 35px;
     }
 }
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
