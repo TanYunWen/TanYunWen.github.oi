@@ -1,0 +1,29 @@
+body {
+    max-width: 1240px;
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 10%;
+    border: 0.5px solid rgb(128, 124, 124);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+}
+  
