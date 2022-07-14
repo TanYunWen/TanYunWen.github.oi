@@ -197,15 +197,15 @@ button a {
     font-weight: bold;
 }
 
-/* My Works */
+/* Fourth Box */
 #t-b {
     background-color: #F9E5DA;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .box3 {
-    padding-top: 90px;
-    margin: 20px 330px;
+    padding-top: 50px;
+    margin: 0px 330px;
     display: flex;
     flex-direction: column;
 }
@@ -217,16 +217,17 @@ button a {
 /* Fourth Box */
 #f-b {
     background-color: #F9E5DA;
-    padding: 20%;
+    padding: 5%;
 }
 
 #content2 {
-    width: 100%;
-    padding: 30px;
+    width: 80%;
+    padding: 70px 90px;
     border: 1px solid #F3D1BF;
     border-radius: 0px 0px 6px 6px;
     border-left: none;
     border-right: none;
+    align-items: center;
     text-align: left;
 }
 
@@ -235,22 +236,11 @@ button a {
     background-color: #28293E;
 }
 
-.f-img {
-    display: flex;
-}
-
-.f-img-6 {
-    width: 100%;
-}
-
-.content6 {
-    margin-top: 5%;
-}
-
 .box10 {
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
+    margin-left: 5%;
+    padding: 80px;
 }
 
 .box10 a {
@@ -530,6 +520,10 @@ button a {
         width: 300px;
         height: 20%;
     }
+
+    #content2 {
+        padding-left: 0%;
+    }
 }
 
 
@@ -582,7 +576,9 @@ button a {
         padding-left: 0%;
     }
 
-    #f-b {}
+    #content2 {
+        padding-left: 0%;
+    }
 
     form .bemail input,
     .bmessage textarea {
