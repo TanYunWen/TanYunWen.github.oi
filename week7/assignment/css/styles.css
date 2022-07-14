@@ -320,7 +320,7 @@ button a {
 /* My Favourite */
 #myfavourite {
     text-align: center;
-    margin: 10% 0%;
+    margin: 20% 0%;
 }
 
 .box7 {
@@ -534,7 +534,6 @@ form .b-btn input {
 }
 
 
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
 @media screen and (max-width: 1145px) {
     .box1 {
@@ -696,6 +695,14 @@ form .b-btn input {
         width: 97.2%;
         padding: 10px;
     }
+
+    .f-img {
+        flex-wrap: wrap;
+    }
+
+    .f-img-6 {
+        width: 50%;
+    }
 }
 
 
@@ -755,6 +762,48 @@ form .b-btn input {
 
     form .b-btn {
         margin-right: 3px;
+    }
+
+    .box10 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu {
+        padding-right: 0;
+    }
+
+    .f-myworks {
+        margin: 5%;
+    }
+
+    .f-myworks-menu1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .f-myworks-menu2 {
+        padding-right: 0;
+    }
+
+    .f-contact {
+        margin-bottom: 5%;   
+    }
+
+    .box11 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-privacy {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .b-sp {
+        padding: 0% 5%;
     }
 }
 
