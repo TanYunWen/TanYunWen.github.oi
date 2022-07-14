@@ -198,110 +198,20 @@ button a {
 }
 
 /* My Works */
-#myworks {
-    background-color: #28293E;
+#t-b {
+    background-color: #F9E5DA;
     padding-bottom: 10%;
 }
 
 .box3 {
-    display: flex;
-    justify-content: space-between;
     padding-top: 90px;
-    margin: 20px 90px;
-}
-
-.box4 {
-    width: 50%;
-}
-
-.box4 h2 {
-    color: #FFFFFF;
-}
-
-.box3 .contact-btn {
-    height: 20px;
-    margin-top: 70px;
-    border: 1px #FFFFFF solid;
-}
-
-.box3 .contact-btn a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.week {
+    margin: 20px 330px;
     display: flex;
-    padding: 20px 0px;
+    flex-direction: column;
 }
 
-.b-w {
-    width: 34%;
-    border: 1px #6F6F6F solid;
-    border-left: none;
-    padding: 5px;
-}
-
-.b-w-button {
-    position: relative;
-    margin: 10px;
-}
-
-.b-w-img {
-    text-align: center;
-}
-
-.b-w-content {
-    position: absolute;
-    left: 53px;
-    bottom: 40px;
-}
-
-.b-w-content h4 {
-    background-color: #FFFFFF;
-    text-align: center;
-    width: 50px;
-    border-radius: 25px;
-    font-size: 15px;
-    padding: 10px;
-}
-
-.b-w-content h3 {
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 0;
-}
-
-.b-w-content a {
-    text-decoration: none;
-}
-
-.b-w-content1 {
-    position: absolute;
-    left: 53px;
-    bottom: 40px;
-}
-
-.b-w-content1 h4 {
-    background-color: #FFFFFF;
-    text-align: center;
-    width: 90px;
-    border-radius: 25px;
-    font-size: 15px;
-    padding: 10px;
-}
-
-.b-w-content1 h3 {
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 0;
-}
-
-.b-w-content1 a {
-    text-decoration: none;
+.video-reel {
+    margin: 10% 0%;
 }
 
 /* My Favourite */
@@ -590,46 +500,6 @@ form .b-btn input {
         margin-left: 0%;
     }
 
-    .week {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .b-w {
-        width: 97.8%;
-        padding: 10px;
-    }
-
-    .b-w-button {
-        margin: 0px;
-    }
-
-    .b-w-content {
-        left: 100px;
-    }
-
-    .b-w-content h4 {
-        width: 90px;
-        font-size: 20px;
-    }
-
-    .b-w-content h3 {
-        font-size: 50px;
-    }
-
-    .b-w-content1 {
-        left: 100px;
-    }
-
-    .b-w-content1 h4 {
-        width: 120px;
-        font-size: 20px;
-    }
-
-    .b-w-content1 h3 {
-        font-size: 50px;
-    }
-
     form .bsubject select {
         width: 100%;
     }
@@ -641,11 +511,6 @@ form .b-btn input {
     #logo {
         width: 280px;
         height: 20%;
-    }
-    
-    .b-w {
-        width: 97.5%;
-        padding: 10px;
     }
 
     .box8 {
@@ -670,11 +535,6 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
 @media screen and (max-width: 900px) {
-    .b-w {
-        width: 97.2%;
-        padding: 10px;
-    }
-
     .f-img {
         flex-wrap: wrap;
     }
@@ -724,11 +584,6 @@ form .b-btn input {
 
     .box6 button {
         width: 30%;
-    }
-
-    .b-w {
-        width: 96.8%;
-        padding: 10px;
     }
 
     form .bsubject select {
@@ -801,11 +656,6 @@ form .b-btn input {
         width: 300px;
         height: 20%;
     }
-
-    .b-w {
-        width: 96.5%;
-        padding: 10px;
-    }
 }
 
 
@@ -814,11 +664,6 @@ form .b-btn input {
     #logo {
         width: 100%;
         height: 20%;
-    }
-
-    .b-w {
-        width: 95.8%;
-        padding: 10px;
     }
 
     form .bsubject select {
@@ -850,11 +695,6 @@ form .b-btn input {
         top: 15px;
         right: 35px;
     }
-
-    .b-w {
-        width: 95.7%;
-        padding: 10px;
-    }
 }
 
 
@@ -866,11 +706,6 @@ form .b-btn input {
     
     #content1 {
         padding-left: 0%;
-    }
-
-    .b-w {
-        width: 94.5%;
-        padding: 10px;
     }
 
     .b-contact {
