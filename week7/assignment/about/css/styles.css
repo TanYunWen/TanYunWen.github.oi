@@ -582,9 +582,7 @@ button a {
         padding-left: 0%;
     }
 
-    .b-contact {
-        width: 85%;
-    }
+    #f-b {}
 
     form .bemail input,
     .bmessage textarea {
