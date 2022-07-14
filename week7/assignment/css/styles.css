@@ -386,6 +386,7 @@ button a {
 
 .b-contact {
     margin-top: 10%;
+    margin-bottom: 10%;
     width: 45%;
 }
 
@@ -457,6 +458,81 @@ form .b-btn input {
     width: 10%;
     margin-right: 3%;
 }
+
+/* Footer */
+#footer {
+    background-color: #28293E;
+}
+
+.f-img {
+    display: flex;
+}
+
+.f-img-6 {
+    width: 100%;
+}
+
+.content6 {
+    margin-top: 5%;
+}
+
+.box10 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.box10 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.b-f1 h1 {
+    color: #FFFFFF;
+}
+
+.menu, .f-myworks-menu1 {
+    display: flex;
+}
+
+.menu, .f-myworks-menu2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.f-contact {
+    margin-top: 10px;
+}
+
+.box11 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+    margin-bottom: 0;
+    padding: 3%;
+    align-items: center;
+    border: 1px #3A3C56 solid;
+    border-left: none;
+    border-right: none;
+}
+
+.service-privacy {
+    display: flex;
+}
+
+.b-sp {
+    padding-left: 80px;
+}
+
+#copyright p {
+    color: #B2B2B9;
+}
+
+.service-privacy p {
+    color: #FFFFFF;
+}
+
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
