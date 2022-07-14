@@ -214,146 +214,20 @@ button a {
     margin: 10% 0%;
 }
 
-/* My Favourite */
-#myfavourite {
-    text-align: center;
-    margin: 20% 0%;
+/* Fourth Box */
+#f-b {
+    background-color: #F9E5DA;
+    padding: 20%;
 }
 
-.box7 {
-    display: flex;
-    justify-content: center;
-    padding: 3%;
-}
-
-.content3 {
-    width: 20%;
-    height: 300px;
+#content2 {
+    width: 100%;
     padding: 30px;
     border: 1px solid #F3D1BF;
-    box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04);
     border-radius: 0px 0px 6px 6px;
+    border-left: none;
+    border-right: none;
     text-align: left;
-}
-
-.content3:hover {
-    background: #FFFFFF;
-    height: 330px;
-    font-size: larger;
-}
-
-.content3 h3 {
-    color: #5C2000;
-    font-weight: bold;
-}
-
-.content3 p {
-    margin-top: 30px;
-}
-
-.id {
-    display: flex;
-    align-items: center;
-    margin-top: 30%;
-}
-
-.picture {
-    width: 30%;
-}
-
-.name {
-    width: 70%;
-    padding-left: 10%;
-    line-height: 30%;
-}
-
-.box6 button {
-    margin-top: 0%;
-    width: 10%;
-}
-
-/* Contact */
-#contact {
-    background-color: #28293E;
-}
-
-.box8 {
-    display: flex;
-}
-
-.b-contact {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 45%;
-}
-
-form {
-    background: #FFFFFF;
-    border-radius: 6px;
-    margin-left: 50px;
-    padding: 20px 30px;
-}
-
-form h3 {
-    color: #5C2000;
-    font-weight: bold;
-}
-
-form .bemail input,
-.bmessage textarea {
-    width: 94%;
-    padding: 10px;
-}
-
-form .bsubject select {
-    width: 99%;
-    padding: 10px;
-}
-
-form .b-btn {
-    text-align: right;
-}
-
-form .b-btn input {
-    width: 110px;
-    background-color: #EF6D58;
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    border: none;
-    color: #FFFFFF;
-}
-
-.content4 {
-    margin: 10%;
-}
-
-.content4 h2 {
-    color: #FFFFFF;
-}
-
-.content4 p {
-    color: #B2B2B9;
-}
-
-.box9 {
-    margin-top: 10%;
-}
-
-.content5 {
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.content5 p {
-    width: 100%;
-    color: #FFFFFF;
-}
-
-.c5-img {
-    width: 10%;
-    margin-right: 3%;
 }
 
 /* Footer */
