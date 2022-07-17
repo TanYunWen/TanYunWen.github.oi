@@ -449,7 +449,7 @@ form .b-btn input {
     margin-top: 5%;
 }
 
-.content5 p {
+ .content5 p {
     width: 100%;
     color: #FFFFFF;
 }
@@ -539,7 +539,7 @@ form .b-btn input {
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
-@media screen and (max-width: 1145px) {
+@media screen and (max-width: 1198px) {
     .box1 {
         background-color: #FED4D500;
     }
@@ -548,16 +548,11 @@ form .b-btn input {
         margin: 30px 50px;
     }
 
-    #logo h1 {
-        color: #FFFFFF;
-    }
-
-    .box2 .title h1 {
-        font-size: 50px;
+    .topnav {
+        overflow: hidden;
     }
 
     .topnav a {
-        text-align: left;
         display: none;
     }
 
@@ -568,7 +563,7 @@ form .b-btn input {
 
     .topnav .icon {
         height: 7%;
-        border: 1px #D8D8D8 solid;
+        border: 1px #c07778 solid;
         border-radius: 15px;
         font-size: 200%;
     }
@@ -579,7 +574,6 @@ form .b-btn input {
         /*why will come out beause this display: block*/
         position: absolute;
         right: 5%;
-        margin-right: 20px;
     }
 
     .topnav.responsive a {
@@ -587,11 +581,20 @@ form .b-btn input {
         /*åƒä¸€ä¸ªä½ inlineåƒæ—è¾¹*/
     }
 
-    .contact-btn {
+    #myTopnav .contact-btn {
         border: none;
-        width: 10px;
     }
 
+    #myTopnav .contact-btn:hover {
+        background-color: white;
+    }
+
+    .box2 {
+        padding: 60px;
+        padding-bottom: 100px;
+    }
+
+    /**/
     .box3 {
         display: flex;
         flex-direction: column;
@@ -652,21 +655,10 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
 @media screen and (max-width: 1100px) {
-    #logo {
-        width: 280px;
-        height: 20%;
+    .topnav a.icon {
+        margin-right: 1.5%;
     }
-
-    .box2 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .box2 .title {
-        width: 93.1%;
-        text-align: center;
-    }
-
+    
     .b-w {
         width: 97.5%;
         padding: 10px;
@@ -711,9 +703,8 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
 @media screen and (max-width: 800px) {
-    #logo {
-        width: 300px;
-        height: 20%;
+    .topnav a.icon {
+        margin-right: 3%;
     }
 
     #about {
@@ -808,6 +799,10 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
 @media screen and (max-width: 700px) {
+    .topnav a.icon {
+        margin-right: 4%;
+    }
+
     form .bsubject select {
         width: 98.8%;
     }
@@ -816,6 +811,10 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
 @media screen and (max-width: 663px) {
+    .topnav a.icon {
+        margin-right: 5%;
+    }
+
     .b-w {
         width: 96.5%;
         padding: 10px;
@@ -825,14 +824,13 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
 @media screen and (max-width: 600px) {
-    #logo {
-        width: 80%;
-        height: 20%;
+    .topnav a.icon {
+        margin-right: 6%;
     }
 
-    .box2 .title {
-        width: 93%;
-    }
+    #header .box2 h1 {
+        font-size: 400%;
+    }    
 
     .b-w {
         width: 95.8%;
@@ -849,15 +847,21 @@ form .b-btn input {
 }
 
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
+@media screen and (max-width: 550px) {
+    #header .box2 h1 {
+        font-size: 350%;
+    }
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
 @media screen and (max-width: 500px) {
-    #logo {
-        width: 80px;
+    .topnav a.icon {
+        margin-right: 7%;
     }
 
-    .box2 .title {
-        text-align: left;
-        width: 91.5%;
+    #header .box2 h1 {
+        font-size: 300%;
     }
 
     #content1 {
@@ -883,8 +887,29 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
+    #logo {
+        margin-left: 30px;
+    }
+
+    #logo h1 {
+        padding-left: 5px;
+    }
+
+    .box1 {
+        padding: 0%;
+    }
+
+    .box2 {
+        padding: 50px 30px;
+    }
+
     .topnav .icon {
-        height: 5%;
+        height: 3.5%;
+        font-size: 150%;
+    }
+
+    .topnav a.icon {
+        margin-right: 10px;
     }
 
     #content1 {
