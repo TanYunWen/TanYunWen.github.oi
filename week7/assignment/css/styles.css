@@ -1,78 +1,73 @@
 body {
     max-width: 1400px;
     margin: auto;
-    background-color: #FDF0E9;
+    background-color: #FED4D5;
 }
 
 /* Header */
 #header {
-    background-image: url(../images/1backgroundimg.jpg);
+    background-image: url(../images/1backgroundimg.png);
     background-size: cover;
 }
 
 .box1 {
     display: flex;
     justify-content: space-between;
-    background-color: #C6DCE4;
-}
-
-#logo {
-    margin: 0px 70px;
-    display: flex;
-    align-items: center;
+    background-color: #FED4D5;
     padding: 10px;
 }
 
+#logo {
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
 #logo h1 {
-    color: #000000;
-    padding-left: 20px;
-    font-size: 200%;
+    width: 150px;
+    padding-left: 15px;
+    font-size: 30px;
 }
 
-#header .box2 h1 {
-    color: #F2D1D1;
-    margin: 20px 0px;
-    font-size: 450%;
-}
-
-#header .box2 h3 {
-    color: #DAEAF1;
+#logo a {
+    text-decoration: none;
 }
 
 .topnav {
     display: flex;
     align-items: center;
-    width: 80%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 100px;
 }
 
 .topnav a {
     color: #000000;
-    text-decoration: none;
     padding: 20px 30px;
+    text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color: #EF6D58;
+    background-color: #EECEE6;
     color: black;
-    text-decoration: underline;
 }
 
 .contact-btn {
-    margin-left: 23%;
-    width: 150px;
-    text-align: center;
-    border: 1px #FFFFFF solid;
+    width: 130px;
+    margin-left: 19%;
+    border: 1px #C07778 solid;
+    border-radius: 10px;
     padding: 15px;
     font-weight: bold;
-    border-radius: 10px;
+    text-align: center;
 }
 
-.topnav .contact-btn a:hover {
-    background-color: #C6DCE4;
-    color: black;
-    padding: 10px;
-    text-decoration: underline;
+.topnav .contact-btn a {
+    color: #000000;
+    padding: 16px 49px;
+}
+
+.topnav .contact-btn:hover {
+    background-color: #EECEE6;
 }
 
 .topnav .icon {
@@ -80,22 +75,14 @@ body {
 }
 
 .overlay {
-    /*æ•´ä¸ªmenu*/
-    height: 100%;
-    /*å®ƒå‡ºæ¥çš„æ—¶å€™æ˜¯å¤šé•¿ æœ‰ç›–è¿‡å­—ä½“ è¿˜æ˜¯ç›–å®Œæ•´é¡µ*/
-    width: 0;
-    /*å®ƒæœ‰å¤šå®½*/
     position: fixed;
-    /*ç»™ä»–æ­»åœ¨é‚£è¾¹*/
+    height: 100%;
+    width: 0;
     top: 0;
     right: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    /*0.9 åŠé€æ˜Ž*/
+    background-color: rgba(238,206,230, 0.9);
     overflow-x: hidden;
-    /*ä¸è¦å‡ºæ¥*/
     transition: 0.5s;
-    /*animation //éœ€è¦å¤šä¹…çš„æ—¶é—´å±•çŽ°å‡ºæ¥*/
     z-index: 1;
 }
 
@@ -109,17 +96,17 @@ body {
 
 .overlay a {
     padding: 8px;
-    text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #C07778;
     display: block;
     transition: 0.3s;
+    text-decoration: none;
     z-index: 1;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: #000000;
 }
 
 .overlay .closebtn {
@@ -129,41 +116,54 @@ body {
     font-size: 60px;
 }
 
+h1 {
+    color: #C07778;
+}
+
+h3 {
+    color: #B17375;
+}
+
 .box2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 150px;
 }
 
 .box2 .title {
-    width: 40%;
-    background-color: #00000046;
-    margin: 150px 50px;
-    padding: 20px;
+    background-color: #EECEE646;
+    padding: 50px;
+    text-align: center;
 }
 
-#header button {
-    width: 140px;
-    background-color: #EF6D58;
+#header .box2 h1 {
+    font-size: 450%;
+    margin: 20px;
 }
 
-.box2 .title button a {
+#header .box2 h3 {
+    color: #B17375;
+}
+
+.box2 button {
+    width: 120px;
+    margin: 50px 0px 10px 0px;
+    font-size: 70%;
+    background-color: #CE5959;
+}
+
+.box2 button a {
     color: #FFFFFF;
+    padding: 20px 0.8px;
     text-decoration: none;
 }
 
-.box2 .title button {
-    margin: 50px 0px 20px 0px;
-}
-
-#box-img1 {
-    margin-right: 160px;
+.box2 button:hover {
+    width: 125px;
 }
 
 /* About */
 #about {
     display: flex;
-    margin: 120px 40px;
+    margin: 100px 40px;
 }
 
 #content1 {
@@ -541,7 +541,7 @@ form .b-btn input {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
 @media screen and (max-width: 1145px) {
     .box1 {
-        background-color: #c6dce400;
+        background-color: #FED4D500;
     }
 
     #logo {
@@ -571,7 +571,6 @@ form .b-btn input {
         border: 1px #D8D8D8 solid;
         border-radius: 15px;
         font-size: 200%;
-        color: #FFFFFF;
     }
 
     .topnav a.icon {
@@ -590,6 +589,7 @@ form .b-btn input {
 
     .contact-btn {
         border: none;
+        width: 10px;
     }
 
     .box3 {
@@ -664,7 +664,6 @@ form .b-btn input {
 
     .box2 .title {
         width: 93.1%;
-        margin: 0px;
         text-align: center;
     }
 
@@ -715,10 +714,6 @@ form .b-btn input {
     #logo {
         width: 300px;
         height: 20%;
-    }
-
-    .box2 #box-img1 {
-        margin-left: 40px;
     }
 
     #about {
@@ -865,17 +860,12 @@ form .b-btn input {
         width: 91.5%;
     }
 
-    #box-img1 {
-        width: 70%;
-        padding-left: 10%;
-    }
-
     #content1 {
         margin-left: 15%;
     }
 
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .overlay .closebtn {
@@ -895,11 +885,6 @@ form .b-btn input {
 @media screen and (max-width: 414px) {
     .topnav .icon {
         height: 5%;
-    }
-
-    #box-img1 {
-        width: 70%;
-        margin-right: 130px;
     }
 
     #content1 {
