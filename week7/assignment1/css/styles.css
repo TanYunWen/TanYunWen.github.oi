@@ -304,11 +304,6 @@ button:hover {
     margin-top: 0;
 }
 
-.b-w-content a,
-.b-w-content1 a {
-    text-decoration: none;
-}
-
 .b-w-content h4 {
     width: 50px;
 }
@@ -331,7 +326,7 @@ button:hover {
     padding-bottom: 120px;
 }
 
-.box8 h2{
+.box8 h2 {
     margin: 70px 130px;
     margin-bottom: 40px;
     padding-top: 60px;
@@ -631,6 +626,10 @@ form .b-btn input {
         margin-right: 100px;
     }
 
+    .box8 h2 {
+        margin-left: 90px;
+    }
+
     form .bsubject select {
         width: 100%;
     }
@@ -674,6 +673,11 @@ form .b-btn input {
         position: absolute;
         left: 30px;
         bottom: 10px;
+    }
+
+    .box9 {
+        flex-direction: column;
+        align-items: center;
     }
 
     /*
@@ -778,32 +782,12 @@ form .b-btn input {
     .b-w-content1 h3 {
         font-size: 15px;
     }
+
+    .box8 h2 {
+        margin-right: 110px;
+    }
+
     /*
-    .box7 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content3 {
-        width: 70%;
-        height: 100%;
-        padding: 50px;
-    }
-
-    .content3:hover {
-        height: 120%;
-    }
-
-    .box6 button {
-        width: 30%;
-    }
-
-    .b-w {
-        width: 96.8%;
-        padding: 10px;
-    }
-
     form .bsubject select {
         width: 97.8%;
     }
@@ -865,6 +849,10 @@ form .b-btn input {
         margin-right: 50px;
     }
 
+    .box8 h2 {
+        margin-right: 80px;
+    }
+
     form .bsubject select {
         width: 98.8%;
     }
@@ -884,6 +872,10 @@ form .b-btn input {
     .b-w {
         width: 96.5%;
         padding: 10px;
+    }
+
+    .box8 h2 {
+        margin: 50px;
     }
 }
 
@@ -945,11 +937,6 @@ form .b-btn input {
         margin-top: 0;
     }
 
-    .b-w-content a,
-    .b-w-content1 a {
-        text-decoration: none;
-    }
-
     .b-w-content h4 {
         width: 50px;
     }
@@ -966,6 +953,19 @@ form .b-btn input {
     .b-w-img2 {
         width: 98.5%;
         margin-left: 0.5%;
+    }
+
+    .box8 h2 {
+        margin: 50px;
+    }
+
+    .name {
+        margin: 0px;
+    }
+
+    .b-c-img {
+        width: 50%;
+        margin-bottom: 40px;
     }
 
     form .bsubject select {
@@ -1006,6 +1006,10 @@ form .b-btn input {
         margin-left: 31px;
         margin-bottom: 60px;
     }
+
+    .box8 h2 {
+        margin: 20px;
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
@@ -1038,6 +1042,15 @@ form .b-btn input {
     .b-w {
         width: 95.7%;
         padding: 20px 10px;
+    }
+
+    .b-c-img img {
+        width: 190%;
+        margin-left: 5%;
+    }
+
+    .name {
+        margin-left: 3%;
     }
 }
 
