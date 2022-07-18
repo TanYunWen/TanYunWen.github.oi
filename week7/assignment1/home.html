@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assignment 1_Homepage -->
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bcontainer">
+        <!-- Container -->
+        <div class="container">
+            <!-- Header -->
+            <div id="header">
+                <div class="box1">
+                    <div id="logo">
+                        <a href="home.html"><img src="../week7/images/logo.png" width="80px"></a>
+                        <a href="home.html">
+                            <h1>个人博客</h1>
+                        </a>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="home.html">首页</a>
+                            <a href="about/about.html">简介</a>
+                            <a href="#myworks">作品集</a>
+                            <a href="#myfavourite">我的爱好</a>
+                            <a href="#contact">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="home.html">首页</a>
+                        <a href="about/about.html">简介</a>
+                        <a href="#myworks">作品集</a>
+                        <a href="#myfavourite">我的爱好</a>
+
+                        <div class="contact-btn">
+                            <a href="#contact">联系</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+
+                <div class="box2">
+                    <div class="title">
+                        <h1>个人博客</h1>
+                        <h3>网页设计_作业 1</h3>
+                        <button><a href="#myworks">查看我的作品集</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div id="about">
+                <div class="box3">
+                    <div id="box-img2">
+                        <img src="../week7/images/1slideimg.jpeg" width="100% ">
+                    </div>
+                </div>
+
+                <div class="box4">
+                    <div id="content1">
+                        <h3>新纪元学生</h3>
+                        <h2>陈韻雯</h2>
+                        <h4>个人介绍</h4>
+                        <p>我还是学生，有着平谈的一生。希望未来的人生能添加更多色彩。</p>
+                        <button><a href="about/about.html">关于我</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Works -->
+            <div id="myworks">
+                <div class="box5">
+                    <div class="content2">
+                        <h3>个人自作</h3>
+                        <h2>作品集</h2>
+                    </div>
+
+                    <div class="contact-btn">
+                        <a href="#">更多</a>
+                    </div>
+                </div>
+
+                <div class="box6">
+                    <div class="week">
+                        <div class="b-w">
+                            <div class="b-w-button">
+                                <div class="b-w-img">
+                                    <a href="#"><img src="../week7/images/Week1.jpg" width="88.5%"></a>
+                                </div>
+
+                                <div class="b-w-content">
+                                    <a href="#">
+                                        <h4>介绍</h4>
+                                        <h3>第 1 周</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-w">
+                            <div class="b-w-button">
+                                <div class="b-w-img1">
+                                    <a href="#"><img src="../week7/images/Week2.jpg" width="93.5%"></a>
+                                </div>
+
+                                <div class="b-w-content">
+                                    <a href="#">
+                                        <h4>练习</h4>
+                                        <h3>第 2 周</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="b-w">
+                            <div class="b-w-button">
+                                <div class="b-w-img2">
+                                    <a href="#"><img src="../week7/images/Week3.jpg" width="90%"></a>
+                                </div>
+
+                                <div class="b-w-content1">
+                                    <a href="#">
+                                        <h4>练习 & 功课</h4>
+                                        <h3>第 3 周</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Favourite -->
+            <div id="myfavourite">
+                <div class="box7">
+                    <div class="content2">
+                        <h3>个人比较喜欢的东西</h3>
+                        <h2>我的爱好</h2>
+                    </div>
+                </div>
+
+                <div class="box6"><!-- 8 -->
+                    <div class="box7"><!-- 9 -->
+                        <div class="content3">
+                            <img src="../assignment/images/star.png" width="50%">
+                            <p>动漫是动画与漫画的集合，并且与游戏无关，并非专业术语。而我爱看动漫，因为每当看动漫时，使我放松。</p>
+
+                            <div class="id">
+                                <div class="picture">
+                                    <img src="../assignment/images/1picture.png" width="100%">
+                                </div>
+
+                                <div class="name">
+                                    <h3>动漫</h3>
+                                    <h4>名字</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content3">
+                            <img src="../assignment/images/star.png" width="50%">
+                            <p>甜品，也叫甜点，种类繁多，大致可以分为中式甜品和西式甜品。我觉得我都爱吃，但偶尔还是又不吃的口味XP。</p>
+
+                            <div class="id">
+                                <div class="picture">
+                                    <img src="../assignment/images/2picture.png" width="100%">
+                                </div>
+
+                                <div class="name">
+                                    <h3>甜点</h3>
+                                    <h4>只爱吃</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button><a href="#">查看所有</a></button>
+
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact">
+                <div class="box8">
+                    <div class="b-contact">
+                        <form name="registration" action="submit.html" target="_blank">
+                            <h3>保持联系</h3>
+
+                            <div class="bemail">
+                                <input type="email" name="email" placeholder="您的邮件" required>
+                            </div>
+                            <br>
+
+                            <div class="bsubject">
+                                <select name="subject" required>
+                                    <option value="">主题</option>
+                                    <option value="推荐小说">推荐小说</option>
+                                    <option value="推荐动漫">推荐动漫</option>
+                                    <option value="推荐漫画">推荐漫画</option>
+                                    <option value="推荐甜点">推荐甜点</option>
+                                    <option value="其他">其他</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="bmessage">
+                                <textarea name="message" rows="10" cols="30" placeholder="信息" required></textarea>
+                            </div>
+                            <br>
+
+                            <div class="b-btn">
+                                <input type="submit" value="现在提交">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="content4">
+                        <h3>联系</h3>
+                        <h2>联系我</h2>
+                        <p>有什么有趣的事情可以联系推荐我。</p>
+
+                        <div class="box9">
+                            <div class="content5">
+                                <div class="c5-img">
+                                    <img src="../assignment/images/address.png" width="90%">
+                                </div>
+
+                                <div id="address">
+                                    <p>Taman Kepong Setia Jalan Silang 52100 Kuala Lumpur</p>
+                                </div>
+                            </div>
+
+                            <div class="content5">
+                                <div class="c5-img">
+                                    <img src="../assignment/images/phone.png" width="90%">
+                                </div>
+
+                                <div id="phone">
+                                    <p>018-2510054</p>
+                                </div>
+                            </div>
+
+                            <div class="content5">
+                                <div class="c5-img">
+                                    <img src="../assignment/images/email.png" width="90%">
+                                </div>
+
+                                <div id="email">
+                                    <p>tanyunwen1192@e.newera.edu.my</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div id="footer">
+                <div class="f-img">
+                    <div class="f-img-6">
+                        <img src="../assignment/images/1footerimg.jpg" width="100%">
+                    </div>
+                    <div class="f-img-6">
+                        <img src="../assignment/images/2footerimg.jpg" width="100%">
+                    </div>
+                    <div class="f-img-6">
+                        <img src="../assignment/images/3footerimg.jpg" width="100%">
+                    </div>
+                    <div class="f-img-6">
+                        <img src="../assignment/images/4footerimg.jpg" width="100%">
+                    </div>
+                    <div class="f-img-6">
+                        <img src="../assignment/images/5footerimg.jpg" width="100%">
+                    </div>
+                    <div class="f-img-6">
+                        <img src="../assignment/images/6footerimg.jpg" width="100%">
+                    </div>
+                </div>
+
+                <div class="content6">
+                    <div class="box10">
+                        <div class="b-f1">
+                            <h1>陈</h1>
+                        </div>
+
+                        <div class="menu">
+                            <h3>菜单</h3>
+                            <a href="home.html">首页</a>
+                            <a href="about/about.html">简介</a>
+                            <a href="#">作品集</a>
+                            <a href="#">我的爱好</a>
+                            <a href="#">联系</a>
+                        </div>
+
+                        <div class="f-myworks">
+                            <div class="f-myworks-menu">
+                                <h3>作品集</h3>
+                                <div class="f-myworks-menu1">
+                                    <div class="f-myworks-menu2">
+                                        <a
+                                            href="https://tanyunwen.github.io/week3/exercise2/jameswoo.github.io-main/index.html">第
+                                            1 周</a>
+                                        <a href="/week2/index.html" target="_blank">第 2 周</a>
+                                        <a href="/week3/index.html">第 3 周</a>
+                                        <a href="https://tanyunwen.github.io/#week4">第 4 周</a>
+                                        <a href="/week5/index.html">第 5 周</a>
+                                    </div>
+                                    <div class="f-myworks-menu2">
+                                        <a href="/week6/index.html">第 6 周</a>
+                                        <a href="/week7/index.html">第 7 周</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="f-contact">
+                            <img src="../assignment/images/f-facebook.png" width="15%">
+                            <img src="../assignment/images/f-email.png" width="15%">
+                            <img src="../assignment/images/f-ig.png" width="15%">
+                        </div>
+                    </div>
+
+                    <div class="box11">
+                        <div id="copyright">
+                            <p>版权所有 © 2022 陈.</p>
+                        </div>
+
+                        <div class="service-privacy">
+                            <div class="b-sp">
+                                <p>服务条款</p>
+                            </div>
+                            <div class="b-sp">
+                                <p>隐私政策</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

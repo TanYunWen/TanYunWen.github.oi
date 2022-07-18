@@ -1,0 +1,1092 @@
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Header */
+#header {
+    background-image: url(../images/1backgroundimg.png);
+    background-size: cover;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FED4D5;
+    padding: 10px;
+}
+
+#logo {
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.topnav a {
+    color: #000000;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #EECEE6;
+    color: black;
+}
+
+.contact-btn {
+    width: 130px;
+    margin-left: 19%;
+    border: 1px #C07778 solid;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topnav .contact-btn a {
+    color: #000000;
+    padding: 16px 49px;
+}
+
+.topnav .contact-btn:hover {
+    background-color: #EECEE6;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(238, 206, 230, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #C07778;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #000000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+h1 {
+    color: #C07778;
+}
+
+h3 {
+    color: #B17375;
+}
+
+.box2 {
+    padding: 150px;
+}
+
+.box2 .title {
+    background-color: #EECEE646;
+    padding: 50px;
+    text-align: center;
+}
+
+#header .box2 h1 {
+    font-size: 450%;
+    margin: 20px;
+}
+
+#header .box2 h3 {
+    color: #B17375;
+}
+
+.box2 button {
+    width: 120px;
+    margin: 50px 0px 10px 0px;
+    font-size: 70%;
+    background-color: #CE5959;
+}
+
+.box2 button a {
+    color: #FFFFFF;
+    padding: 20px 0.8px;
+    text-decoration: none;
+}
+
+.box2 button:hover {
+    width: 125px;
+}
+
+/* About */
+#about {
+    display: flex;
+    align-items: center;
+    background-color: #FED4D5;
+}
+
+.box3 {
+    margin: 150px;
+    margin-right: 0%;
+    width: 30%;
+}
+
+#box-img2 img {
+    border-radius: 25px;
+}
+
+.box4 {
+    margin-left: 120px;
+}
+
+h2 {
+    color: #BC4545;
+    font-size: 300%;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #B17375;
+    font-weight: 500;
+}
+
+h4 {
+    color: #CE5959;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+p {
+    color: #CE5959;
+    margin-top: -5%;
+}
+
+button {
+    width: 110px;
+    background-color: #FFFFFF;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px rgba(81, 81, 249, 0.053);
+    border: none;
+}
+
+button a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
+button:hover {
+    background-color: #EECEE6;
+}
+
+/* My Works */
+#myworks {
+    background-image: url("../images/2backgroundimg.png");
+    background-size: cover;
+}
+
+.box5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 {
+    margin: 120px 150px;
+    margin-bottom: 0px;
+}
+
+.box5 .contact-btn {
+    margin-top: 190px;
+    margin-right: 150px;
+    height: 20px;
+}
+
+.box5 .contact-btn a {
+    color: #000000;
+    padding: 15px 49px;
+    text-decoration: none;
+}
+
+.box6 {
+    padding-bottom: 130px;
+}
+
+.week {
+    display: flex;
+}
+
+.b-w {
+    width: 34%;
+    border: 3px #EECEE6 solid;
+    border-left: none;
+    padding: 5px;
+}
+
+.b-w-button {
+    position: relative;
+    margin: 10px;
+}
+
+.b-w-img,
+.b-w-img1,
+.b-w-img2 {
+    text-align: center;
+}
+
+.b-w-content,
+.b-w-content1 {
+    position: absolute;
+    left: 53px;
+    bottom: 40px;
+}
+
+.b-w-content h4,
+.b-w-content1 h4 {
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 15px;
+    color: #BC4545;
+}
+
+.b-w-content h3,
+.b-w-content1 h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.b-w-content a,
+.b-w-content1 a {
+    text-decoration: none;
+}
+
+.b-w-content h4 {
+    width: 50px;
+}
+
+.b-w-content1 h4 {
+    width: 90px;
+}
+
+/* My Favourite */
+#myfavourite {
+    text-align: center;
+    margin: 10% 0%;
+}
+
+.box7 {/*9*/
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.content3 {
+    width: 20%;
+    height: 300px;
+    padding: 30px;
+    border: 1px solid #F3D1BF;
+    box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04);
+    border-radius: 0px 0px 6px 6px;
+    text-align: left;
+}
+
+.content3:hover {
+    background: #FFFFFF;
+    height: 330px;
+    font-size: larger;
+}
+
+.content3 h3 {
+    color: #5C2000;
+    font-weight: bold;
+}
+
+.content3 p {
+    margin-top: 30px;
+}
+
+.id {
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.picture {
+    width: 30%;
+}
+
+.name {
+    width: 70%;
+    padding-left: 10%;
+    line-height: 30%;
+}
+
+/*
+.box7 button { √
+    margin-top: 0%;
+    width: 10%;
+}
+*/
+
+/* Contact */
+/*
+#contact {
+    background-color: #28293E;
+}
+
+.box8 {
+    display: flex;
+}
+
+.b-contact {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 45%;
+}
+
+form {
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-left: 50px;
+    padding: 20px 30px;
+}
+
+form h3 {
+    color: #5C2000;
+    font-weight: bold;
+}
+
+form .bemail input,
+.bmessage textarea {
+    width: 94%;
+    padding: 10px;
+}
+
+form .bsubject select {
+    width: 99%;
+    padding: 10px;
+}
+
+form .b-btn {
+    text-align: right;
+}
+
+form .b-btn input {
+    width: 110px;
+    background-color: #EF6D58;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #FFFFFF;
+}
+
+.content4 {
+    margin: 10%;
+}
+
+.content4 h2 {
+    color: #FFFFFF;
+}
+
+.content4 p {
+    color: #B2B2B9;
+}
+
+.box9 {
+    margin-top: 10%;
+}
+
+.content5 {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.content5 p {
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.c5-img {
+    width: 10%;
+    margin-right: 3%;
+}*/
+
+/* Footer */
+#footer {
+    background-color: #28293E;
+}
+
+.f-img {
+    display: flex;
+}
+
+.f-img-6 {
+    width: 100%;
+}
+
+.content6 {
+    margin-top: 5%;
+}
+
+.box10 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.box10 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.b-f1 h1 {
+    color: #FFFFFF;
+}
+
+.menu,
+.f-myworks-menu1 {
+    display: flex;
+}
+
+.menu,
+.f-myworks-menu2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.f-contact {
+    margin-top: 10px;
+}
+
+.box11 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+    margin-bottom: 0;
+    padding: 3%;
+    align-items: center;
+    border: 1px #3A3C56 solid;
+    border-left: none;
+    border-right: none;
+}
+
+.service-privacy {
+    display: flex;
+}
+
+.b-sp {
+    padding-left: 80px;
+}
+
+#copyright p {
+    color: #B2B2B9;
+}
+
+.service-privacy p {
+    color: #FFFFFF;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1145px wide or less) */
+@media screen and (max-width: 1198px) {
+    .box1 {
+        background-color: #FED4D500;
+    }
+
+    #logo {
+        margin: 30px 50px;
+    }
+
+    .topnav {
+        overflow: hidden;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
+    }
+
+    .topnav .icon {
+        height: 7%;
+        border: 1px #c07778 solid;
+        border-radius: 15px;
+        font-size: 200%;
+    }
+
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        right: 5%;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    #myTopnav .contact-btn {
+        border: none;
+    }
+
+    #myTopnav .contact-btn:hover {
+        background-color: white;
+    }
+
+    .box2 {
+        padding: 60px;
+        padding-bottom: 100px;
+    }
+
+    .box3 {
+        margin: 150px 60px;
+        margin-right: 0%;
+        width: 45%;
+    }
+
+    #box-img2 img {
+        border-radius: 25px;
+    }
+
+    .box4 {
+        margin-right: 60px;
+    }
+
+    .box5 .contact-btn {
+        margin-right: 100px;
+    }
+
+    form .bsubject select {
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
+@media screen and (max-width: 1100px) {
+    .topnav a.icon {
+        margin-right: 1.5%;
+    }
+
+    .box3 #box-img2 {
+        width: 120%;
+    }
+
+    .box4 {
+        margin-left: 200px;
+    }
+
+    .content2 {
+        margin: 120px 30px;
+        margin-bottom: 0px;
+    }
+
+    .box5 .contact-btn {
+        margin-right: 50px;
+    }
+
+    .b-w {
+        width: 350px;
+        padding: 10px;
+    }
+
+    .b-w-button {
+        margin: 0px;
+    }
+
+    .b-w-content,
+    .b-w-content1 {
+        position: absolute;
+        left: 30px;
+        bottom: 10px;
+    }
+
+    /*
+    .box8 {
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+    }
+
+    .b-contact {
+        width: 90%;
+    }
+
+    form .bsubject select {
+        width: 96.8%;
+    }
+
+    form .b-btn {
+        margin-right: 10px;
+    }*/
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+@media screen and (max-width: 900px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box3 {
+        margin: 150px;
+        margin-right: 30%;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+
+    .box4 {
+        align-items: center;
+        margin-left: 5%;
+        margin-bottom: 15%;
+    }
+
+    .box5 .contact-btn {
+        margin-right: 50px;
+    }
+
+    .b-w-content1 h4 {
+        width: 80px;
+    }
+
+    .b-w-content h4,
+    .b-w-content1 h4 {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    /*
+    .f-img {
+        flex-wrap: wrap;
+    }
+
+    .f-img-6 {
+        width: 50%;
+    }*/
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
+@media screen and (max-width: 800px) {
+    .topnav a.icon {
+        margin-right: 3%;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box3 {
+        margin: 120px;
+        margin-right: 35%;
+        margin-bottom: 10%;
+        width: 65%;
+    }
+
+    .box5 .contact-btn {
+        margin-right: 50px;
+    }
+
+    .b-w-content1 h4 {
+        width: 65px;
+    }
+
+    .b-w-content h4,
+    .b-w-content1 h4 {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .b-w-content h3,
+    .b-w-content1 h3 {
+        font-size: 15px;
+    }
+    /*
+    .box7 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content3 {
+        width: 70%;
+        height: 100%;
+        padding: 50px;
+    }
+
+    .content3:hover {
+        height: 120%;
+    }
+
+    .box6 button {
+        width: 30%;
+    }
+
+    .b-w {
+        width: 96.8%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 97.8%;
+    }
+
+    form .b-btn {
+        margin-right: 3px;
+    }
+
+    .box10 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .menu {
+        padding-right: 0;
+    }
+
+    .f-myworks {
+        margin: 5%;
+    }
+
+    .f-myworks-menu1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-myworks-menu2 {
+        padding-right: 0;
+    }
+
+    .f-contact {
+        margin-bottom: 5%;
+    }
+
+    .box11 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-privacy {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .b-sp {
+        padding: 0% 5%;
+    }*/
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
+@media screen and (max-width: 700px) {
+    .topnav a.icon {
+        margin-right: 4%;
+    }
+
+    .box5 .contact-btn {
+        margin-right: 50px;
+    }
+
+    form .bsubject select {
+        width: 98.8%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
+@media screen and (max-width: 663px) {
+    .topnav a.icon {
+        margin-right: 5%;
+    }
+
+    .box4 {
+        margin-left: 50px;
+    }
+
+    .b-w {
+        width: 96.5%;
+        padding: 10px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .topnav a.icon {
+        margin-right: 6%;
+    }
+
+    #header .box2 h1 {
+        font-size: 400%;
+    }
+
+    .box3 {
+        margin: 150px;
+        margin-right: 40%;
+        margin-bottom: 10%;
+        width: 60%;
+    }
+
+    .box4 {
+        margin-left: 80px;
+    }
+
+    .week {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-w {
+        width: 95.8%;
+        padding: 30px 10px;
+    }
+
+    .b-w-content,
+    .b-w-content1 {
+        position: absolute;
+        left: 53px;
+        bottom: 40px;
+    }
+
+    .b-w-content h4,
+    .b-w-content1 h4 {
+        background-color: #FFFFFF;
+        text-align: center;
+        border-radius: 25px;
+        padding: 10px;
+        font-size: 15px;
+        color: #BC4545;
+    }
+
+    .b-w-content h3,
+    .b-w-content1 h3 {
+        color: #FFFFFF;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .b-w-content a,
+    .b-w-content1 a {
+        text-decoration: none;
+    }
+
+    .b-w-content h4 {
+        width: 50px;
+    }
+
+    .b-w-content1 h4 {
+        width: 90px;
+    }
+
+    .b-w-img1 {
+        width: 94.5%;
+        margin-left: 2.5%;
+    }
+
+    .b-w-img2 {
+        width: 98.5%;
+        margin-left: 0.5%;
+    }
+
+    form .bsubject select {
+        width: 100%;
+    }
+
+    form .b-btn {
+        margin-right: 3px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
+@media screen and (max-width: 550px) {
+    #header .box2 h1 {
+        font-size: 350%;
+    }
+
+    .box3 {
+        margin: 120px;
+        margin-right: 40%;
+        margin-bottom: 10%;
+        width: 60%;
+    }
+
+    .box4 {
+        margin-left: 60px;
+    }
+
+    .box5 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .box5 .contact-btn {
+        margin-top: 10px;
+        margin-left: 31px;
+        margin-bottom: 60px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
+@media screen and (max-width: 500px) {
+    .topnav a.icon {
+        margin-right: 7%;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .box3 {
+        margin: 120px;
+        margin-right: 40%;
+        margin-bottom: 10%;
+        width: 60%;
+    }
+
+    .box4 {
+        margin-left: 60px;
+    }
+
+    .b-w {
+        width: 95.7%;
+        padding: 20px 10px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+@media screen and (max-width: 414px) {
+    #logo {
+        margin-left: 30px;
+    }
+
+    #logo h1 {
+        padding-left: 5px;
+    }
+
+    #header {
+        padding-bottom: 50px;
+    }
+
+    .box1 {
+        padding: 0%;
+    }
+
+    .box2 {
+        padding: 50px 30px;
+    }
+
+    .topnav .icon {
+        height: 3.5%;
+        font-size: 150%;
+    }
+
+    .topnav a.icon {
+        margin-right: 10px;
+    }
+
+    .box3 {
+        margin: 120px;
+        margin-right: 50%;
+        margin-bottom: 10%;
+        width: 65%;
+    }
+
+    .box4 {
+        margin-left: 10%;
+        margin-bottom: 25%;
+    }
+
+    .box5 .content2 h3 {
+        margin-top: 0%;
+    }
+
+    .b-w {
+        width: 94.5%;
+        padding: 20px 10px;
+    }
+
+    .b-contact {
+        width: 85%;
+    }
+
+    form .bemail input,
+    .bmessage textarea {
+        width: 89%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 99%;
+        padding: 10px;
+    }
+}
