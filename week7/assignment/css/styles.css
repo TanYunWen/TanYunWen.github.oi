@@ -1,7 +1,6 @@
 body {
     max-width: 1400px;
     margin: auto;
-    background-color: #FED4D5;
 }
 
 /* Header */
@@ -164,6 +163,7 @@ h3 {
 #about {
     display: flex;
     align-items: center;
+    background-color: #FED4D5;
 }
 
 .box3 {
@@ -226,41 +226,39 @@ button:hover {
 
 /* My Works */
 #myworks {
-    background-color: #28293E;
-    padding-bottom: 10%;
+    background-image: url("../images/2backgroundimg.png");
+    background-size: cover;
 }
 
-/*
-.box3 {
+.box5 {
     display: flex;
     justify-content: space-between;
-    padding-top: 90px;
-    margin: 20px 90px;
 }
 
-
-.box4 {
-    width: 50%;
+.content2 {
+    margin: 120px 150px;
+    margin-bottom: 0px;
 }
 
-.box4 h2 {
-    color: #FFFFFF;
-}
-
-.box3 .contact-btn {
+.box5 .contact-btn {
+    margin-top: 190px;
+    margin-right: 150px;
     height: 20px;
-    margin-top: 70px;
-    border: 1px #FFFFFF solid;
+    border: 1px #C07778 solid;
 }
 
-.box3 .contact-btn a {
-    color: #FFFFFF;
+.box5 .contact-btn a {
+    color: #000000;
+    padding: 15px 49px;
     text-decoration: none;
 }
-*/
+
+.box6 {
+    padding-bottom: 120px;
+}
+
 .week {
     display: flex;
-    padding: 20px 0px;
 }
 
 .b-w {
@@ -385,11 +383,12 @@ button:hover {
     padding-left: 10%;
     line-height: 30%;
 }
-
+/*
 .box6 button {
     margin-top: 0%;
     width: 10%;
 }
+*/
 
 /* Contact */
 #contact {
