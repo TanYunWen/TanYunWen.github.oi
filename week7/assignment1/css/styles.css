@@ -434,6 +434,7 @@ form .bsubject select {
 
 form .b-btn {
     text-align: right;
+    margin: 3px;
 }
 
 form .b-btn input {
