@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assignment 1_Homepage -->
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bcontainer">
+        <!-- Container -->
+        <div class="container">
+            <div class="loop-up">
+                <a
+                    href="file:///D:/BCS/Degree%20Sem%204/BIBWB1114%20Web%20Design/MyWebsite/week7/assignment1/about/about.html"><img
+                        src="../images/1loop pink arrow.gif" width="120px"></a>
+            </div>
+
+            <!-- Header -->
+            <div id="header">
+                <div class="box1">
+                    <div id="logo">
+                        <a href="../home.html"><img src="../images/logo.png" width="80px"></a>
+                        <a href="../home.html">
+                            <h1>个人博客</h1>
+                        </a>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="../home.html">首页</a>
+                            <a href="about.html">简介</a>
+                            <a href="#myworks">作品集</a>
+                            <a href="#myfavourite">我的爱好</a>
+                            <a href="#contact">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="../home.html">首页</a>
+                        <a href="about.html">简介</a>
+                        <a href="#myworks">作品集</a>
+                        <a href="#myfavourite">我的爱好</a>
+
+                        <div class="contact-btn">
+                            <a href="#contact">联系</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+
+                <!-- About -->
+                <div id="about">
+                    <div class="box2">
+                        <div id="box-img2">
+                            <img src="../images/1slideimg.jpeg" width="100% ">
+                        </div>
+                    </div>
+
+                    <div class="box3">
+                        <div id="content1">
+                            <h3>新纪元学生</h3>
+                            <h2>陈韻雯</h2>
+                            <br><br><br>
+                            <p>我还是学生，有着平谈的一生。希望未来的人生能添加更多色彩。</p><br>
+                            <p></p>
+                            <p>我是个不聪明，不努力又懒惰的人，但唯一不变的是活得很放松。我喜欢的东西很多，但比较喜欢的还是看动漫，看小说，听音乐。</p><br>
+                            <p></p>
+                            <p>但我也喜欢收集可爱或漂亮的东西。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
