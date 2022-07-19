@@ -9,7 +9,7 @@ body {
 
 .loop-up {
     position: fixed;
-    right: 3%;
+    right: 0%;
     bottom: 1%;
     z-index: 1;
     transform: rotate(270deg);
@@ -483,6 +483,7 @@ form .b-btn input {
 .content6 {
     margin-top: 5%;
 }
+
 /*
 .box10 {
     display: flex;
@@ -516,6 +517,7 @@ form .b-btn input {
     background-color: #28293E;
     z-index: 1;
 }
+
 /*
 .box11 {
     display: flex;
@@ -529,20 +531,9 @@ form .b-btn input {
     border-right: none;
 }
 */
-.service-privacy {
-    display: flex;
-}
-
-.b-sp {
-    padding-left: 80px;
-}
 
 #copyright p {
     color: #B2B2B9;
-}
-
-.service-privacy p {
-    color: #FFFFFF;
 }
 
 
@@ -551,6 +542,11 @@ form .b-btn input {
     .box1 {
         background-color: #FED4D500;
     }
+
+    .loop-up {
+        right: 3%;
+    }
+    
 
     #logo {
         margin: 30px 50px;
@@ -580,7 +576,8 @@ form .b-btn input {
         /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
         display: block;
         /*why will come out beause this display: block*/
-        position: absolute;    height: 40px;
+        position: absolute;
+        height: 40px;
         right: 5%;
     }
 
@@ -599,7 +596,7 @@ form .b-btn input {
     .loop-up {
         width: 5%;
         top: 90%;
-    }    
+    }
 
     .box2 {
         padding: 60px;
@@ -626,6 +623,10 @@ form .b-btn input {
 
     .box8 h2 {
         margin-left: 30px;
+    }
+
+    form .bsubject select {
+        width: 100%;
     }
 }
 
@@ -700,6 +701,10 @@ form .b-btn input {
         flex-direction: column;
     }
 
+    .loop-up {
+        right: 5%;
+    }
+
     .box3 {
         margin: 150px;
         margin-right: 30%;
@@ -730,6 +735,10 @@ form .b-btn input {
     .content4 {
         width: 60%;
     }
+
+    form .bsubject select {
+        width: 98.8%;
+    }
 }
 
 
@@ -737,6 +746,10 @@ form .b-btn input {
 @media screen and (max-width: 800px) {
     .topnav a.icon {
         margin-right: 3%;
+    }
+
+    .loop-up {
+        right: 5%;
     }
 
     #about {
@@ -787,7 +800,7 @@ form .b-btn input {
     }
 
     form .bsubject select {
-        width: 98%;
+        width: 97.9%;
     }
 
     form .b-btn {
@@ -832,15 +845,6 @@ form .b-btn input {
     .box11 {
         display: flex;
         flex-direction: column;
-    }
-
-    .service-privacy {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .b-sp {
-        padding: 0% 5%;
     }*/
 }
 
@@ -889,6 +893,10 @@ form .b-btn input {
 @media screen and (max-width: 600px) {
     .topnav a.icon {
         margin-right: 6%;
+    }
+
+    .loop-up {
+        right: 6%;
     }
 
     #header .box2 h1 {
@@ -974,7 +982,7 @@ form .b-btn input {
     }
 
     form .bsubject select {
-        width: 100%;
+        width: 99.5%;
     }
 
     form .b-btn {
@@ -1011,7 +1019,7 @@ form .b-btn input {
         margin-left: 31px;
         margin-bottom: 60px;
     }
-
+    
     .box8 h2 {
         margin: 20px;
     }
@@ -1122,8 +1130,7 @@ form .b-btn input {
     }
 
     .content3 {
-        padding: 30px
-        10px;
+        padding: 30px 10px;
     }
 
     .b-contact {
