@@ -3,6 +3,18 @@ body {
     margin: auto;
 }
 
+.container {
+    position: relative;
+}
+
+.loop-up {
+    position: fixed;
+    top: 80%;
+    right: -1%;
+    z-index: 1;
+    transform: rotate(270deg);
+}
+
 /* Header */
 #header {
     background-image: url(../images/1backgroundimg.png);
@@ -254,6 +266,7 @@ button:hover {
 
 .box6 {
     padding-bottom: 130px;
+    z-index: -1;
 }
 
 .week {
@@ -481,14 +494,6 @@ form .b-btn input {
     background-color: #28293E;
 }
 
-.f-img {
-    display: flex;
-}
-
-.f-img-6 {
-    width: 100%;
-}
-
 .content6 {
     margin-top: 5%;
 }
@@ -522,6 +527,8 @@ form .b-btn input {
 
 .f-contact {
     margin-top: 10px;
+    background-color: #28293E;
+    z-index: 1;
 }
 
 .box11 {
@@ -587,7 +594,7 @@ form .b-btn input {
         /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
         display: block;
         /*why will come out beause this display: block*/
-        position: absolute;
+        position: absolute;    height: 40px;
         right: 5%;
     }
 
@@ -602,6 +609,11 @@ form .b-btn input {
     #myTopnav .contact-btn:hover {
         background-color: white;
     }
+
+    .loop-up {
+        width: 5%;
+        top: 90%;
+    }    
 
     .box2 {
         padding: 60px;
@@ -734,15 +746,6 @@ form .b-btn input {
         padding: 5px;
         font-size: 12px;
     }
-
-    /*
-    .f-img {
-        flex-wrap: wrap;
-    }
-
-    .f-img-6 {
-        width: 50%;
-    }*/
 }
 
 
@@ -1057,6 +1060,11 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
+    .loop-up {
+        width: 10px;
+        top: 650px;
+    }
+
     #logo {
         margin-left: 30px;
     }
