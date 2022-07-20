@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assignment 1_Homepage -->
+    <title>我的爱好</title>
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bcontainer">
+        <!-- Container -->
+        <div class="container">
+            <div class="loop-up">
+                <a
+                    href="file:///D:/BCS/Degree%20Sem%204/BIBWB1114%20Web%20Design/MyWebsite/week7/assignment1/home.html#header"><img
+                        src="../images/1loop pink arrow.gif" width="120px"></a>
+            </div>
+
+            <!-- Header -->
+            <div id="header">
+                <div class="box1">
+                    <div id="logo">
+                        <a href="../home.html"><img src="../images/logo.png" width="80px"></a>
+                        <a href="../home.html">
+                            <h1>个人博客</h1>
+                        </a>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="../home.html">首页</a>
+                            <a href="../about/about.html">简介</a>
+                            <a href="../myworks/myworks.html">作品集</a>
+                            <a href="myfavourite.html">我的爱好</a>
+                            <a href="#contact">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="../home.html">首页</a>
+                        <a href="../about/about.html">简介</a>
+                        <a href="../myworks/myworks.html">作品集</a>
+                        <a href="myfavourite.html">我的爱好</a>
+
+                        <div class="contact-btn">
+                            <a href="#contact">联系</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+
+                <div class="box2">
+                    <div class="title">
+                        <h2>我的爱好</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
