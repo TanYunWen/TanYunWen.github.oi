@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第八周_作品集</title>
+
+    <style>
+        body {
+            max-width: 1024px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding: 20px;
+            border: 3px #EECEE6 solid;
+        }
+
+        .box2 a {
+            text-decoration: none;
+        }
+
+        .box2 a:hover {
+            color: #C07778;
+            padding: 20px;
+        }
+
+        a,
+        p {
+            margin: 20px;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .exercises {
+            width: 50%;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+
+        .assignment {
+            width: 50%;
+            padding-left: 30px;
+            border-left: 3px #EECEE6 dotted;
+        }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+        @media screen and (max-width: 600px) {
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                border: none;
+                align-items: center;
+            }
+
+            a,
+            p {
+                margin: 20px;
+            }
+
+            p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .exercises,
+            .assignment {
+                width: 100%;
+                border-bottom: 3px #EECEE6 dotted;
+            }
+
+            .exercises {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            .assignment {
+                padding-left: 8px;
+                border-left: none;
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="week8">
+            <div class="box1">
+                <div class="title">
+                    <h1>第八周</h1>
+                    <h2>作品集</h2>
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="exercises">
+                    <h3>练习</h3>
+                    <ul>
+                        <li><a href="../week8/index.html" target="_blank">Exercise 1</a></li>
+                    </ul>
+                </div>
+
+                <div class="assignment">
+                    <h3>任务</h3>
+                    <ul>
+                        <li><a href="" target="_blank">作品集</a></li>
+                        <li><a href="" target="_blank">我的爱好</a></li>
+                        <li><a href="" target="_blank">联系</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
