@@ -194,11 +194,11 @@ button:hover {
 
 /* About Box 2 */
 #about-b2 {
-    background-image: url("/week7/assignment1/images/2backgroundimg.png");
+    background-image: url("../images/1backgroundimg.png");
     background-size: cover;
+    padding: 150px 60px;
     display: flex;
     justify-content: space-between;
-    padding: 150px 60px;
     align-items: center;
 }
 
