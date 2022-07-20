@@ -147,13 +147,11 @@ h3 {
     border-radius: 25px;
 }
 
-#content1 p {
-    line-height: 30px;
-}
-
 .box3 {
+    background-color: #fee2e283;
     margin-left: 90px;
-    width: 50%;
+    width: 40%;
+    padding: 30px;
 }
 
 h2 {
@@ -171,7 +169,6 @@ h4 {
 
 p {
     color: #CE5959;
-    margin-top: -5%;
 }
 
 button {
@@ -193,6 +190,30 @@ button a {
 
 button:hover {
     background-color: #EECEE6;
+}
+
+/* About Box 2 */
+#about-b2 {
+    background-image: url("/week7/assignment1/images/2backgroundimg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 60px;
+    align-items: center;
+}
+
+.content2 {
+    width: 45%;
+    background-color: #EECEE646;
+    padding: 30px;
+}
+
+.content2 h3 {
+    color: #CE5959;
+}
+
+iframe {
+    border-radius: 10px;
 }
 
 /* Footer */
@@ -325,6 +346,11 @@ button:hover {
 
     #about {
         padding: 90px 60px;
+    }
+
+    .box3 {
+        background-color: #fee2e200;
+        padding: 0px;
     }
 }
 
