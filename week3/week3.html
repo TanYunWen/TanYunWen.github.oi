@@ -46,6 +46,40 @@
             width: 25%;
             padding-left: 50px;
         }
+
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+        @media screen and (max-width: 1000px) {
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                border: none;
+                align-items: center;
+            }
+
+            .html a, .exercises a, .homeworks a {
+                margin: 20px;
+            }
+
+            .html, .exercises, .homeworks {
+                width: 100%;
+                border-bottom: 3px #EECEE6 dotted;
+            }
+
+            .html {
+                padding-left: 0;
+                border-right: none;
+            }
+
+            .exercises {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            .homeworks {
+                padding-left: 0;
+                border-bottom: none;
+            }
+        }
     </style>
 </head>
 
@@ -71,7 +105,8 @@
                     <h3>练习</h3>
                     <ul>
                         <li><a href="../week3/apple.html" target="_blank">Exercise 1_Apple Inc.</a></li>
-                        <li><a href="../week3/exercise2/jameswoo.github.io-main/index.html" target="_blank">Exercise2</a></li>
+                        <li><a href="../week3/exercise2/jameswoo.github.io-main/index.html"
+                                target="_blank">Exercise2</a></li>
                     </ul>
                 </div>
 
