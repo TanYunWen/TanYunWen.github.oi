@@ -205,10 +205,11 @@ h3 {
 }
 
 .content2 {
-    text-align: center;
-    width: 100%;
-    margin: 70px 150px;
-    margin-bottom: 20px;
+    margin: auto;
+}
+
+.content2 {
+    margin-top: 70px;
 }
 
 .box3 .contact-btn {
@@ -224,12 +225,15 @@ h3 {
 }
 
 .box4 {
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 120px;
     z-index: -1;
 }
 
 .week {
     display: flex;
+    align-items: center;
 }
 
 #week-1,
@@ -258,6 +262,10 @@ h3 {
 
 .b-w-button {
     position: relative;
+}
+
+.b-w-img img {
+    border-radius: 10px;
 }
 
 .b-w-content,
@@ -292,6 +300,10 @@ h3 {
 
 .b-w-content1 h4 {
     width: 90px;
+}
+
+.b-w-button img:hover {
+    transform: rotate(5deg);
 }
 
 /* Footer */
@@ -360,16 +372,17 @@ h3 {
     text-align: center;
 }
 
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1198px wide or less) */
 @media screen and (max-width: 1198px) {
-    .box1 {
-        background-color: #FED4D500;
-    }
-
     .loop-up {
         width: 5%;
         top: 90%;
         right: 3%;
+    }
+
+    .box1 {
+        background-color: #F6E6F2;
     }
 
     #logo {
@@ -416,41 +429,13 @@ h3 {
     #myTopnav .contact-btn:hover {
         background-color: white;
     }
-
-    .box3 .contact-btn {
-        margin-right: 100px;
-    }
 }
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
 @media screen and (max-width: 1100px) {
     .topnav a.icon {
         margin-right: 1.5%;
-    }
-
-    .content2 {
-        margin: 120px 30px;
-        margin-bottom: 0px;
-    }
-
-    .box3 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .b-w {
-        width: 350px;
-        padding: 10px;
-    }
-
-    .b-w-button {
-        margin: 0px;
-    }
-
-    .b-w-content,
-    .b-w-content1 {
-        position: absolute;
-        left: 30px;
-        bottom: 10px;
     }
 
     .box12 {
@@ -462,6 +447,7 @@ h3 {
         padding: 20px;
     }
 }
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (950px wide or less) */
 @media screen and (max-width: 950px) {
@@ -516,26 +502,45 @@ h3 {
     }
 }
 
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
 @media screen and (max-width: 900px) {
     .loop-up {
         right: 5%;
     }
-
-    .box3 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .b-w-content1 h4 {
-        width: 80px;
-    }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        padding: 5px;
-        font-size: 12px;
-    }
 }
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (850px wide or less) */
+@media screen and (max-width: 850px) {
+    .week {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #week-1,
+    #week-4,
+    #week-7 {
+        width: 45%;
+        margin-left: 20px;
+    }
+    
+    #week-2,
+    #week-5,
+    #week-8 {
+        width: 45%;
+        margin-right: 20px;
+    }
+    
+    #week-3,
+    #week-6,
+    #week-9 {
+        width: 45%;
+        margin-right: 20px;
+    }    
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
 @media screen and (max-width: 800px) {
@@ -547,34 +552,44 @@ h3 {
         right: 5%;
     }
 
-    .box3 .contact-btn {
-        margin-right: 50px;
+    .week {
+        display: flex;
+        flex-direction: column;
     }
 
-    .b-w-content1 h4 {
-        width: 65px;
+    #week-1,
+    #week-4,
+    #week-7 {
+        width: 90%;
+        margin-left: 0px;
     }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        padding: 5px;
-        font-size: 10px;
+    
+    #week-2,
+    #week-5,
+    #week-8 {
+        width: 90%;
+        margin-right: 0px;
     }
-
-    .b-w-content h3,
-    .b-w-content1 h3 {
-        font-size: 15px;
+    
+    #week-3,
+    #week-6,
+    #week-9 {
+        width: 90%;
+        margin-right: 0px;
     }
 }
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (750px wide or less) */
+@media screen and (max-width: 750px) {
+
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
 @media screen and (max-width: 700px) {
     .topnav a.icon {
-        margin-right: 4%;
-    }
-
-    .box3 .contact-btn {
-        margin-right: 50px;
+        margin-left: 20px;
     }
 }
 
@@ -582,11 +597,6 @@ h3 {
 @media screen and (max-width: 663px) {
     .topnav a.icon {
         margin-right: 5%;
-    }
-
-    .b-w {
-        width: 96.5%;
-        padding: 10px;
     }
 }
 
@@ -600,61 +610,13 @@ h3 {
         right: 6%;
     }
 
-    #header .box2 h1 {
-        font-size: 400%;
-    }
-
-    .week {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .b-w {
-        width: 95.8%;
-        padding: 30px 10px;
-    }
-
-    .b-w-content,
-    .b-w-content1 {
-        position: absolute;
-        left: 53px;
-        bottom: 40px;
-    }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        background-color: #FFFFFF;
-        text-align: center;
-        border-radius: 25px;
-        padding: 10px;
-        font-size: 15px;
-        color: #BC4545;
-    }
-
-    .b-w-content h3,
-    .b-w-content1 h3 {
-        color: #FFFFFF;
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: 0;
-    }
-
-    .b-w-content h4 {
-        width: 50px;
-    }
-
-    .b-w-content1 h4 {
-        width: 90px;
+    .dropdown-content {
+        min-width: 182px;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
 @media screen and (max-width: 550px) {
-    #header .box2 h1 {
-        font-size: 350%;
-    }
-
     .loop-up {
         margin-right: 7px;
     }
@@ -665,10 +627,17 @@ h3 {
         margin-left: 20px;
     }
 
-    .box3 .contact-btn {
-        margin-top: 10px;
-        margin-left: 31px;
-        margin-bottom: 60px;
+    .content2 h2 {
+        margin-right: 20px;
+    }
+
+
+    .dropbtn {
+        padding: 16px 50px;
+    }
+
+    .dropdown-content {
+        min-width: 145px;
     }
 }
 
@@ -691,11 +660,6 @@ h3 {
         top: 15px;
         right: 35px;
     }
-
-    .b-w {
-        width: 95.7%;
-        padding: 20px 10px;
-    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
@@ -711,10 +675,6 @@ h3 {
 
     #logo h1 {
         padding-left: 5px;
-    }
-
-    #header {
-        padding-bottom: 50px;
     }
 
     .box1 {
@@ -735,12 +695,7 @@ h3 {
         margin-right: 10px;
     }
 
-    .box3 .content2 h3 {
-        margin-top: 0%;
-    }
-
-    .b-w {
-        width: 94.5%;
-        padding: 20px 10px;
+    .dropdown-content {
+        min-width: 132px;
     }
 }
