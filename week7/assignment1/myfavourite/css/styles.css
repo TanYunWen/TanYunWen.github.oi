@@ -134,7 +134,6 @@ h2 {
 
 h3 {
     color: #B17375;
-    font-weight: 500;
 }
 
 h4 {
@@ -149,8 +148,29 @@ p {
     margin-top: -5%;
 }
 
+button {
+    width: 110px;
+    background-color: #FFFFFF;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px rgba(81, 81, 249, 0.053);
+    border: none;
+}
+
+button a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
+button:hover {
+    background-color: #EECEE6;
+}
+
 .box2 {
-    padding: 30px 0px;
+    padding-top: 30px;
 }
 
 .box2 .title {
@@ -160,42 +180,45 @@ p {
 }
 
 /* My Favourite */
-#myfavourite {
-    background-color: #FED4D5;
-}
-
-.box7 {
+.box3 {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
-.box8 {
-    padding-bottom: 120px;
-}
-
-.box8 h2 {
-    margin: 70px 80px;
+.box3 h2 {
+    margin: 20px 80px;
     margin-bottom: 40px;
-    padding-top: 60px;
-    padding-left: 20px;
-    border-top: 1px #000000 solid;
+    padding-top: 50px;
     color: #C07778;
+    text-align: left;
 }
 
-.box9 {
+.box4, .box6 {
     display: flex;
     justify-content: center;
 }
 
 .content3 {
-    padding: 30px;
+    padding: 20px;
+    border-bottom: 1px black solid;
+}
+
+.content3 h3 {
+    color: #C07778;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.content3 p {
+    margin: 30px 0px;
+    font-size: 150%;
 }
 
 .content3 a {
     text-decoration: none;
 }
 
-.content3 a h4:hover {
+.content3 a h4:hover, .content3 a p:hover {
     text-decoration: underline;
 }
 
@@ -203,17 +226,8 @@ p {
     border-radius: 5px;
 }
 
-.content3 h3 {
-    color: #CE5959;
-    font-weight: bold;
-    padding: 20px 0px;
-}
-
-.content3 p {
-    margin-top: 30px;
-}
-
 .name {
+    text-align: left;
     line-height: 30%;
 }
 
@@ -221,92 +235,33 @@ p {
     color: #C07778;
 }
 
-.more-btn {
-    text-align: center;
+.recommend2, .recommend4 {
+    background-color: #eecee690;
 }
 
-.more-btn button {
-    margin: 20px;
-    width: 150px;
-    font-size: 100%;
+.recommend2 {
+    padding-top: 60px;
 }
 
-/* Contact */
-.box10 {
-    display: flex;
-    align-items: center;
+.recommend4 {
+    padding-top: 10px;
 }
 
-.b-contact {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 61%;
+.recommend2 .content3, .recommend3 .content3, .recommend4 .content3 {
+    border-bottom: none;
 }
 
-form {
-    background: #EECEE6;
-    border-radius: 6px;
-    margin-left: 90px;
-    padding: 20px 30px;
+.box5 {
+    padding: 0px 80px;
 }
 
-form h3 {
-    color: #C07778;
-    font-weight: bold;
+.recommend2 .box5 h3 {
+    margin: 0%;
+    font-size: 40px;
 }
 
-form .bemail input,
-.bmessage textarea {
-    width: 94%;
-    padding: 10px;
-}
-
-form .bsubject select {
-    width: 99.5%;
-    padding: 10px;
-}
-
-form .b-btn {
-    text-align: right;
-    margin: 3px;
-}
-
-form .b-btn input {
-    width: 110px;
-    background-color: #CE5959;
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    border: none;
-    color: #FFFFFF;
-}
-
-.content4 {
-    margin: 8%;
-}
-
-.content4 p {
-    color: #000000;
-}
-
-.box11 {
-    margin-top: 10%;
-}
-
-.content5 {
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.content5 p {
-    width: 100%;
-    margin-top: 5px;
-}
-
-.c5-img {
-    width: 10%;
-    margin-right: 3%;
+.recommend2 h4 {
+    margin-top: 30px;
 }
 
 /* Footer */
@@ -433,25 +388,7 @@ form .b-btn input {
         background-color: white;
     }
 
-    .box3 {
-        margin: 150px 60px;
-        margin-right: 0%;
-        width: 45%;
-    }
-
-    #box-img2 img {
-        border-radius: 25px;
-    }
-
-    .box4 {
-        margin-right: 60px;
-    }
-
-    .box5 .contact-btn {
-        margin-right: 100px;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         margin-left: 30px;
     }
 
@@ -467,59 +404,9 @@ form .b-btn input {
         margin-right: 1.5%;
     }
 
-    .box3 #box-img2 {
-        width: 120%;
-    }
-
     .box4 {
-        margin-left: 200px;
-    }
-
-    .content2 {
-        margin: 120px 30px;
-        margin-bottom: 0px;
-    }
-
-    .box5 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .b-w {
-        width: 350px;
-        padding: 10px;
-    }
-
-    .b-w-button {
-        margin: 0px;
-    }
-
-    .b-w-content,
-    .b-w-content1 {
-        position: absolute;
-        left: 30px;
-        bottom: 10px;
-    }
-
-    .box9 {
         flex-direction: column;
         align-items: center;
-    }
-
-    .box10 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    form {
-        margin-left: 0%;
-    }
-
-    form .bsubject select {
-        width: 98%;
-    }
-
-    form .b-btn {
-        margin-right: 11px;
     }
 
     .box12 {
@@ -572,7 +459,7 @@ form .b-btn input {
         display: flex;
         flex-direction: column;
     }
-    
+
     .f-myworks-menu2 {
         padding: 0%;
     }
@@ -590,48 +477,8 @@ form .b-btn input {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
 @media screen and (max-width: 900px) {
-    #about {
-        display: flex;
-        flex-direction: column;
-    }
-
     .loop-up {
         right: 5%;
-    }
-
-    .box3 {
-        margin: 150px;
-        margin-right: 30%;
-        margin-bottom: 5%;
-        width: 50%;
-    }
-
-    .box4 {
-        align-items: center;
-        margin-left: 5%;
-        margin-bottom: 15%;
-    }
-
-    .box5 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .b-w-content1 h4 {
-        width: 80px;
-    }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    .content4 {
-        width: 60%;
-    }
-
-    form .bsubject select {
-        width: 98.8%;
     }
 }
 
@@ -646,65 +493,12 @@ form .b-btn input {
         right: 5%;
     }
 
-    #about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .box3 {
-        margin: 120px;
-        margin-right: 35%;
-        margin-bottom: 10%;
-        width: 65%;
-    }
-
-    .box5 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .b-w-content1 h4 {
-        width: 65px;
-    }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        padding: 5px;
-        font-size: 10px;
-    }
-
-    .b-w-content h3,
-    .b-w-content1 h3 {
-        font-size: 15px;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         margin-right: 55px;
     }
 
     .content3 {
         padding: 30px 0px;
-    }
-
-    .b-contact {
-        width: 85%;
-    }
-
-    form {
-        margin-top: 60px;
-    }
-
-    form .bsubject select {
-        width: 97.9%;
-    }
-
-    form .b-btn {
-        margin-right: 15px;
-    }
-
-    .content4 {
-        width: 85%;
-        text-align: left;
-        margin-bottom: 100px;
     }
 }
 
@@ -714,16 +508,8 @@ form .b-btn input {
         margin-right: 4%;
     }
 
-    .box5 .contact-btn {
-        margin-right: 50px;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         margin-right: 80px;
-    }
-
-    form .bsubject select {
-        width: 98.8%;
     }
 }
 
@@ -734,16 +520,7 @@ form .b-btn input {
         margin-right: 5%;
     }
 
-    .box4 {
-        margin-left: 50px;
-    }
-
-    .b-w {
-        width: 96.5%;
-        padding: 10px;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         margin: 50px;
     }
 }
@@ -759,72 +536,7 @@ form .b-btn input {
         right: 6%;
     }
 
-    .box3 {
-        margin: 150px;
-        margin-right: 40%;
-        margin-bottom: 10%;
-        width: 60%;
-    }
-
-    .box4 {
-        margin-left: 80px;
-    }
-
-    .week {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .b-w {
-        width: 95.8%;
-        padding: 30px 10px;
-    }
-
-    .b-w-content,
-    .b-w-content1 {
-        position: absolute;
-        left: 53px;
-        bottom: 40px;
-    }
-
-    .b-w-content h4,
-    .b-w-content1 h4 {
-        background-color: #FFFFFF;
-        text-align: center;
-        border-radius: 25px;
-        padding: 10px;
-        font-size: 15px;
-        color: #BC4545;
-    }
-
-    .b-w-content h3,
-    .b-w-content1 h3 {
-        color: #FFFFFF;
-        text-align: center;
-        font-weight: bold;
-        font-size: 30px;
-        margin-top: 0;
-    }
-
-    .b-w-content h4 {
-        width: 50px;
-    }
-
-    .b-w-content1 h4 {
-        width: 90px;
-    }
-
-    .b-w-img1 {
-        width: 94.5%;
-        margin-left: 2.5%;
-    }
-
-    .b-w-img2 {
-        width: 98.5%;
-        margin-left: 0.5%;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         margin: 50px;
     }
 
@@ -836,14 +548,6 @@ form .b-btn input {
         width: 50%;
         margin-bottom: 40px;
     }
-
-    form .bsubject select {
-        width: 99.5%;
-    }
-
-    form .b-btn {
-        margin-right: 3px;
-    }
 }
 
 
@@ -853,30 +557,7 @@ form .b-btn input {
         margin-right: 7px;
     }
 
-    .box3 {
-        margin: 120px;
-        margin-right: 40%;
-        margin-bottom: 10%;
-        width: 60%;
-    }
-
-    .box4 {
-        margin-left: 60px;
-    }
-
-    .box5 {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-    }
-
-    .box5 .contact-btn {
-        margin-top: 10px;
-        margin-left: 31px;
-        margin-bottom: 60px;
-    }
-    
-    .box8 h2 {
+    .box3 h2 {
         margin: 20px;
     }
 }
@@ -899,22 +580,6 @@ form .b-btn input {
         font-size: 40px;
         top: 15px;
         right: 35px;
-    }
-
-    .box3 {
-        margin: 120px;
-        margin-right: 40%;
-        margin-bottom: 10%;
-        width: 60%;
-    }
-
-    .box4 {
-        margin-left: 60px;
-    }
-
-    .b-w {
-        width: 95.7%;
-        padding: 20px 10px;
     }
 
     .b-c-img img {
@@ -965,51 +630,11 @@ form .b-btn input {
         margin-right: 10px;
     }
 
-    .box3 {
-        margin: 120px;
-        margin-right: 50%;
-        margin-bottom: 10%;
-        width: 65%;
-    }
-
-    .box4 {
-        margin-left: 10%;
-        margin-bottom: 25%;
-    }
-
-    .box5 .content2 h3 {
-        margin-top: 0%;
-    }
-
-    .b-w {
-        width: 94.5%;
-        padding: 20px 10px;
-    }
-
-    .box8 h2 {
+    .box3 h2 {
         padding-left: 0px;
     }
 
     .content3 {
         padding: 30px 10px;
-    }
-
-    .b-contact {
-        width: 85%;
-    }
-
-    form .bemail input,
-    .bmessage textarea {
-        width: 89%;
-        padding: 10px;
-    }
-
-    form .bsubject select {
-        width: 97%;
-        padding: 10px;
-    }
-
-    .b-btn {
-        width: 97%;
     }
 }

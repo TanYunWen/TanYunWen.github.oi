@@ -133,6 +133,7 @@ h1 {
 
 h3 {
     color: #B17375;
+    font-weight: 500;
 }
 
 .box2 {
@@ -196,11 +197,6 @@ h2 {
     color: #BC4545;
     font-size: 300%;
     margin-top: 20px;
-}
-
-h3 {
-    color: #B17375;
-    font-weight: 500;
 }
 
 h4 {
@@ -549,9 +545,10 @@ form .b-btn input {
     }
 
     .loop-up {
+        width: 5%;
+        top: 90%;
         right: 3%;
     }
-    
 
     #logo {
         margin: 30px 50px;
@@ -596,11 +593,6 @@ form .b-btn input {
 
     #myTopnav .contact-btn:hover {
         background-color: white;
-    }
-
-    .loop-up {
-        width: 5%;
-        top: 90%;
     }
 
     .box2 {
