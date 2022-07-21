@@ -7420,31 +7420,6 @@ textarea.form-control-lg {
   position: relative;
 }
 
-#rabbitimg {
-  position: absolute;
-  right: 10%;
-  bottom: 20%;
-}
-
-#rabbitimg2 {
-  position: absolute;
-  top: 59%;
-  right: 5%;
-  z-index: -1;
-}
-
-#rabbitimg3 {
-  position: absolute;
-  top: 2.5%;
-  right: 50%;
-}
-
-#rabbitimg4 {
-  position: absolute;
-  top: 19.1%;
-  right: 62%;
-}
-
 .p-1 {
   padding: 0.25rem !important;
 }
