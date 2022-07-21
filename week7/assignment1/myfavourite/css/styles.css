@@ -139,7 +139,6 @@ h3 {
 h4 {
     color: #CE5959;
     margin-top: 5%;
-    font-weight: 500;
     font-size: 200%;
 }
 
@@ -220,6 +219,7 @@ button:hover {
 
 .content3 a h4:hover, .content3 a p:hover {
     text-decoration: underline;
+    color: #000000;
 }
 
 .b-c-img img {
@@ -256,7 +256,7 @@ button:hover {
 }
 
 .recommend2 .box5 h3 {
-    margin: 0%;
+    margin: 0;
     font-size: 40px;
 }
 
@@ -330,7 +330,6 @@ button:hover {
     text-align: center;
 }
 
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1198px wide or less) */
 @media screen and (max-width: 1198px) {
     .box1 {
@@ -388,12 +387,23 @@ button:hover {
         background-color: white;
     }
 
-    .box3 h2 {
-        margin-left: 30px;
+    .name h3, .name h4 {
+        text-align: center;
+        margin: 15px;
+    } 
+
+    .name h4 {
+        margin-bottom: 50px;
     }
 
-    form .bsubject select {
-        width: 100%;
+    .box4, .box5, .box6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content3, .name p {
+        text-align: center;
+        padding-bottom: 20px;
     }
 }
 
@@ -496,11 +506,19 @@ button:hover {
     .box3 h2 {
         margin-right: 55px;
     }
+}
 
-    .content3 {
-        padding: 30px 0px;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (750px wide or less) */
+@media screen and (max-width: 750px) {
+    .recommend2 .content3, .recommend3 .content3, .recommend4 .content3 {
+        padding: 0px;
+    }
+
+    .box5 h4 {
+        margin: 50px 0px;
     }
 }
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
 @media screen and (max-width: 700px) {
@@ -510,6 +528,14 @@ button:hover {
 
     .box3 h2 {
         margin-right: 80px;
+    }
+
+    .b-c-img img {
+        width: 500px;
+    }
+
+    .box4 .content3 {
+        padding: 0;
     }
 }
 
@@ -522,6 +548,14 @@ button:hover {
 
     .box3 h2 {
         margin: 50px;
+    }
+
+    .b-c-img img {
+        width: 450px;
+    }
+
+    .box5 {
+        padding: 0px 40px;
     }
 }
 
@@ -560,6 +594,18 @@ button:hover {
     .box3 h2 {
         margin: 20px;
     }
+
+    .box5 {
+        padding: 25px;
+    }
+
+    .b-c-img {
+        margin-right: 0;
+    }
+
+    .b-c-img img {
+        width: 450px;
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
@@ -582,9 +628,18 @@ button:hover {
         right: 35px;
     }
 
+    .box5 {
+        padding: 15px;
+    }
+
     .b-c-img img {
         width: 190%;
         margin-left: 5%;
+    }
+
+    .box6 img {
+        width: 200%;
+        margin-left: 0%;
     }
 
     .name {
@@ -630,10 +685,14 @@ button:hover {
         margin-right: 10px;
     }
 
-    .box3 h2 {
-        padding-left: 0px;
+    #header {
+        padding-bottom: 0;
     }
 
+    .box3 {
+        padding-top: 0;
+    }
+    
     .content3 {
         padding: 30px 10px;
     }
