@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assignment 1_Homepage -->
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bcontainer">
+        <!-- Container -->
+        <div class="container">
+            <div class="loop-up">
+                <a
+                    href="file:///D:/BCS/Degree%20Sem%204/BIBWB1114%20Web%20Design/MyWebsite/week7/assignment1/home.html#header"><img
+                        src="../assignment1/images/1loop pink arrow.gif" width="120px"></a>
+            </div>
+
+            <!-- Header -->
+            <div id="header">
+                <div class="box1">
+                    <div id="logo">
+                        <a href="home.html"><img src="../assignment1/images/logo.png" width="80px"></a>
+                        <a href="home.html">
+                            <h1>个人博客</h1>
+                        </a>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="home.html">首页</a>
+                            <a href="about/about.html">简介</a>
+                            <a href="#myworks">作品集</a>
+                            <a href="#myfavourite">我的爱好</a>
+                            <a href="#contact">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="home.html">首页</a>
+                        <a href="about/about.html">简介</a>
+                        <a href="#myworks">作品集</a>
+                        <a href="#myfavourite">我的爱好</a>
+
+                        <div class="contact-btn">
+                            <a href="#contact">联系</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+
+                <!-- Contact -->
+                <div id="contact">
+                    <div class="title">
+                        <div class="box2">
+                            <h2>联系</h2>
+                        </div>
+
+                        <div class="box10">
+                            <div class="b-contact">
+                                <form name="registration" action="submit.html" target="_blank">
+                                    <h3>保持联系</h3>
+
+                                    <div class="bemail">
+                                        <input type="email" name="email" placeholder="您的邮件" required>
+                                    </div>
+                                    <br>
+
+                                    <div class="bsubject">
+                                        <select name="subject" required>
+                                            <option value="">主题</option>
+                                            <option value="推荐小说">推荐小说</option>
+                                            <option value="推荐动漫">推荐动漫</option>
+                                            <option value="推荐漫画">推荐漫画</option>
+                                            <option value="推荐甜点">推荐甜点</option>
+                                            <option value="其他">其他</option>
+                                        </select>
+                                    </div>
+                                    <br>
+
+                                    <div class="bmessage">
+                                        <textarea name="message" rows="10" cols="30" placeholder="信息"
+                                            required></textarea>
+                                    </div>
+                                    <br>
+
+                                    <div class="b-btn">
+                                        <input type="submit" value="现在提交">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="contact-b-img">
+                                <img src="../contact/images/1slideimg.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
