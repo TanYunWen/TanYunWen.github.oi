@@ -276,7 +276,7 @@ form .b-btn input {
     align-items: center;
 }
 
-.content1:hover, .content2:hover {
+.content2 {
     background-color: #EECEE6;
 }
 
