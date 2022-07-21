@@ -237,25 +237,48 @@ form .b-btn input {
     width: 50%;
 }
 
-.box4 {
-    margin-top: 10%;
+/*Content*/
+.contact-no {
+    background-image: url("../images/1backgroundimg.png");
+    background-size: cover;
+    display: flex;
+    padding: 20px;
+}
+
+.content1, .content2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+    padding: 70px;
+    align-items: center;
+    border: 1px #FED4D5 solid;
+}
+
+.content1 h3, .content2 h3 {
+    font-size: 200%;
+    margin-left: 20px;
+}
+
+.content1 p, .content2 p {
+    margin-top: 5px;
+    font-size: 150%;
+    padding: 20px;
 }
 
 .content1 {
-    display: flex;
-    align-items: center;
-    margin-top: 5%;
-}
-
-.content1 p {
-    width: 100%;
-    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .c5-img {
-    width: 10%;
+    display: flex;
     margin-right: 3%;
 }
+
+.content1:hover, .content2:hover {
+    background-color: #EECEE6;
+}
+
 
 /* Footer */
 #footer {
