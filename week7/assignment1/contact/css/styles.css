@@ -134,6 +134,7 @@ h3 {
 .title {
     background-color: #FED4D5;
     padding: 50px;
+    padding-top: 5px;
 }
 
 .box2 {
@@ -146,8 +147,11 @@ h3 {
 h2 {
     color: #BC4545;
     font-size: 300%;
-    margin-top: 10px;
     padding: 50px;
+}
+
+.box2 h2 {
+    margin-bottom: 0%;
 }
 
 h4 {
@@ -232,7 +236,6 @@ form .b-btn input {
 .contact-b-img {
     width: 50%;
 }
-
 
 .box4 {
     margin-top: 10%;
@@ -379,12 +382,23 @@ form .b-btn input {
     }
 
     .box2 {
-        padding: 60px;
-        padding-bottom: 100px;
+        padding: 0px;
+    }
+
+    .b-contact {
+        padding-bottom: 50px;
+    }
+
+    form {
+        width: 40%;
     }
 
     form .bsubject select {
         width: 100%;
+    }
+
+    .contact-b-img {
+        width: 60%;
     }
 }
 
@@ -395,28 +409,31 @@ form .b-btn input {
         margin-right: 1.5%;
     }
 
+    .box2 {
+        padding-bottom: 0px;
+    }
+
     .box3 {
         display: flex;
         flex-direction: column;
     }
 
     form {
-        margin-left: 0%;
+        padding: 10px 30px;
     }
 
-    form .bsubject select {
-        width: 98%;
+    .b-contact {
+        align-items: center;
     }
 
-    form .b-btn {
-        margin-right: 11px;
+    .bsubject {
+        width: 101%;
     }
 
     .box12 {
         padding: 10px;
         padding-bottom: 0%;
     }
-
     #copyright {
         padding: 20px;
     }
@@ -485,8 +502,8 @@ form .b-btn input {
     }
 
     form .bsubject select {
-        width: 98.8%;
-    }
+        width: 101%;
+    } 
 }
 
 
@@ -500,22 +517,21 @@ form .b-btn input {
         right: 5%;
     }
 
+    .box3 {
+        display: flex;
+    }
+
     .b-contact {
-        width: 85%;
+        flex-direction: column-reverse;
     }
 
     form {
-        margin-top: 60px;
-    }
-
-    form .bsubject select {
-        width: 97.9%;
-    }
-
-    form .b-btn {
-        margin-right: 15px;
+        margin-top: 20px;
+        margin-left: 0%;
+        width: 45%;
     }
 }
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
 @media screen and (max-width: 700px) {
@@ -523,8 +539,8 @@ form .b-btn input {
         margin-right: 4%;
     }
 
-    form .bsubject select {
-        width: 98.8%;
+    .contact-b-img {
+        width: 79%;
     }
 }
 
@@ -533,6 +549,14 @@ form .b-btn input {
 @media screen and (max-width: 663px) {
     .topnav a.icon {
         margin-right: 5%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .bsubject {
+        width: 100%;
     }
 }
 
@@ -547,16 +571,12 @@ form .b-btn input {
         right: 6%;
     }
 
-    #header .box2 h1 {
-        font-size: 400%;
-    }
-
     form .bsubject select {
-        width: 99.5%;
+        width: 102%;
     }
 
     form .b-btn {
-        margin-right: 3px;
+        margin-right: 0px;
     }
 }
 
@@ -591,6 +611,10 @@ form .b-btn input {
         top: 15px;
         right: 35px;
     }
+
+    .bsubject {
+        width: 102%;
+    }
 }
 
 
@@ -618,7 +642,7 @@ form .b-btn input {
     }
 
     .box2 {
-        padding: 50px 30px;
+        padding: 5px 5px;
     }
 
     .topnav .icon {
@@ -631,14 +655,27 @@ form .b-btn input {
         margin-right: 10px;
     }
 
+    .title {
+        padding: 20px;
+    }
+
+    form {
+        width: 70%;
+        padding: 10px 20px;
+    }
+
     form .bemail input,
     .bmessage textarea {
-        width: 89%;
+        width: 87.5%;
         padding: 10px;
     }
 
     form .bsubject select {
-        width: 97%;
+        width: 93%;
         padding: 10px;
+    }
+
+    .contact-b-img {
+        width: 90%;
     }
 }
