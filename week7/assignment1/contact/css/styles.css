@@ -325,6 +325,10 @@ form .b-btn input {
     z-index: 1;
 }
 
+.menu a:hover, .f-myworks a:hover, .f-contact a:hover {
+    color: #BC4545;
+}
+
 .box13 {
     display: flex;
     width: 97%;

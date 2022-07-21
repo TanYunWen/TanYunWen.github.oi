@@ -524,6 +524,10 @@ form .b-btn input {
     border-right: none;
 }
 
+.menu a:hover, .f-myworks a:hover, .f-contact a:hover {
+    color: #BC4545;
+}
+
 #copyright {
     background-color: #FED4D5;
     width: 100%;
