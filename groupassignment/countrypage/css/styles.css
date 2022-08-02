@@ -1,0 +1,57 @@
+.container {
+    max-width: 1400px;
+    margin: 0;
+}
+
+body {
+    background-color: #A91B2A;
+}
+
+h1 {
+    font-size: 240%;
+    color: white;
+}
+
+p {
+    font-size: 120%;
+    color: white;
+}
+
+#b-content2 p {
+    font-size: 100%;
+    margin-top: 30%;
+    margin-bottom: 0;
+}
+
+a {
+    font-size: 145%;
+    color: white;
+    text-decoration: none;
+}
+
+.row .see-more-btn a {
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    z-index: 1;
+}
+
+#dessert {
+    position: relative;
+}
+
+.bg-img {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: -25%;
+}
+
+#list-example {
+    margin-top:120%;
+}
+
+#c_dragonbc {
+    margin: 0%;
+}
