@@ -12,7 +12,7 @@ body {
 }
 
 #dessert,
-#dessert2 {
+#dessert2, #dessert3 {
     position: relative;
     padding-bottom: 10%;
 }
@@ -38,10 +38,18 @@ p {
 }
 
 .b-content2 p,
-.b-content3 p {
+.b-content3 p, .b-content4 p {
     font-size: 100%;
-    margin-top: 30%;
     margin-left: 50px;
+}
+
+.b-content2 p,
+.b-content3 p {
+    margin-top: 30%;
+}
+
+.b-content4 p { 
+    margin-top: 40%;
 }
 
 a {
@@ -51,12 +59,12 @@ a {
 }
 
 #list-example,
-#list-example2 {
+#list-example2, #list-example3 {
     margin-top: 120%;
 }
 
 #c_dragonbc,
-#c_sugarch {
+#c_sugarch, #c_yangzgl {
     padding: 0%;
 }
 
@@ -117,13 +125,18 @@ a {
 @media screen and (max-width: 1218px) {
 
     .b-content2 p,
-    .b-content3 p {
+    .b-content3 p, .b-content4 {
         font-size: 90%;
     }
 
     /*sugar coated haws*/
     .b-content3 p {
         margin-top: 35%;
+    }
+
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 45%;
     }
 }
 
@@ -142,7 +155,7 @@ a {
     }
 
     #dessert,
-    dessert2 {
+    dessert2, #dessert3 {
         padding-bottom: 15%;
     }
 
@@ -184,7 +197,7 @@ a {
     }
 
     #dessert,
-    #dessert2 {
+    #dessert2, #dessert3 {
         padding-bottom: 20%;
     }
 
@@ -226,12 +239,17 @@ a {
     }
 
     #list-example,
-    #list-example2 {
+    #list-example2, #list-example3 {
         margin-top: 150%;
     }
 
     .list-group-item img {
         width: 120%;
+    }
+
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 34%;
     }
 }
 
@@ -268,6 +286,11 @@ a {
 
     .list-group {
         width: 130%;
+    }
+
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 30%;
     }
 }
 
@@ -310,13 +333,26 @@ a {
         font-size: 100%;
     }
 
-    .b-content2 p {
+    .b-content2 p, .b-content3 p, .b-content4 p {
         font-size: 65%;
+    }
+
+    .b-content2 p {
         margin-top: 13%;
     }
 
     .list-group {
         width: 150%;
+    }
+
+    /*sugar coated haws*/
+    .b-content3 p{
+        margin-top: 20%;
+    }
+
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 40%;
     }
 }
 
@@ -350,8 +386,16 @@ a {
     }
 
     #dessert,
-    #dessert2 {
+    #dessert2, #dessert3 {
         padding-bottom: 20%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (745px wide or less)*/
+@media screen and (max-width: 745px) {
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 35%;
     }
 }
 
@@ -369,6 +413,7 @@ a {
 
     /*sugar coated haws*/
     .b-content3 p {
+        font-size: 55%;
         margin-top: 15%;
     }
 }
@@ -383,10 +428,6 @@ a {
     .name {
         padding-left: 20px;
         margin-top: 5px;
-    }
-
-    .b-content2 p, .b-content3 p {
-        font-size: 60%;
     }
 }
 
@@ -415,12 +456,16 @@ a {
     .time-line {
         width: 180%;
     }
+
+    .b-content4 p {
+        margin-top: 30%;
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less)*/
 @media screen and (max-width: 600px) {
     #dessert,
-    #dessert2 {
+    #dessert2, #dessert3 {
         display: flex;
         flex-direction: column;
         padding-bottom: 15%;
@@ -486,7 +531,26 @@ a {
 
     /*sugar coated haws*/
     .b-content3 p {
+        margin-top: 15%;
+    }
+
+    .b-content4 p {
+        margin-top: 20%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (582px wide or less)*/
+@media screen and (max-width: 582px) {
+    /*sugar coated haws*/
+    .b-content3 p {
         margin-top: 5%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (578px wide or less)*/
+@media screen and (max-width: 578px) {
+    .b-content4 p {
+        margin-top: 10%;
     }
 }
 
@@ -495,22 +559,65 @@ a {
     .b-content2 p, .b-content3 p {
         margin-top: 38%;
     }
-}
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less)*/
-@media screen and (max-width: 550px) {
-    .b-content2 p, .b-content3 p {
-        margin-top: 35%;
+    .b-content4 p {
+        margin-top: 45%;
+    }
+
+    .content1 {
+        margin: 0%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    h1 {
+        padding-right: 30px;
+    }
+
+    .time-line img {
+        padding-right: 0px;
+    }
+
+    .b-content2 p, .b-content3 p, .b-content4 p {
+        margin-left: 30%;
+    }
+
     .b-content2 p {
         margin-top: 25%;
-    } 
+    }
+
+    .content1 {
+        padding: 0%;
+    }
+
+    .product-making .row {
+        margin: 0%;
+    }
     
     .b-content3 p {
         margin-top: 35%;
+    }
+    
+    .flag-name {
+        padding-right: 0px;
+    }
+
+    .see-more-btn2 {
+        width: 50%;
+        left: 40%;
+    }
+
+    .story p {
+        padding-right: 20px;
+    }
+
+    .phone-dessert-img {
+        padding-right: 25px;
     }
 }
