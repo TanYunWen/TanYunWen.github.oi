@@ -1,10 +1,24 @@
+body {
+    background-color: #A91B2A;
+}
+
 .container {
     max-width: 1400px;
     margin: 0;
+    background-image: url("../images/c_dragonbc_bgimg.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
-body {
-    background-color: #A91B2A;
+#dessert {
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.time-line {
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -17,10 +31,15 @@ p {
     color: white;
 }
 
-#b-content2 p {
+.story {
+    margin-top: 16px;
+    margin-left: 48px;
+}
+
+.b-content2 p {
     font-size: 100%;
     margin-top: 30%;
-    margin-bottom: 0;
+    margin-left: 40px;
 }
 
 a {
@@ -29,29 +48,407 @@ a {
     text-decoration: none;
 }
 
-.row .see-more-btn a {
-    width: 30%;
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
-    z-index: 1;
-}
-
-#dessert {
-    position: relative;
-}
-
-.bg-img {
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    bottom: -25%;
-}
-
 #list-example {
-    margin-top:120%;
+    margin-top: 120%;
 }
 
 #c_dragonbc {
-    margin: 0%;
+    padding: 0%;
+}
+
+.flag-name {
+    margin-left: 10px;
+}
+
+.name {
+    margin-left: 20px;
+}
+
+.phone-dessert-img {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.arrow1 {
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
+}
+
+.see-more-btn {
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    width: 15%;
+}
+
+.see-more-btn2 {
+    position: absolute;
+    top: 57%;
+    left: 49%;
+    width: 15%;
+    display: none;
+}
+
+@keyframes slide1 {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(10px, 0);
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1218px wide or less)*/
+@media screen and (max-width: 1218px) {
+    .b-content2 p {
+        font-size: 90%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1180px wide or less)*/
+@media screen and (max-width: 1180px) {
+    .b-content2 p {
+        margin-top: 20%;
+    }
+    
+    .see-more-btn {
+        display: none;
+    }
+
+    .see-more-btn2 {
+        display: block;
+    }
+
+    #dessert {
+        padding-bottom: 15%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1087px wide or less)*/
+@media screen and (max-width: 1087px) {
+    h1 {
+        font-size: 220%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1055px wide or less)*/
+@media screen and (max-width: 1055px) {
+    h1 {
+        font-size: 200%;
+        margin-top: 1%;
+    }
+
+    .b-content2 p {
+        margin-top: 10%;
+    }
+
+    .flag {
+        width: 30px;
+        margin-top: 0%;
+        margin-right: 3%;
+    }
+
+    .see-more-btn2 {
+        width: 20%;
+    }
+
+    #dessert {
+        padding-bottom: 20%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1000px wide or less)*/
+@media screen and (max-width: 1000px) {
+    .list-group-item img {
+        width: 110%;
+    }
+
+    .see-more-btn2 {
+        top: 65%;
+        width: 20%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (960px wide or less)*/
+@media screen and (max-width: 960px) {
+    .b-content2 p {
+        font-size: 85%;
+        margin-top: 10%;
+    }
+
+    #list-example {
+        margin-top: 150%;
+    }
+
+    .list-group-item img {
+        width: 120%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (935px wide or less)*/
+@media screen and (max-width: 935px) {
+    h1 {
+        font-size: 180%;
+    }
+
+    p {
+        font-size: 110%;
+    }
+
+    .b-content2 p {
+        margin-top: 10%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (883px wide or less)*/
+@media screen and (max-width: 883px) {
+    h1 {
+        font-size: 180%;
+        margin-top: 2%;
+    }
+
+    .b-content2 p {
+        font-size: 70%;
+        margin-top: 10%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (860px wide or less)*/
+@media screen and (max-width: 860px) {
+    h1 {
+        font-size: 170%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .flag {
+        width: 10%;
+    }
+
+    .b-content2 p {
+        margin-top: 13%;
+    }
+
+    .list-group {
+        width: 130%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (806px wide or less)*/
+@media screen and (max-width: 806px) {
+    h1 {
+        font-size: 140%;
+        margin-top: 3%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    .b-content2 p {
+        font-size: 65%;
+        margin-top: 13%;
+    }
+
+    .list-group {
+        width: 150%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (770px wide or less)*/
+@media screen and (max-width: 770px) {
+    .time-line {
+        width: 130%;
+    }
+
+    h1 {
+        font-size: 140%;
+        margin-top: 5%;
+    }
+
+    p {
+        font-size: 90%;
+    }
+
+    .b-content2 p {
+        font-size: 60%;
+    }
+
+    .list-group-item {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+
+    .see-more-btn2 {
+        width: 30%;
+        top: 60%;
+    }
+
+    #dessert {
+        padding-bottom: 20%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (730px wide or less)*/
+@media screen and (max-width: 730px) {
+    h1 {
+        font-size: 140%;
+        margin-top: 5%;
+    }
+
+    .b-content2 p {
+        font-size: 55%;
+        margin-top: 10%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (715px wide or less)*/
+@media screen and (max-width: 715px) {
+    h1 {
+        font-size: 120%;
+    }
+
+    .name {
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+    
+    .b-content2 p {
+        font-size: 50%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (660px wide or less)*/
+@media screen and (max-width: 650px) {
+    .time-line {
+        width: 150%;
+    }
+
+    .b-content2 p {
+        font-size: 50%;
+        margin-top: 0%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (640px wide or less)*/
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 110%;
+    }
+
+    p {
+        font-size: 85%;
+    }
+
+    .list-example {
+        margin-top: 180%;
+    }
+
+    .time-line {
+        width: 180%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less)*/
+@media screen and (max-width: 600px) {
+    #dessert {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15%;
+    }
+
+    .flag-name {
+        margin: 0%;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flag {
+        margin-left: 0%;
+        padding: 0%;
+    }
+
+    .name {
+        padding: 0%;
+        margin-left: 0%;
+    }
+
+    h1 {
+        font-size: 150%;
+        text-align: center;
+    }
+    
+    .story {
+        margin: 20px;
+        padding-right: 20px;
+    }
+
+    .title-line {
+        padding-right: 40px;
+    }
+    
+    .time-line {
+        display: none;
+    }
+
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    } 
+
+    .desktop-dessert-img {
+        display: none;       
+    }
+
+    .product-img {
+        padding-right: 20px;
+    }
+
+    .phone-dessert-img {
+        display: block;
+    }
+
+    .see-more-btn2 {
+        top: 78%;
+    }
 }
