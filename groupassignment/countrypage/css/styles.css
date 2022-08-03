@@ -11,7 +11,8 @@ body {
     background-position: bottom;
 }
 
-#dessert {
+#dessert,
+#dessert2 {
     position: relative;
     padding-bottom: 10%;
 }
@@ -36,10 +37,11 @@ p {
     margin-left: 48px;
 }
 
-.b-content2 p {
+.b-content2 p,
+.b-content3 p {
     font-size: 100%;
     margin-top: 30%;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 a {
@@ -48,11 +50,13 @@ a {
     text-decoration: none;
 }
 
-#list-example {
+#list-example,
+#list-example2 {
     margin-top: 120%;
 }
 
-#c_dragonbc {
+#c_dragonbc,
+#c_sugarch {
     padding: 0%;
 }
 
@@ -97,6 +101,7 @@ a {
 }
 
 @keyframes slide1 {
+
     0%,
     100% {
         transform: translate(0, 0);
@@ -110,8 +115,15 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1218px wide or less)*/
 @media screen and (max-width: 1218px) {
-    .b-content2 p {
+
+    .b-content2 p,
+    .b-content3 p {
         font-size: 90%;
+    }
+
+    /*sugar coated haws*/
+    .b-content3 p {
+        margin-top: 35%;
     }
 }
 
@@ -120,7 +132,7 @@ a {
     .b-content2 p {
         margin-top: 20%;
     }
-    
+
     .see-more-btn {
         display: none;
     }
@@ -129,7 +141,8 @@ a {
         display: block;
     }
 
-    #dessert {
+    #dessert,
+    dessert2 {
         padding-bottom: 15%;
     }
 
@@ -170,7 +183,8 @@ a {
         width: 20%;
     }
 
-    #dessert {
+    #dessert,
+    #dessert2 {
         padding-bottom: 20%;
     }
 
@@ -178,6 +192,15 @@ a {
         width: 130%;
     }
 }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1020px wide or less)*/
+@media screen and (max-width: 1020px) {
+    /*sugar coated haws*/
+    .b-content3 p {
+        margin-top: 25%;
+    }
+}
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1000px wide or less)*/
 @media screen and (max-width: 1000px) {
@@ -202,7 +225,8 @@ a {
         margin-top: 10%;
     }
 
-    #list-example {
+    #list-example,
+    #list-example2 {
         margin-top: 150%;
     }
 
@@ -268,6 +292,11 @@ a {
     .list-group {
         width: 130%;
     }
+
+    /*sugar coated haws*/
+    .b-content3 p {
+        margin-top: 20%;
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (806px wide or less)*/
@@ -320,7 +349,8 @@ a {
         top: 60%;
     }
 
-    #dessert {
+    #dessert,
+    #dessert2 {
         padding-bottom: 20%;
     }
 }
@@ -336,6 +366,11 @@ a {
         font-size: 55%;
         margin-top: 10%;
     }
+
+    /*sugar coated haws*/
+    .b-content3 p {
+        margin-top: 15%;
+    }
 }
 
 
@@ -349,9 +384,9 @@ a {
         padding-left: 20px;
         margin-top: 5px;
     }
-    
-    .b-content2 p {
-        font-size: 50%;
+
+    .b-content2 p, .b-content3 p {
+        font-size: 60%;
     }
 }
 
@@ -377,10 +412,6 @@ a {
         font-size: 85%;
     }
 
-    .list-example {
-        margin-top: 180%;
-    }
-
     .time-line {
         width: 180%;
     }
@@ -388,7 +419,8 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less)*/
 @media screen and (max-width: 600px) {
-    #dessert {
+    #dessert,
+    #dessert2 {
         display: flex;
         flex-direction: column;
         padding-bottom: 15%;
@@ -416,7 +448,7 @@ a {
         font-size: 150%;
         text-align: center;
     }
-    
+
     .story {
         margin: 20px;
         padding-right: 20px;
@@ -425,7 +457,7 @@ a {
     .title-line {
         padding-right: 40px;
     }
-    
+
     .time-line {
         display: none;
     }
@@ -434,10 +466,10 @@ a {
         display: flex;
         flex-direction: column;
         margin: auto;
-    } 
+    }
 
     .desktop-dessert-img {
-        display: none;       
+        display: none;
     }
 
     .product-img {
@@ -450,5 +482,35 @@ a {
 
     .see-more-btn2 {
         top: 78%;
+    }
+
+    /*sugar coated haws*/
+    .b-content3 p {
+        margin-top: 5%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (575px wide or less)*/
+@media screen and (max-width: 575px) {
+    .b-content2 p, .b-content3 p {
+        margin-top: 38%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less)*/
+@media screen and (max-width: 550px) {
+    .b-content2 p, .b-content3 p {
+        margin-top: 35%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+@media screen and (max-width: 414px) {
+    .b-content2 p {
+        margin-top: 25%;
+    } 
+    
+    .b-content3 p {
+        margin-top: 35%;
     }
 }
