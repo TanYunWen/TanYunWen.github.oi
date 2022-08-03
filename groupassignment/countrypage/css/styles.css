@@ -1,20 +1,47 @@
 body {
     background-color: #A91B2A;
+    font-family: 'Asar', serif;
 }
 
+/*3 dessert*/
 .container {
     max-width: 1400px;
     margin: 0;
-    background-image: url("../images/c_dragonbc_bgimg.png");
+}
+
+.container1, .container2, .container3 {
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
+.container1 {
+    background-image: url("../images/c_dragonbc_bgimg.png");
+}
+
+.container2 {
+    background-image: url("../images/c_sugarch_bgimg.png");
+}
+
+.container3 {
+    background-image: url("../images/c_yangzgl_bgimg.png");
+}
+
 #dessert,
 #dessert2, #dessert3 {
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#dessert,
+#dessert2 {
     position: relative;
     padding-bottom: 10%;
+}
+
+#dessert3 {
+    position: relative;
+    padding-bottom: 16%;
 }
 
 .time-line {
@@ -118,6 +145,47 @@ a {
     50% {
         transform: translate(10px, 0);
     }
+}
+
+/*Footer*/
+.footer {
+    background-color: #4C4751;
+    position: relative;
+    padding-top: 5%;
+}
+.footer img{
+    position: absolute;
+    bottom: 85%;
+    width: 8%;
+}
+.footer .design {
+    padding-left:10%;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    display: inline-block;
+    animation-name: coolVerticalShake; 
+    animation-iteration-count: infinite;
+}
+
+/*Button-Animation*/
+.cssanimation {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    display: inline-block;
+}
+
+.coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
+
+@keyframes coolVerticalShake {
+      3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
+      6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) }
+      9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) }
 }
 
 
