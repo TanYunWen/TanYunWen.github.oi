@@ -289,7 +289,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1198px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (1198px wide or less) */
 @media screen and (max-width: 1198px) {
     .box1 {
         background-color: #EECEE646;
@@ -326,7 +327,8 @@ iframe {
     }
 
     .topnav a.icon {
-        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display
+none*/
         display: block;
         /*why will come out beause this display: block*/
         position: absolute;
@@ -373,7 +375,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (1100px wide or less) */
 @media screen and (max-width: 1100px) {
     .topnav a.icon {
         margin-right: 1.5%;
@@ -397,7 +400,8 @@ iframe {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (950px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (950px wide or less) */
 @media screen and (max-width: 1000px) {
     #about {
         display: flex;
@@ -417,7 +421,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (950px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (950px wide or less) */
 @media screen and (max-width: 950px) {
     .loop-up {
         margin-right: 6px;
@@ -471,7 +476,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (900px wide or less) */
 @media screen and (max-width: 900px) {
     .loop-up {
         right: 5%;
@@ -479,7 +485,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (800px wide or less) */
 @media screen and (max-width: 800px) {
     .loop-up {
         right: 5%;
@@ -490,7 +497,8 @@ iframe {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (700px wide or less) */
 @media screen and (max-width: 700px) {
     .topnav a.icon {
         margin-right: 4%;
@@ -498,7 +506,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (663px wide or less) */
 @media screen and (max-width: 663px) {
     .topnav a.icon {
         margin-right: 5%;
@@ -510,7 +519,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (600px wide or less) */
 @media screen and (max-width: 600px) {
     .loop-up {
         right: 6%;
@@ -531,7 +541,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (550px wide or less) */
 @media screen and (max-width: 550px) {
     .loop-up {
         margin-right: 7px;
@@ -543,7 +554,8 @@ iframe {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (500px wide or less) */
 @media screen and (max-width: 500px) {
     .loop-up {
         margin-right: 10px;
@@ -579,7 +591,8 @@ iframe {
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller
+screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
     .loop-up {
         top: 600px;
