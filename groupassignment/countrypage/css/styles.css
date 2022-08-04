@@ -3,50 +3,68 @@ body {
     font-family: 'Asar', serif;
 }
 
-/*3 dessert*/
 .container {
     max-width: 1400px;
     margin: 0;
+    padding: 0;
 }
 
-.container1, .container2, .container3 {
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-position: bottom;
+.time-line {
+    z-index: 10;
+    padding-right: 0%;
 }
 
+.title-line img {
+    width: 100%;
+}
+
+/*dragon beard candy*/
 .container1 {
     background-image: url("../images/c_dragonbc_bgimg.png");
 }
 
+/*sugar coated haws*/
 .container2 {
     background-image: url("../images/c_sugarch_bgimg.png");
 }
 
+/*yang zhi gao lu*/
 .container3 {
     background-image: url("../images/c_yangzgl_bgimg.png");
 }
 
-#dessert,
-#dessert2, #dessert3 {
-    margin-left: 0%;
-    margin-right: 0%;
+#dessert3 {
+    position: relative;
+    padding-bottom: 15%;
 }
 
-#dessert,
-#dessert2 {
+#dessert3 .see-more-btn {
+    position: absolute;
+    top: 56%;
+    left: 40%;
+    width: 15%;
+}
+
+#dessert3 .see-more-btn2 {
+    top: 55%;
+}
+
+/*2 or 3 dessert*/
+.container1, .container2, .container3 {
+    background-size:90%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#dessert1, #dessert2 {
     position: relative;
     padding-bottom: 10%;
 }
 
-#dessert3 {
-    position: relative;
-    padding-bottom: 16%;
-}
-
-.time-line {
-    position: sticky;
-    top: 0;
+#dessert {
+    margin-left: 0%;
+    margin-right: 0%;
+    justify-content: space-between;
 }
 
 h1 {
@@ -57,6 +75,10 @@ h1 {
 p {
     font-size: 120%;
     color: white;
+}
+
+.content1 {
+    padding: 0%;
 }
 
 .story {
@@ -88,6 +110,19 @@ a {
 #list-example,
 #list-example2, #list-example3 {
     margin-top: 120%;
+}
+
+.list-group{
+    --bs-list-group-active-bg:none;
+    --bs-list-group-active-border-color:none;
+    --bs-list-group-border-color:black;
+    --bs-list-group-bg:none;
+    --bs-list-group-active-color:none;
+    --bs-list-group-disabled-bg:none;
+}
+
+.list-group a:hover {
+    background-color:rgb(91, 7, 16);
 }
 
 #c_dragonbc,
@@ -122,16 +157,16 @@ a {
 
 .see-more-btn {
     position: absolute;
-    top: 60%;
-    left: 49%;
+    top: 63%;
+    left: 40%;
     width: 15%;
 }
 
 .see-more-btn2 {
     position: absolute;
-    top: 57%;
-    left: 49%;
-    width: 15%;
+    top: 63%;
+    left: 38%;
+    width: 20%;
     display: none;
 }
 
@@ -153,67 +188,121 @@ a {
     position: relative;
     padding-top: 5%;
 }
-.footer img{
-    position: absolute;
-    bottom: 85%;
-    width: 8%;
-}
+
 .footer .design {
     padding-left:10%;
 }
 .footer a {
+    background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+
+
+.footer a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
+
+.underline {
+    padding-bottom: 2px;
+    --bg-h: 2px !important;
+}
+
+.f-title-font h4{
+    font-size: 150%;
+}
+
+.footer a {
     text-decoration: none;
-    color: white;
-}
-.footer a:hover {
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    display: inline-block;
-    animation-name: coolVerticalShake; 
-    animation-iteration-count: infinite;
+    color: inherit;
+    line-height: 1;
+    font-size: 108% !important;
+    line-height: 155%;
 }
 
-/*Button-Animation*/
-.cssanimation {
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    display: inline-block;
+/*Footer-Logo*/
+svg { width: 100%; }
+rect { fill: #FE0304; }
+text { 
+  font-size: 40px;
+	font-weight: 100; 
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	fill: white;
+}
+.footer .flogo{
+    position: absolute;
+    bottom: 65%;
+    width: 90%;
+    left: 5%;
+}
+.footer .noHover a{
+    background: linear-gradient(0deg, 0deg, 0deg) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
 }
 
-.coolVerticalShake { animation-name: coolVerticalShake; animation-iteration-count: infinite }
+.f-p {
+    padding-left: 9% !important;
+    padding-right: 2% !important;
+}
 
-@keyframes coolVerticalShake {
-      3%, 21%, 39%, 57%, 74%, 92% { transform: translateY(5px) }
-      6%, 24%, 42%, 60%, 77%, 95% { transform: translateY(3px) }
-      9%, 27%, 45%, 63%, 80%, 98% { transform: translateY(-5px) }
+.f-p-end {
+    padding-right: 8% !important;
 }
 
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1218px wide or less)*/
-@media screen and (max-width: 1218px) {
+/*Responsive-Mobile*/
+@media screen and (max-width:767px) {
+    /*Footer*/
+    .footer img{
+        bottom: 95%;
+        width: 20%;
+    }
+    .footer .design {
+        padding-top: 7%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+    }
+    .footer .japan, .france, .italy, .china {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 
+    .f-p {
+        text-align: center;
+        padding-left: 0 !important;
+        padding-top: 15%;
+    }
+    .f-m-change {
+        text-align: center;
+        padding-left: 24% !important;
+        padding-right: 24% !important;
+    }
+    .f-m-space {
+        margin-top: 2%;
+    }
+
+    /*Footer-Logo*/
+    .footer .flogo{
+        bottom: 88%;
+        left: 10%;
+    }
+    svg { width: 85%; }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1264px wide or less)*/
+@media screen and (max-width: 1264px) {
     .b-content2 p,
-    .b-content3 p, .b-content4 {
+    .b-content3 p, .b-content4 p {
         font-size: 90%;
-    }
-
-    /*sugar coated haws*/
-    .b-content3 p {
-        margin-top: 35%;
-    }
-
-    /*yang zhi gao lu*/
-    .b-content4 p {
-        margin-top: 45%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1180px wide or less)*/
 @media screen and (max-width: 1180px) {
-    .b-content2 p {
-        margin-top: 20%;
-    }
-
     .see-more-btn {
         display: none;
     }
@@ -221,94 +310,109 @@ a {
     .see-more-btn2 {
         display: block;
     }
+}
 
-    #dessert,
-    dessert2, #dessert3 {
-        padding-bottom: 15%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1171px wide or less)*/
+@media screen and (max-width: 1171px) {
+    .b-content2 p, .b-content3 p, .b-content4 p {
+        font-size: 85%;
     }
 
-    .list-group {
-        width: 130%;
+    #dessert1, #dessert2, #dessert3 {
+        padding-bottom: 18%;
+    }
+
+    /*dragon beard candy*/
+    .b-content2 p {
+        margin-top: 25%;
+    }
+    
+    #dessert1 .see-more-btn2 {
+        top: 63%;
+    }
+
+    /*sugar-coated haws*/
+    #dessert2 .see-more-btn2 {
+        top: 65%;
+    }
+
+    /*yang zhi gao lu*/
+    .b-content4 p {
+        margin-top: 40%;
+    }
+
+    #dessert3 .see-more-btn2 {
+        top: 59%;
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1087px wide or less)*/
-@media screen and (max-width: 1087px) {
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1133px wide or less)*/
+@media screen and (max-width: 1133px) {
     h1 {
         font-size: 220%;
-    }
-
-    .list-group {
-        width: 130%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1055px wide or less)*/
 @media screen and (max-width: 1055px) {
     h1 {
-        font-size: 200%;
+        font-size: 220%;
         margin-top: 1%;
     }
-
-    .b-content2 p {
-        margin-top: 10%;
-    }
-
+    
     .flag {
-        width: 30px;
-        margin-top: 0%;
         margin-right: 3%;
     }
+}
 
-    .see-more-btn2 {
-        width: 20%;
-    }
-
-    #dessert,
-    #dessert2, #dessert3 {
-        padding-bottom: 20%;
-    }
-
-    .list-group {
-        width: 130%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1046px wide or less)*/
+@media screen and (max-width: 1046px) {
+    h1 {
+        font-size: 200%;
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1020px wide or less)*/
-@media screen and (max-width: 1020px) {
-    /*sugar coated haws*/
-    .b-content3 p {
-        margin-top: 25%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1028px wide or less)*/
+@media screen and (max-width: 1028px) {
+    .b-content4 p {
+        margin-top: 35%;
     }
 }
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1000px wide or less)*/
 @media screen and (max-width: 1000px) {
-    .list-group-item img {
-        width: 110%;
+    #dessert1 .see-more-btn2 .see-more-btn2 {
+        top: 66%;
     }
 
-    .see-more-btn2 {
-        top: 65%;
-        width: 20%;
+    #dessert1, #dessert2 {
+        padding-bottom: 20%;
     }
+}
 
-    .list-group {
-        width: 130%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (995px wide or less)*/
+@media screen and (max-width: 995px) {
+    #dessert1 .see-more-btn2 {
+        top: 66%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (960px wide or less)*/
 @media screen and (max-width: 960px) {
-    .b-content2 p {
-        font-size: 85%;
-        margin-top: 10%;
+    h1 {
+        font-size: 180%;
     }
 
-    #list-example,
-    #list-example2, #list-example3 {
-        margin-top: 150%;
+    .b-content2 p, .b-content3 p, .b-content4 p {
+        font-size: 85%;
+    }
+
+    .b-content2 p {
+        margin-top: 15%;
+    }
+
+    #dessert3 {
+        padding-bottom: 20%;
     }
 
     .list-group-item img {
@@ -317,90 +421,47 @@ a {
 
     /*yang zhi gao lu*/
     .b-content4 p {
-        margin-top: 34%;
+        margin-top: 35%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (935px wide or less)*/
 @media screen and (max-width: 935px) {
-    h1 {
-        font-size: 180%;
-    }
-
     p {
         font-size: 110%;
-    }
-
-    .b-content2 p {
-        margin-top: 10%;
-    }
-
-    .list-group {
-        width: 130%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (883px wide or less)*/
 @media screen and (max-width: 883px) {
     h1 {
-        font-size: 180%;
-        margin-top: 2%;
+        font-size: 150%;
+        margin-top: 4%;
+        margin-left: 2%;
     }
 
-    .b-content2 p {
+    .b-content2 p, .b-content3 p, .b-content4 p {
         font-size: 70%;
-        margin-top: 10%;
     }
 
-    .list-group {
-        width: 130%;
-    }
-
-    /*yang zhi gao lu*/
-    .b-content4 p {
-        margin-top: 30%;
+    .see-more-btn2 {
+        width: 30%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (860px wide or less)*/
 @media screen and (max-width: 860px) {
-    h1 {
-        font-size: 170%;
-    }
-
     p {
         font-size: 100%;
     }
 
-    .flag {
-        width: 10%;
-    }
-
-    .b-content2 p {
-        margin-top: 13%;
-    }
-
-    .list-group {
-        width: 130%;
-    }
-
-    /*sugar coated haws*/
-    .b-content3 p {
-        margin-top: 20%;
+    .b-content4 p {
+        margin-top: 30%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (806px wide or less)*/
 @media screen and (max-width: 806px) {
-    h1 {
-        font-size: 140%;
-        margin-top: 3%;
-    }
-
-    p {
-        font-size: 100%;
-    }
-
     .b-content2 p, .b-content3 p, .b-content4 p {
         font-size: 65%;
     }
@@ -409,61 +470,28 @@ a {
         margin-top: 13%;
     }
 
-    .list-group {
-        width: 150%;
-    }
-
     /*sugar coated haws*/
     .b-content3 p{
-        margin-top: 20%;
-    }
-
-    /*yang zhi gao lu*/
-    .b-content4 p {
-        margin-top: 40%;
+        margin-top: 15%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (770px wide or less)*/
 @media screen and (max-width: 770px) {
     .time-line {
-        width: 130%;
-    }
-
-    h1 {
-        font-size: 140%;
-        margin-top: 5%;
+        padding-left: 0;
     }
 
     p {
         font-size: 90%;
     }
 
-    .b-content2 p {
-        font-size: 60%;
-    }
-
-    .list-group-item {
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
-    }
-
-    .see-more-btn2 {
-        width: 30%;
-        top: 60%;
-    }
-
-    #dessert,
-    #dessert2, #dessert3 {
+    #dessert1, #dessert2, #dessert3 {
         padding-bottom: 20%;
     }
-}
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (745px wide or less)*/
-@media screen and (max-width: 745px) {
-    /*yang zhi gao lu*/
-    .b-content4 p {
-        margin-top: 35%;
+    #dessert2 .see-more-btn2 {
+        top: 65%;
     }
 }
 
@@ -489,59 +517,41 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (715px wide or less)*/
 @media screen and (max-width: 715px) {
+    .name {
+        padding-left: 20px;
+        margin-top:3px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (633px wide or less)*/
+@media screen and (max-width: 633px) {
     h1 {
         font-size: 120%;
     }
-
-    .name {
-        padding-left: 20px;
-        margin-top: 5px;
-    }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (660px wide or less)*/
-@media screen and (max-width: 650px) {
-    .time-line {
-        width: 150%;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (593px wide or less)*/
+@media screen and (max-width: 593px) {
+    #dessert {
+        display: flex;
+        justify-content: center;
     }
 
-    .b-content2 p {
-        font-size: 50%;
-        margin-top: 0%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (640px wide or less)*/
-@media screen and (max-width: 640px) {
-    h1 {
-        font-size: 110%;
-    }
-
-    p {
-        font-size: 85%;
-    }
-
-    .time-line {
-        width: 180%;
-    }
-
-    .b-content4 p {
-        margin-top: 30%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less)*/
-@media screen and (max-width: 600px) {
-    #dessert,
-    #dessert2, #dessert3 {
+    #dessert1,
+    #dessert2 {
         display: flex;
         flex-direction: column;
         padding-bottom: 15%;
     }
 
+    #dessert3 {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20%;
+    }
+
     .flag-name {
         margin: 0%;
-        padding-right: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -552,11 +562,6 @@ a {
         padding: 0%;
     }
 
-    .name {
-        padding: 0%;
-        margin-left: 0%;
-    }
-
     h1 {
         font-size: 150%;
         text-align: center;
@@ -564,11 +569,6 @@ a {
 
     .story {
         margin: 20px;
-        padding-right: 20px;
-    }
-
-    .title-line {
-        padding-right: 40px;
     }
 
     .time-line {
@@ -585,16 +585,20 @@ a {
         display: none;
     }
 
-    .product-img {
-        padding-right: 20px;
-    }
-
     .phone-dessert-img {
         display: block;
     }
 
     .see-more-btn2 {
-        top: 78%;
+        width: 50%;
+    }
+
+    #dessert1 .see-more-btn2, #dessert2 .see-more-btn2 {
+        top: 80%;
+    }
+
+    #dessert3 .see-more-btn2 {
+        top: 75%;
     }
 
     /*sugar coated haws*/
@@ -602,50 +606,17 @@ a {
         margin-top: 15%;
     }
 
+    /*yang zhi gao lu*/
     .b-content4 p {
         margin-top: 20%;
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (582px wide or less)*/
-@media screen and (max-width: 582px) {
-    /*sugar coated haws*/
-    .b-content3 p {
-        margin-top: 5%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (578px wide or less)*/
-@media screen and (max-width: 578px) {
-    .b-content4 p {
-        margin-top: 10%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (575px wide or less)*/
-@media screen and (max-width: 575px) {
-    .b-content2 p, .b-content3 p {
-        margin-top: 38%;
-    }
-
-    .b-content4 p {
-        margin-top: 45%;
-    }
-
-    .content1 {
-        margin: 0%;
-    }
-}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
-    .container {
-        padding-left: 40px;
-        padding-right: 0px;
-    }
-
     h1 {
-        padding-right: 30px;
+        padding-right: 40px;
     }
 
     .time-line img {
@@ -673,7 +644,10 @@ a {
     }
     
     .flag-name {
+        display: flex;
+        flex-direction: column;
         padding-right: 0px;
+        text-align: center;
     }
 
     .see-more-btn2 {
