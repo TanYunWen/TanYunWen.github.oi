@@ -1,0 +1,705 @@
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.loop-up {
+    position: fixed;
+    right: 0%;
+    bottom: 1%;
+    z-index: 1;
+    transform: rotate(270deg);
+}
+
+/* Header */
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FED4D5;
+    padding: 10px;
+}
+
+#logo {
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.topnav a {
+    color: #000000;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #EECEE6;
+    color: black;
+}
+
+.contact-btn {
+    width: 130px;
+    margin-left: 19%;
+    border: 1px #C07778 solid;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topnav .contact-btn a {
+    color: #000000;
+    padding: 16px 49px;
+}
+
+.topnav .contact-btn:hover {
+    background-color: #EECEE6;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(238, 206, 230, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #C07778;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #000000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+h1 {
+    color: #C07778;
+}
+
+h2 {
+    color: #BC4545;
+    font-size: 300%;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #B17375;
+    font-weight: 500;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fee2e275;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropbtn {
+    background-color: #fee2e200;
+    color: #CE5959;
+    padding: 16px 70px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #fee2e275;
+    min-width: 185px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #EECEE6;
+}
+
+/* My Works */
+#myworks {
+    background-image: url("../images/6background.png");
+    background-size: cover;
+
+}
+
+.box3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content2 {
+    margin: auto;
+}
+
+.content2 {
+    margin-top: 70px;
+}
+
+.box3 .contact-btn {
+    margin-top: 190px;
+    margin-right: 150px;
+    height: 20px;
+}
+
+.box3 .contact-btn a {
+    color: #000000;
+    padding: 15px 49px;
+    text-decoration: none;
+}
+
+.box4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    z-index: -1;
+}
+
+.week {
+    display: flex;
+    align-items: center;
+}
+
+#week-1,
+#week-4,
+#week-7 {
+    width: 35%;
+    margin-left: 50px;
+}
+
+#week-2,
+#week-5,
+#week-8 {
+    width: 35%;
+}
+
+#week-3,
+#week-6,
+#week-9 {
+    width: 35%;
+    margin-right: 50px;
+}
+
+.b-w {
+    padding: 10px;
+}
+
+.b-w-button {
+    position: relative;
+}
+
+.b-w-img img {
+    border-radius: 10px;
+}
+
+.b-w-content,
+.b-w-content1 {
+    position: absolute;
+    left: 53px;
+    bottom: 40px;
+}
+
+.b-w-content h4,
+.b-w-content1 h4 {
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 15px;
+    color: #BC4545;
+}
+
+.b-w-content h3,
+.b-w-content1 h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.b-w-content h4 {
+    width: 50px;
+}
+
+.b-w-content1 h4 {
+    width: 90px;
+}
+
+.b-w-button img:hover {
+    transform: rotate(5deg);
+}
+
+/* Footer */
+#footer {
+    background-color: #FED4D5;
+}
+
+.box12 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    padding-bottom: 0%;
+}
+
+.box12 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.b-f1 h1 {
+    color: #C07778;
+}
+
+.f-myworks-menu h3 {
+    margin-top: 18px;
+}
+
+.menu,
+.f-myworks-menu1 {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.menu,
+.f-myworks-menu2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.f-contact {
+    padding-top: 20px;
+    background-color: #FED4D5;
+    z-index: 1;
+}
+
+.menu a:hover,
+.f-myworks a:hover,
+.f-contact a:hover {
+    color: #BC4545;
+}
+
+.box13 {
+    display: flex;
+    width: 97%;
+    margin: auto;
+    border: 1px #3A3C56 solid;
+    border-left: none;
+    border-right: none;
+}
+
+#copyright {
+    background-color: #FED4D5;
+    width: 100%;
+    padding: 3%;
+    z-index: 1;
+}
+
+#copyright p {
+    color: #957C7D;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1198px wide or less) */
+@media screen and (max-width: 1198px) {
+    .loop-up {
+        width: 5%;
+        top: 90%;
+        right: 3%;
+    }
+
+    .box1 {
+        background-color: #F6E6F2;
+    }
+
+    #logo {
+        margin: 30px 50px;
+    }
+
+    .topnav {
+        overflow: hidden;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
+    }
+
+    .topnav .icon {
+        height: 7%;
+        border: 1px #c07778 solid;
+        border-radius: 15px;
+        font-size: 200%;
+    }
+
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        height: 40px;
+        right: 5%;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    #myTopnav .contact-btn {
+        border: none;
+    }
+
+    #myTopnav .contact-btn:hover {
+        background-color: white;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
+@media screen and (max-width: 1100px) {
+    .topnav a.icon {
+        margin-right: 1.5%;
+    }
+
+    .box12 {
+        padding: 10px;
+        padding-bottom: 0%;
+    }
+
+    #copyright {
+        padding: 20px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (950px wide or less) */
+@media screen and (max-width: 950px) {
+    .loop-up {
+        margin-right: 6px;
+    }
+
+    .box12 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .b-f1 {
+        background-color: #FED4D5;
+        z-index: 1;
+    }
+
+    .b-f1 h1 {
+        margin-top: 10px;
+        padding: 20px 20px;
+    }
+
+    .f-myworks {
+        background-color: #FED4D5;
+        z-index: 1;
+    }
+
+    .menu {
+        background-color: #FED4D5;
+        padding-right: 0%;
+        z-index: 1;
+    }
+
+    .f-myworks-menu1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-myworks-menu2 {
+        padding: 0%;
+    }
+
+    .f-contact {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    #copyright {
+        padding: 30px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+@media screen and (max-width: 900px) {
+    .loop-up {
+        right: 5%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (850px wide or less) */
+@media screen and (max-width: 850px) {
+    .week {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #week-1,
+    #week-4,
+    #week-7 {
+        width: 45%;
+        margin-left: 20px;
+    }
+
+    #week-2,
+    #week-5,
+    #week-8 {
+        width: 45%;
+        margin-right: 20px;
+    }
+
+    #week-3,
+    #week-6,
+    #week-9 {
+        width: 45%;
+        margin-right: 20px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
+@media screen and (max-width: 800px) {
+    .topnav a.icon {
+        margin-right: 3%;
+    }
+
+    .loop-up {
+        right: 5%;
+    }
+
+    .week {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #week-1,
+    #week-4,
+    #week-7 {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    #week-2,
+    #week-5,
+    #week-8 {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    #week-3,
+    #week-6,
+    #week-9 {
+        width: 90%;
+        margin-right: 0px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (750px wide or less) */
+@media screen and (max-width: 750px) {}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
+@media screen and (max-width: 700px) {
+    .topnav a.icon {
+        margin-left: 20px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
+@media screen and (max-width: 663px) {
+    .topnav a.icon {
+        margin-right: 5%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .topnav a.icon {
+        margin-right: 6%;
+    }
+
+    .loop-up {
+        right: 6%;
+    }
+
+    .dropdown-content {
+        min-width: 182px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
+@media screen and (max-width: 550px) {
+    .loop-up {
+        margin-right: 7px;
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .content2 h2 {
+        margin-right: 20px;
+    }
+
+
+    .dropbtn {
+        padding: 16px 50px;
+    }
+
+    .dropdown-content {
+        min-width: 145px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
+@media screen and (max-width: 500px) {
+    .topnav a.icon {
+        margin-right: 7%;
+    }
+
+    .loop-up {
+        margin-right: 10px;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+@media screen and (max-width: 414px) {
+    .loop-up {
+        top: 600px;
+        right: -20%;
+    }
+
+    #logo {
+        margin-left: 30px;
+    }
+
+    #logo h1 {
+        padding-left: 5px;
+    }
+
+    .box1 {
+        padding: 0%;
+    }
+
+    .box2 {
+        padding: 50px 30px;
+    }
+
+    .topnav .icon {
+        height: 3.5%;
+        font-size: 150%;
+    }
+
+    .topnav a.icon {
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .dropdown-content {
+        min-width: 132px;
+    }
+}

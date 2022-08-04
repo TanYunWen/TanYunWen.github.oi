@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Assignment 1_Contactpage -->
+    <title>联系</title>
+    <script src="https://kit.fontawesome.com/0e6b5af501.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bcontainer">
+        <!-- Container -->
+        <div class="container">
+            <div class="loop-up">
+                <a href="../contact/contact.html"><img src="../images/1loop pink arrow.gif" width="120px"></a>
+            </div>
+
+            <!-- Header -->
+            <div id="header">
+                <div class="box1">
+                    <div id="logo">
+                        <a href="../index.html"><img src="../images/logo.png" width="80px"></a>
+                        <a href="../index.html">
+                            <h1>个人博客</h1>
+                        </a>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <div class="overlay-content">
+                            <a href="../index.html">首页</a>
+                            <a href="../about/about.html">简介</a>
+                            <a href="../myworks/myworks.html">作品集</a>
+                            <a href="../myfavourite/myfavourite.html">我的爱好</a>
+                            <a href="contact.html">联系</a>
+                        </div>
+                    </div>
+
+                    <div class="topnav" id="myTopnav">
+                        <a href="../index.html">首页</a>
+                        <a href="../about/about.html">简介</a>
+                        <a href="../myworks/myworks.html">作品集</a>
+                        <a href="../myfavourite/myfavourite.html">我的爱好</a>
+
+                        <div class="contact-btn">
+                            <a href="contact.html">联系</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                            <i id="icon" class="fa fa-bars"></i></a>
+                    </div>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("icon").style.display = "none";
+                            document.getElementById("myNav").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("icon").style.display = "block";
+                            document.getElementById("myNav").style.width = "0%";
+                        }
+                    </script>
+                </div>
+
+                <!-- Contact -->
+                <div id="contact">
+                    <div class="title">
+                        <div class="box2">
+                            <h2>联系</h2>
+
+                            <div class="box3">
+                                <div class="b-contact">
+                                    <form name="registration" action="../submit.html" target="_blank">
+                                        <h3>保持联系</h3>
+
+                                        <div class="bemail">
+                                            <input type="email" name="email" placeholder="您的邮件" required>
+                                        </div>
+                                        <br>
+
+                                        <div class="bsubject">
+                                            <select name="subject" required>
+                                                <option value="">主题</option>
+                                                <option value="推荐小说">推荐小说</option>
+                                                <option value="推荐动漫">推荐动漫</option>
+                                                <option value="推荐漫画">推荐漫画</option>
+                                                <option value="推荐甜点">推荐甜点</option>
+                                                <option value="其他">其他</option>
+                                            </select>
+                                        </div>
+                                        <br>
+
+                                        <div class="bmessage">
+                                            <textarea name="message" rows="10" cols="30" placeholder="信息"
+                                                required></textarea>
+                                        </div>
+                                        <br>
+
+                                        <div class="b-btn">
+                                            <input type="submit" value="现在提交">
+                                        </div>
+                                    </form>
+
+                                    <div class="contact-b-img">
+                                        <img src="../contact/images/1slideimg.jpg" width="90%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div id="box4">
+                        <div class="contact-no">
+                            <div class="content1">
+                                <div class="c5-img">
+                                    <img src="../images/phone.png" width="100px" height="100px">
+                                    <h3>电话</h3>
+                                </div>
+
+                                <div id="phone">
+                                    <p>018-2510054</p>
+                                </div>
+                            </div>
+
+                            <div class="content2">
+                                <div class="c5-img">
+                                    <img src="../images/email.png" width="100px" height="100px">
+                                    <h3>邮件</h3>
+                                </div>
+
+                                <div id="email">
+                                    <p>tanyunwen1192@e.newera.edu.my</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div id="footer">
+                        <div class="content6">
+                            <div class="box12">
+                                <div class="b-f1">
+                                    <a href="../index.html">
+                                        <h1>个人博客</h1>
+                                    </a>
+                                </div>
+
+                                <div class="menu">
+                                    <h3>菜单</h3>
+                                    <a href="../index.html">首页</a>
+                                    <a href="../about/about.html">简介</a>
+                                    <a href="../myworks/myworks.html">作品集</a>
+                                    <a href="../myfavourite/myfavourite.html">我的爱好</a>
+                                    <a href="contact.html">联系</a>
+                                </div>
+
+                                <div class="f-myworks">
+                                    <div class="f-myworks-menu">
+                                        <h3>作品集</h3>
+                                        <div class="f-myworks-menu1">
+                                            <div class="f-myworks-menu2">
+                                                <a href="https://1drv.ms/p/s!AjhhJh45IOBkglJ8MVU-jq5_cw5b?e=VsW4wx"
+                                                    target="_blank">第
+                                                    1 周</a>
+                                                <a href="/week2/index.html" target="_blank">第 2 周</a>
+                                                <a href="/week3/week3.html" target="_blank">第 3 周</a>
+                                                <a href="https://tanyunwen.github.io/#week4" target="_blank">第 4 周</a>
+                                                <a href="/week5/week5.html" target="_blank">第 5 周</a>
+                                            </div>
+                                            <div class="f-myworks-menu2">
+                                                <a href="/week6/week6.html" target="_blank">第 6 周</a>
+                                                <a href="/week7/week7.html" target="_blank">第 7 周</a>
+                                                <a href="/week8/week8.html" target="_blank">第 8 周</a>
+                                                <a href="/week9/week9.html" target="_blank">第 9 周</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="f-contact">
+                                    <a href="https://www.facebook.com/wenny.tan.142/" target="_blank"><img
+                                            src="../images/f-facebook.png" width="50px"></a>
+
+                                    <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><img
+                                            src="../images/email.png" width="50px"></a>
+
+                                    <a href="https://www.instagram.com/wenny.tan.142/?hl=en" target="_blank"><img
+                                            src="../images/f-ig.png" width="50px"></a>
+                                </div>
+                            </div>
+
+                            <div class="box13">
+                                <div id="copyright">
+                                    <p>版权所有 © 2022 个人博客.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

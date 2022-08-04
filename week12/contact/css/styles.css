@@ -1,0 +1,749 @@
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.loop-up {
+    position: fixed;
+    right: 0%;
+    bottom: 1%;
+    z-index: 1;
+    transform: rotate(270deg);
+}
+
+/* Header */
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FED4D5;
+    padding: 10px;
+}
+
+#logo {
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 {
+    width: 150px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.topnav a {
+    color: #000000;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #EECEE6;
+    color: black;
+}
+
+.contact-btn {
+    width: 130px;
+    margin-left: 19%;
+    border: 1px #C07778 solid;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.topnav .contact-btn a {
+    color: #000000;
+    padding: 16px 49px;
+}
+
+.topnav .contact-btn:hover {
+    background-color: #EECEE6;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(238, 206, 230, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    font-size: 36px;
+    color: #C07778;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #000000;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+h1 {
+    color: #C07778;
+}
+
+h3 {
+    color: #B17375;
+    font-weight: 500;
+}
+
+.title {
+    background-color: #FED4D5;
+    padding: 50px;
+    padding-top: 5px;
+}
+
+.box2 {
+    background-color: #ffffff2e;
+    padding: 50px;
+    padding-top: 0;
+    text-align: center;
+}
+
+h2 {
+    color: #BC4545;
+    font-size: 300%;
+    padding: 50px;
+}
+
+.box2 h2 {
+    margin-bottom: 0%;
+}
+
+h4 {
+    color: #CE5959;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+p {
+    color: #CE5959;
+    margin-top: -5%;
+}
+
+button {
+    width: 110px;
+    background-color: #FFFFFF;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px 3px rgba(81, 81, 249, 0.053);
+    border: none;
+}
+
+button a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
+button:hover {
+    background-color: #EECEE6;
+}
+
+/* Contact */
+.b-contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 6px;
+    width: 40%;
+    margin-left: 30px;
+    padding: 20px 30px;
+}
+
+form h3 {
+    color: #C07778;
+    font-weight: bold;
+}
+
+form .bemail input,
+.bmessage textarea {
+    width: 94%;
+    padding: 10px;
+}
+
+form .bsubject select {
+    width: 99.5%;
+    padding: 10px;
+}
+
+form .b-btn {
+    text-align: right;
+    margin: 3px;
+}
+
+form .b-btn input {
+    width: 110px;
+    background-color: #CE5959;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    color: #FFFFFF;
+}
+
+.contact-b-img {
+    width: 50%;
+}
+
+/*Content*/
+.contact-no {
+    background-image: url("../images/1backgroundimg.png");
+    background-size: cover;
+    display: flex;
+    padding: 20px;
+}
+
+.content1,
+.content2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px;
+    padding: 70px;
+    align-items: center;
+    border: 1px #FED4D5 solid;
+}
+
+.content1 h3,
+.content2 h3 {
+    font-size: 200%;
+    margin-left: 20px;
+}
+
+.content1 p,
+.content2 p {
+    margin-top: 5px;
+    font-size: 150%;
+    padding: 20px;
+}
+
+.content1 {
+    margin-left: 10px;
+}
+
+.c5-img {
+    display: flex;
+    margin-right: 3%;
+    align-items: center;
+}
+
+.content2 {
+    background-color: #EECEE6;
+}
+
+
+/* Footer */
+#footer {
+    background-color: #FED4D5;
+}
+
+.box12 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    padding-bottom: 0%;
+}
+
+.box12 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.b-f1 h1 {
+    color: #C07778;
+}
+
+.f-myworks-menu h3 {
+    margin-top: 18px;
+}
+
+.menu,
+.f-myworks-menu1 {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.menu,
+.f-myworks-menu2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.f-contact {
+    padding-top: 20px;
+    background-color: #FED4D5;
+    z-index: 1;
+}
+
+.menu a:hover,
+.f-myworks a:hover,
+.f-contact a:hover {
+    color: #BC4545;
+}
+
+.box13 {
+    display: flex;
+    width: 97%;
+    margin: auto;
+    border: 1px #3A3C56 solid;
+    border-left: none;
+    border-right: none;
+}
+
+#copyright {
+    background-color: #FED4D5;
+    width: 100%;
+    padding: 3%;
+    z-index: 1;
+}
+
+#copyright p {
+    color: #957C7D;
+    margin: 5px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1198px wide or less) */
+@media screen and (max-width: 1198px) {
+    .box1 {
+        background-color: #FED4D500;
+    }
+
+    .loop-up {
+        width: 5%;
+        top: 90%;
+        right: 3%;
+    }
+
+    #logo {
+        margin: 30px 50px;
+    }
+
+    .topnav {
+        overflow: hidden;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a:not(:first-child) {
+        /*expect for the first-child*/
+        display: none;
+    }
+
+    .topnav .icon {
+        height: 7%;
+        border: 1px #c07778 solid;
+        border-radius: 15px;
+        font-size: 200%;
+    }
+
+    .topnav a.icon {
+        /*float: right; /*will show the icon that i choose when the screen was 600px because the .topnav .icon is writed display none*/
+        display: block;
+        /*why will come out beause this display: block*/
+        position: absolute;
+        height: 40px;
+        right: 5%;
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    #myTopnav .contact-btn {
+        border: none;
+    }
+
+    #myTopnav .contact-btn:hover {
+        background-color: white;
+    }
+
+    .box2 {
+        padding: 0px;
+    }
+
+    .b-contact {
+        padding-bottom: 50px;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    form .bsubject select {
+        width: 100%;
+    }
+
+    .contact-b-img {
+        width: 60%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1100px wide or less) */
+@media screen and (max-width: 1100px) {
+    .topnav a.icon {
+        margin-right: 1.5%;
+    }
+
+    .box2 {
+        padding-bottom: 0px;
+    }
+
+    .box3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        padding: 10px 30px;
+    }
+
+    .b-contact {
+        align-items: center;
+    }
+
+    .bsubject {
+        width: 101%;
+    }
+
+    .box12 {
+        padding: 10px;
+        padding-bottom: 0%;
+    }
+
+    #copyright {
+        padding: 20px;
+    }
+
+    .contact-no {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content1 {
+        margin-bottom: 0%;
+        margin-left: 0%;
+    }
+
+    .content2 {
+        margin-top: 0%;
+    }
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (950px wide or less) */
+@media screen and (max-width: 950px) {
+    .loop-up {
+        margin-right: 6px;
+    }
+
+    .box12 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .b-f1 {
+        background-color: #FED4D5;
+        z-index: 1;
+    }
+
+    .b-f1 h1 {
+        margin-top: 10px;
+        padding: 20px 20px;
+    }
+
+    .f-myworks {
+        background-color: #FED4D5;
+        z-index: 1;
+    }
+
+    .menu {
+        background-color: #FED4D5;
+        padding-right: 0%;
+        z-index: 1;
+    }
+
+    .f-myworks-menu1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-myworks-menu2 {
+        padding: 0%;
+    }
+
+    .f-contact {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    #copyright {
+        padding: 30px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (900px wide or less) */
+@media screen and (max-width: 900px) {
+    .loop-up {
+        right: 5%;
+    }
+
+    form .bsubject select {
+        width: 101%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (800px wide or less) */
+@media screen and (max-width: 800px) {
+    .topnav a.icon {
+        margin-right: 3%;
+    }
+
+    .loop-up {
+        right: 5%;
+    }
+
+    .box3 {
+        display: flex;
+    }
+
+    .b-contact {
+        flex-direction: column-reverse;
+    }
+
+    form {
+        margin-top: 20px;
+        margin-left: 0%;
+        width: 45%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less) */
+@media screen and (max-width: 700px) {
+    .topnav a.icon {
+        margin-right: 4%;
+    }
+
+    .contact-b-img {
+        width: 79%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (663px wide or less) */
+@media screen and (max-width: 663px) {
+    .topnav a.icon {
+        margin-right: 5%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .bsubject {
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .topnav a.icon {
+        margin-right: 6%;
+    }
+
+    .loop-up {
+        right: 6%;
+    }
+
+    form .bsubject select {
+        width: 102%;
+    }
+
+    form .b-btn {
+        margin-right: 0px;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (550px wide or less) */
+@media screen and (max-width: 550px) {
+    #header .box2 h1 {
+        font-size: 350%;
+    }
+
+    .loop-up {
+        margin-right: 7px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less) */
+@media screen and (max-width: 500px) {
+    .topnav a.icon {
+        margin-right: 7%;
+    }
+
+    .loop-up {
+        margin-right: 10px;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+    .bsubject {
+        width: 102%;
+    }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
+@media screen and (max-width: 414px) {
+    .loop-up {
+        top: 600px;
+        right: -20%;
+    }
+
+    #logo {
+        margin-left: 30px;
+    }
+
+    #logo h1 {
+        padding-left: 5px;
+    }
+
+    #header {
+        padding-bottom: 50px;
+    }
+
+    .box1 {
+        padding: 0%;
+    }
+
+    .box2 {
+        padding: 5px 5px;
+    }
+
+    .topnav .icon {
+        height: 3.5%;
+        font-size: 150%;
+    }
+
+    .topnav a.icon {
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .title {
+        padding: 20px;
+    }
+
+    form {
+        width: 70%;
+        padding: 10px 20px;
+    }
+
+    form .bemail input,
+    .bmessage textarea {
+        width: 87.5%;
+        padding: 10px;
+    }
+
+    form .bsubject select {
+        width: 93%;
+        padding: 10px;
+    }
+
+    .contact-b-img {
+        width: 90%;
+    }
+
+    .c5-img {
+        align-items: center;
+    }
+
+    .c5-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content1 h3,
+    .content2 h3 {
+        font-size: 120%;
+    }
+
+    .content1 p,
+    .content2 p {
+        font-size: 100%;
+    }
+}
