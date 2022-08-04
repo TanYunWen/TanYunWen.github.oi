@@ -524,9 +524,7 @@ form .b-btn input {
     border-right: none;
 }
 
-.menu a:hover,
-.f-myworks a:hover,
-.f-contact a:hover {
+.menu a:hover, .f-myworks a:hover, .f-contact a:hover {
     color: #BC4545;
 }
 
@@ -745,7 +743,7 @@ form .b-btn input {
         display: flex;
         flex-direction: column;
     }
-
+    
     .f-myworks-menu2 {
         padding: 0%;
     }
@@ -1056,7 +1054,7 @@ form .b-btn input {
         margin-left: 31px;
         margin-bottom: 60px;
     }
-
+    
     .box8 h2 {
         margin: 20px;
     }
