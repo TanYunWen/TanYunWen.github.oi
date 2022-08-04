@@ -4,13 +4,8 @@ body {
     color: white !important;
 }
 
-.big-container {
-    max-width: 1400px;
-    margin: 0;
-}
-
 /*Logo*/
-.navbar-brand svg { width: 70%; }
+.navbar-brand svg { width: 50%; }
 rect { fill: #FE0304; }
 text { 
   font-size: 40px;
@@ -134,14 +129,6 @@ text {
     font-size: 176%;
 }
 
-
-/*3 dessert for china*/
-.container {
-    max-width: 1400px;
-    margin: 0;
-    padding: 0;
-}
-
 .time-line {
     z-index: 10;
     padding-right: 0%;
@@ -152,17 +139,17 @@ text {
 }
 
 /*dragon beard candy*/
-.container1 {
+.dragonbc {
     background-image: url("../images/c_dragonbc_bgimg.png");
 }
 
 /*sugar coated haws*/
-.container2 {
+.sugarch {
     background-image: url("../images/c_sugarch_bgimg.png");
 }
 
 /*yang zhi gao lu*/
-.container3 {
+.yangzgl {
     background-image: url("../images/c_yangzgl_bgimg.png");
 }
 
@@ -183,7 +170,7 @@ text {
 }
 
 /*2 or 3 dessert*/
-.container1, .container2, .container3 {
+.dragonbc, .sugarch, .yangzgl {
     background-size:90%;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -667,6 +654,17 @@ text {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (593px wide or less)*/
 @media screen and (max-width: 593px) {
+    .navbar-brand svg {
+        display: flex;
+        /* text-align: center; */
+        margin: auto;
+        margin-right: 0px;
+    }
+
+    #main {
+        margin-right: 0;
+    }
+
     #dessert {
         display: flex;
         justify-content: center;
@@ -693,8 +691,15 @@ text {
     }
 
     .flag {
-        margin-left: 0%;
-        padding: 0%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .name {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     h1 {
@@ -706,6 +711,14 @@ text {
         margin: 20px;
     }
 
+    .product-making .row {
+        margin-right: 0%;
+    }
+
+    .product-img {
+        margin-right: 0;
+    }
+
     .time-line {
         display: none;
     }
@@ -714,6 +727,7 @@ text {
         display: flex;
         flex-direction: column;
         margin: auto;
+        text-align: center;
     }
 
     .desktop-dessert-img {
@@ -785,6 +799,13 @@ text {
         text-align: center;
     }
 
+    .flag {
+        margin-right: 20px;
+    } 
+    .name {
+        margin-left: 20px;
+    }
+
     .see-more-btn2 {
         width: 50%;
         left: 40%;
@@ -796,5 +817,9 @@ text {
 
     .phone-dessert-img {
         padding-right: 25px;
+    }
+
+    .navbar-brand svg {
+        margin-right: 55px;
     }
 }
