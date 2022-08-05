@@ -86,8 +86,9 @@ body {
 }
 
 .topnav a.active {
-    background-color: #EECEE646;
+    background-color: #eecee6;
     color: #C07778;
+    padding: 10px;
 }
 
 .overlay {
