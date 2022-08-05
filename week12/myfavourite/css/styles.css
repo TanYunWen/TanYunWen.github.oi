@@ -80,6 +80,11 @@ body {
     display: none;
 }
 
+.topnav a.active {
+    background-color: #c07778;
+    color: white;
+}
+
 .overlay {
     position: fixed;
     height: 100%;
