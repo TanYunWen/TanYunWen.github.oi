@@ -85,6 +85,11 @@ body {
     display: none;
 }
 
+.topnav a.active {
+    background-color: #EECEE646;
+    color: #C07778;
+}
+
 .overlay {
     position: fixed;
     height: 100%;
@@ -125,11 +130,6 @@ body {
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-
-a.active {
-    background-color: #EECEE646;
-    color: #C07778;
 }
 
 h1 {
