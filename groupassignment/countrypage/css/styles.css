@@ -1,141 +1,74 @@
+@import "stylegeneral.css";
+
 body {
     background-color: #A91B2A;
     font-family: 'Asar', serif;
     color: white !important;
 }
 
-/*Logo*/
-.navbar-brand svg { width: 50%; }
-rect { fill: #FE0304; }
-text { 
-  font-size: 40px;
-	font-weight: 100; 
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	fill: rgb(244, 173, 41);
-}
-
-/*Header-Menu*/
-.sidenav {
-    height: 200%;
-    width: 0;
-    position: fixed;
-    z-index: 11;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 198%;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover,.sidenav a.active {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.navb {
-    display: flex;
-}
-
-.image-col {
-    display: flex;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-}
-.dessert {
-    width: 40%;
-}
-.image {
-    width: 40%;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    margin-right: 50px;
-}
-#j-img {
-    display: none;
-    background-color: #FFE5F8;
-}
-#j-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#f-img {
-    display: none;
-    background-color: rgba(9, 8, 8, 0.44);
-}
-#f-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#i-img {
-    display: none;
-    background-color: #ECD2C0;
-}
-#i-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#c-img {
-    display: none;
-    background-color: #A91B2A;
-}
-#c-dessert {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-}
-#j-dessert a{
-    font-size: 176%;
-}
-#f-dessert a{
-    font-size: 176%;
-}
-#i-dessert a{
-    font-size: 176%;
-}
-#c-dessert a{
-    font-size: 176%;
-}
-
+/* timeline */
 .time-line {
-    z-index: 10;
-    padding-right: 0%;
+    margin-top: 110px;
 }
 
-.title-line img {
-    width: 100%;
+.icon {
+    top: 30%;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: 110% !important;
+}
+
+ul {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+ul::before {
+    height: 133%;
+    width: 133%;
+    display: block;
+    position: absolute;
+    top: -18%;
+    left: 10px;
+}
+
+li {
+    margin: 18px 0;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+li::before {
+    height: 20px;
+    width: 20px;
+    content: "";
+    display: inline-block;
+    background-color: rgb(198, 107, 122);
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    margin-right: 6px;
+}
+
+li span {
+    position: relative;
+    left: -100%;
+    transition: left 300ms ease-in;
+}
+
+li:hover span {
+    left: 0;
+}
+
+.scrollspy-example {
+    padding-top: 100px;
+    padding-left: 90px;
 }
 
 /*dragon beard candy*/
@@ -170,13 +103,16 @@ text {
 }
 
 /*2 or 3 dessert*/
-.dragonbc, .sugarch, .yangzgl {
-    background-size:90%;
+.dragonbc,
+.sugarch,
+.yangzgl {
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-#dessert1, #dessert2 {
+#dessert1,
+#dessert2 {
     position: relative;
     padding-bottom: 10%;
 }
@@ -207,7 +143,8 @@ p {
 }
 
 .b-content2 p,
-.b-content3 p, .b-content4 p {
+.b-content3 p,
+.b-content4 p {
     font-size: 100%;
     margin-left: 50px;
 }
@@ -217,7 +154,7 @@ p {
     margin-top: 30%;
 }
 
-.b-content4 p { 
+.b-content4 p {
     margin-top: 40%;
 }
 
@@ -229,25 +166,27 @@ a {
 }
 
 #list-example,
-#list-example2, #list-example3 {
+#list-example2,
+#list-example3 {
     margin-top: 120%;
 }
 
-.list-group{
-    --bs-list-group-active-bg:none;
-    --bs-list-group-active-border-color:none;
-    --bs-list-group-border-color:black;
-    --bs-list-group-bg:none;
-    --bs-list-group-active-color:none;
-    --bs-list-group-disabled-bg:none;
+.list-group {
+    --bs-list-group-active-bg: none;
+    --bs-list-group-active-border-color: none;
+    --bs-list-group-border-color: black;
+    --bs-list-group-bg: none;
+    --bs-list-group-active-color: none;
+    --bs-list-group-disabled-bg: none;
 }
 
 .list-group a:hover {
-    background-color:rgb(91, 7, 16);
+    background-color: rgb(91, 7, 16);
 }
 
 #c_dragonbc,
-#c_sugarch, #c_yangzgl {
+#c_sugarch,
+#c_yangzgl {
     padding: 0%;
 }
 
@@ -303,91 +242,25 @@ a {
     }
 }
 
-
-/*Footer*/
-.footer {
-    background-color: #4C4751;
-    position: relative;
-    padding-top: 5%;
-}
-
-.footer .design {
-    padding-left:10%;
-}
-.footer a {
-    background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
-    transition: background-size 350ms;
-    --bg-h: 100%;
-}
-
-
-.footer a:where(:hover, :focus-visible) {
-    background-size: 100% var(--bg-h);
-    background-position-x: left;
-}
-
-.underline {
-    padding-bottom: 2px;
-    --bg-h: 2px !important;
-}
-
-.f-title-font h4{
-    font-size: 150%;
-}
-
-.footer a {
-    text-decoration: none;
-    color: inherit;
-    line-height: 1;
-    font-size: 108% !important;
-    line-height: 155%;
-}
-
-/*Footer-Logo*/
-svg { width: 100%; }
-rect { fill: #FE0304; }
-text { 
-  font-size: 40px;
-	font-weight: 100; 
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	fill: white;
-}
-.footer .flogo{
-    position: absolute;
-    bottom: 65%;
-    width: 90%;
-    left: 5%;
-}
-.footer .noHover a{
-    background: linear-gradient(0deg, 0deg, 0deg) no-repeat right bottom / 0 var(--bg-h);
-    transition: background-size 350ms;
-    --bg-h: 100%;
-}
-
-.f-p {
-    padding-left: 9% !important;
-    padding-right: 2% !important;
-}
-
-.f-p-end {
-    padding-right: 8% !important;
-}
-
-
 /*Responsive-Mobile*/
 @media screen and (max-width:767px) {
+
     /*Footer*/
-    .footer img{
+    .footer img {
         bottom: 95%;
         width: 20%;
     }
+
     .footer .design {
         padding-top: 7%;
         padding-bottom: 5%;
         padding-left: 5%;
     }
-    .footer .japan, .france, .italy, .china {
+
+    .footer .japan,
+    .france,
+    .italy,
+    .china {
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -397,28 +270,34 @@ text {
         padding-left: 0 !important;
         padding-top: 15%;
     }
+
     .f-m-change {
         text-align: center;
         padding-left: 24% !important;
         padding-right: 24% !important;
     }
+
     .f-m-space {
         margin-top: 2%;
     }
 
     /*Footer-Logo*/
-    .footer .flogo{
+    .footer .flogo {
         bottom: 88%;
         left: 10%;
     }
-    svg { width: 85%; }
-}
 
+    svg {
+        width: 85%;
+    }
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1264px wide or less)*/
 @media screen and (max-width: 1264px) {
+
     .b-content2 p,
-    .b-content3 p, .b-content4 p {
+    .b-content3 p,
+    .b-content4 p {
         font-size: 90%;
     }
 }
@@ -436,11 +315,16 @@ text {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1171px wide or less)*/
 @media screen and (max-width: 1171px) {
-    .b-content2 p, .b-content3 p, .b-content4 p {
+
+    .b-content2 p,
+    .b-content3 p,
+    .b-content4 p {
         font-size: 85%;
     }
 
-    #dessert1, #dessert2, #dessert3 {
+    #dessert1,
+    #dessert2,
+    #dessert3 {
         padding-bottom: 18%;
     }
 
@@ -448,7 +332,7 @@ text {
     .b-content2 p {
         margin-top: 25%;
     }
-    
+
     #dessert1 .see-more-btn2 {
         top: 63%;
     }
@@ -464,7 +348,7 @@ text {
     }
 
     #dessert3 .see-more-btn2 {
-        top: 59%;
+        top: 58%;
     }
 }
 
@@ -481,7 +365,7 @@ text {
         font-size: 220%;
         margin-top: 1%;
     }
-    
+
     .flag {
         margin-right: 3%;
     }
@@ -503,19 +387,23 @@ text {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (1000px wide or less)*/
 @media screen and (max-width: 1000px) {
-    #dessert1 .see-more-btn2 .see-more-btn2 {
+
+    #dessert1 .see-more-btn2,
+    #dessert2 .see-more-btn2 {
         top: 66%;
     }
 
-    #dessert1, #dessert2 {
-        padding-bottom: 20%;
+    #dessert1 .see-more-btn2,
+    #dessert2 .see-more-btn2,
+    #dessert3 .see-more-btn2 {
+        width: 35%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (995px wide or less)*/
 @media screen and (max-width: 995px) {
-    #dessert1 .see-more-btn2 {
-        top: 66%;
+    #dessert2 .see-more-btn2 {
+        top: 69%;
     }
 }
 
@@ -525,7 +413,9 @@ text {
         font-size: 180%;
     }
 
-    .b-content2 p, .b-content3 p, .b-content4 p {
+    .b-content2 p,
+    .b-content3 p,
+    .b-content4 p {
         font-size: 85%;
     }
 
@@ -552,22 +442,25 @@ text {
     p {
         font-size: 110%;
     }
+
+    #dessert2 .see-more-btn2 {
+        top: 65.5%;
+    }
+}
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (883px wide or less)*/
-@media screen and (max-width: 883px) {
+@media screen and (max-width: 884px) {
     h1 {
         font-size: 150%;
         margin-top: 4%;
         margin-left: 2%;
     }
 
-    .b-content2 p, .b-content3 p, .b-content4 p {
+    .b-content2 p,
+    .b-content3 p,
+    .b-content4 p {
         font-size: 70%;
-    }
-
-    .see-more-btn2 {
-        width: 30%;
     }
 }
 
@@ -584,7 +477,10 @@ text {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (806px wide or less)*/
 @media screen and (max-width: 806px) {
-    .b-content2 p, .b-content3 p, .b-content4 p {
+
+    .b-content2 p,
+    .b-content3 p,
+    .b-content4 p {
         font-size: 65%;
     }
 
@@ -593,22 +489,20 @@ text {
     }
 
     /*sugar coated haws*/
-    .b-content3 p{
+    .b-content3 p {
         margin-top: 15%;
     }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (770px wide or less)*/
 @media screen and (max-width: 770px) {
-    .time-line {
-        padding-left: 0;
-    }
-
     p {
         font-size: 90%;
     }
 
-    #dessert1, #dessert2, #dessert3 {
+    #dessert1,
+    #dessert2,
+    #dessert3 {
         padding-bottom: 20%;
     }
 
@@ -641,7 +535,7 @@ text {
 @media screen and (max-width: 715px) {
     .name {
         padding-left: 20px;
-        margin-top:3px;
+        margin-top: 3px;
     }
 }
 
@@ -685,8 +579,6 @@ text {
 
     .flag-name {
         margin: 0%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
@@ -719,10 +611,6 @@ text {
         margin-right: 0;
     }
 
-    .time-line {
-        display: none;
-    }
-
     .content1 {
         display: flex;
         flex-direction: column;
@@ -742,7 +630,8 @@ text {
         width: 50%;
     }
 
-    #dessert1 .see-more-btn2, #dessert2 .see-more-btn2 {
+    #dessert1 .see-more-btn2,
+    #dessert2 .see-more-btn2 {
         top: 80%;
     }
 
@@ -768,11 +657,9 @@ text {
         padding-right: 40px;
     }
 
-    .time-line img {
-        padding-right: 0px;
-    }
-
-    .b-content2 p, .b-content3 p, .b-content4 p {
+    .b-content2 p,
+    .b-content3 p,
+    .b-content4 p {
         margin-left: 30%;
     }
 
@@ -787,11 +674,11 @@ text {
     .product-making .row {
         margin: 0%;
     }
-    
+
     .b-content3 p {
         margin-top: 35%;
     }
-    
+
     .flag-name {
         display: flex;
         flex-direction: column;
@@ -801,7 +688,8 @@ text {
 
     .flag {
         margin-right: 20px;
-    } 
+    }
+
     .name {
         margin-left: 20px;
     }
