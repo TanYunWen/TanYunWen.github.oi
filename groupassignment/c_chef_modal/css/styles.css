@@ -1,0 +1,22 @@
+.modal-content {
+    border-radius: 23px;
+}
+
+.modal-header, .modal-footer {
+    background-color: rgba(169, 27, 42, 1);
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+
+h4 {
+    color: white;
+}
+
+.button {
+    background-color: #EA4649;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    background-color: #D33742;
+    color: white;
+}
