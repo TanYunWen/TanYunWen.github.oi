@@ -8,7 +8,7 @@ body {
 
 /* timeline */
 .time-line {
-    margin-top: 110px;
+    margin-top: 200px;
 }
 
 .icon {
@@ -41,6 +41,7 @@ ul::before {
 li {
     margin: 18px 0;
     font-weight: bold;
+    color: #ef8993;
     overflow: hidden;
 }
 
@@ -49,11 +50,15 @@ li::before {
     width: 20px;
     content: "";
     display: inline-block;
-    background-color: rgb(198, 107, 122);
+    background-color: rgba(251, 132, 144, 0.973);
     border-radius: 50%;
     position: relative;
     top: 4px;
     margin-right: 6px;
+}
+
+li:hover:before {
+    background-color: white;
 }
 
 li span {
@@ -67,7 +72,7 @@ li:hover span {
 }
 
 .scrollspy-example {
-    padding-top: 100px;
+    padding-top: 140px;
     padding-left: 90px;
 }
 
@@ -559,6 +564,11 @@ a {
         margin-right: 0;
     }
 
+    .scrollspy-example {
+        padding-top: 25%;
+        padding-left: 10%;
+    }
+
     #dessert {
         display: flex;
         justify-content: center;
@@ -626,7 +636,9 @@ a {
         display: block;
     }
 
-    .see-more-btn2 {
+    #dessert1 .see-more-btn2,
+    #dessert2 .see-more-btn2,
+    #dessert3 .see-more-btn2 {
         width: 50%;
     }
 
@@ -653,8 +665,8 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
-    h1 {
-        padding-right: 40px;
+    .time-line {
+        display: none;
     }
 
     .b-content2 p,
@@ -686,21 +698,9 @@ a {
         text-align: center;
     }
 
-    .flag {
-        margin-right: 20px;
-    }
-
-    .name {
-        margin-left: 20px;
-    }
-
     .see-more-btn2 {
         width: 50%;
         left: 40%;
-    }
-
-    .story p {
-        padding-right: 20px;
     }
 
     .phone-dessert-img {
