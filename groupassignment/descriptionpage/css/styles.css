@@ -1,0 +1,193 @@
+@import "stylegeneral.css";
+
+body {
+    background-color: rgb(198, 107, 122);
+    font-family: 'Asar', serif;
+}
+
+/*Story*/
+.detail {
+    margin-top: 12%;
+}
+
+.title,
+.r {
+    margin: 5% 0%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 240%;
+    color: #A91B2A;
+}
+
+h2 {
+    text-align: center;
+    color: #580101;
+}
+
+.line {
+    margin-bottom: 5%;
+}
+
+.dividing-line {
+    margin: 5% 0%;
+}
+
+.line2,
+.line2-r {
+    text-align: right;
+}
+
+.story-content1,
+.story-content2 {
+    background-color: #D4B2B6;
+}
+
+p {
+    padding: 20px;
+    font-size: 120%;
+    color: #A91B2A;
+}
+
+.story-content1 {
+    margin-right: 4px;
+}
+
+.story-content2 {
+    margin-left: 4px;
+}
+
+.dividing-line {
+    text-align: center;
+}
+
+/*Recipe*/
+.i .img-i {
+    width: 15%;
+}
+
+.i .title-i {
+    width: 85%;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: #580101;
+}
+
+.ingredients {
+    color: #580101;
+}
+
+/*Steps*/
+.r .img-r {
+    width: 10%;
+}
+
+.r .title-r {
+    width: 10%;
+}
+
+.title-r h2 {
+    text-align: left;
+}
+
+.line2-r {
+    width: 80%;
+}
+
+#flush-collapseOne,
+#flush-collapseOne img,
+#flush-collapseTwo,
+#flush-collapseTwo img,
+#flush-collapseThree,
+#flush-collapseThree img,
+#flush-collapseFour,
+#flush-collapseFour img,
+#flush-collapseFive,
+#flush-collapseFive img,
+#flush-collapseSix,
+#flush-collapseSix img,
+#flush-collapseSeven,
+#flush-collapseSeven img {
+    padding: 20px;
+}
+
+/*Slide Dessert*/
+.slider-container {
+    width: 100%;
+    height: 446px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-container {
+  width: 4320px;
+  height: 446px;
+  clear: both;
+  position: relative;
+  animation-name: slider;
+  animation-duration: 30s;
+  animation-delay: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+}
+
+.slider-image {
+  width: auto;
+  height: 446px;
+  float: left;
+  position: relative;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+      transform: translate(-1080px, 0);
+  }
+  66% {
+      transform: translate(-2160px, 0);
+  }
+  100% {
+      transform: translate(-3690px, 0);
+  } 
+}
+
+
+
+@media screen and (max-width: 786px) {
+    .story-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .story-content1 {
+        margin-right: 0;
+    }
+
+    .story-content2 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .i-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        margin: 48px 0px;
+    }
+
+    .ingredients {
+        margin-top: 40px;
+    }
+}
