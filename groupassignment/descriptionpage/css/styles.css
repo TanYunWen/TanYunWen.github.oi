@@ -6,7 +6,7 @@ body {
 }
 
 /*Story*/
-.detail {
+.detail, .detail2, .detail3 {
     margin-top: 12%;
 }
 
@@ -67,14 +67,42 @@ p {
 /*Recipe*/
 .recipe {
     background-image: url("../images/c_bgwindowimg_l1.png");
-    background-size: 23%;
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: left top;
 }
 
 .detail {
     background-image: url("../images/c_bgwindowimg_r1.png");
-    background-size: 23%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.recipe2 {
+    background-image: url("../images/c_bgwindowimg_l2.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.detail2 {
+    background-image: url("../images/c_bgwindowimg_r2.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.recipe3 {
+    background-image: url("../images/c_bgwindowimg_l3.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.detail3 {
+    background-image: url("../images/c_bgwindowimg_r3.png");
+    background-size: 15%;
     background-repeat: no-repeat;
     background-position: bottom right;
 }
@@ -131,7 +159,8 @@ h3 {
 #flush-collapseSix,
 #flush-collapseSix img,
 #flush-collapseSeven,
-#flush-collapseSeven img {
+#flush-collapseSeven img, #flush-collapseEight,
+#flush-collapseEight img {
     padding: 20px;
 }
 
