@@ -7,6 +7,10 @@ body {
 }
 
 /* timeline */
+.size li span {
+    font-size: 65%;
+}
+
 .time-line {
     margin-top: 200px;
 }
@@ -566,7 +570,7 @@ a {
 
     .scrollspy-example {
         padding-top: 25%;
-        padding-left: 10%;
+        padding-left: 0%;
     }
 
     #dessert {
