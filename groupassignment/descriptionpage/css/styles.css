@@ -537,7 +537,7 @@ h3 {
 
     .step-box {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .step-img img {
