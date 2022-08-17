@@ -479,7 +479,6 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (879px wide or less)*/
 @media screen and (max-width: 879px) {
-
     /*yang zhi gan lu*/
     #dessert3 {
         padding-bottom: 160px;
@@ -494,6 +493,17 @@ a {
 
     .b-content4 p {
         margin-top: 30%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (860px wide or less)*/
+@media screen and (max-width: 850px) {
+    #dessert1 {
+        padding-bottom: 130px;
+    }
+
+    #dessert1 .see-more-btn2 {
+        top: 65%;
     }
 }
 
@@ -559,7 +569,6 @@ a {
     }
 }
 
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (730px wide or less)*/
 @media screen and (max-width: 730px) {
     h1 {
@@ -590,11 +599,22 @@ a {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (641px wide or less)*/
-@media screen and (max-width: 641px) {
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (661px wide or less)*/
+@media screen and (max-width: 661px) {
+    #dessert2 .see-more-btn2 {
+        top: 68%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (650px wide or less)*/
+@media screen and (max-width: 650px) {
     .name h1 {
         font-size: 120%;
     }
+
+    #dessert3 .see-more-btn2 {
+        top: 60%;
+    }    
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (633px wide or less)*/
@@ -647,19 +667,16 @@ a {
 
     .flag-name {
         margin: 0%;
-        align-items: center;
+        justify-content: center;
     }
 
     .flag {
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0;
+        width: 0;
     }
 
     .name {
-        margin-left: 0;
+        width: 50%;
         padding-left: 0;
-        padding-right: 0;
     }
 
     h1 {
@@ -706,7 +723,7 @@ a {
 
     #dessert1 .see-more-btn2,
     #dessert2 .see-more-btn2 {
-        top: 80%;
+        top: 75%;
     }
 
     #dessert3 .see-more-btn2 {
@@ -758,8 +775,14 @@ a {
     .flag-name {
         display: flex;
         flex-direction: column;
-        padding-right: 0px;
-        text-align: center;
+    }
+
+    .flag {
+        width: 100%;
+    }
+
+    .name {
+        width: 85%;
     }
 
     .see-more-btn2 {
