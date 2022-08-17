@@ -6,9 +6,7 @@ body {
 }
 
 /*Story*/
-.detail,
-.detail2,
-.detail3 {
+.detail, .detail2, .detail3 {
     margin-top: 12%;
 }
 
@@ -46,6 +44,7 @@ h2 {
 .story-content1,
 .story-content2 {
     background-color: #D4B2B6;
+    text-align: justify;
 }
 
 p {
@@ -161,8 +160,7 @@ h3 {
 #flush-collapseSix,
 #flush-collapseSix img,
 #flush-collapseSeven,
-#flush-collapseSeven img,
-#flush-collapseEight,
+#flush-collapseSeven img, #flush-collapseEight,
 #flush-collapseEight img {
     padding: 20px;
 }
@@ -173,6 +171,7 @@ h3 {
 
 .step-box {
     display: flex;
+    flex-direction: row-reverse;
 }
 
 /*Slide Dessert*/
@@ -186,6 +185,10 @@ h3 {
     width: 24.7%;
     height: 300px;
     object-fit: cover;
+}
+
+.imgslider .carousel-item{
+    transition: transform 10s linear !important;
 }
 
 /*Recommendation*/
@@ -209,7 +212,7 @@ h3 {
     margin-left: 16px;
     margin-bottom: 20px;
     font-weight: 600;
-    text-align: center;
+    text-align: center;   
 }
 
 .title-rm p {
@@ -333,8 +336,7 @@ h3 {
     }
 }
 
-/*All*/
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px){
     .step-img img {
         width: 90%;
     }
@@ -351,7 +353,6 @@ h3 {
 }
 
 @media screen and (max-width: 1050px) {
-
     /*Tablet Recommendation*/
     .recommendation {
         display: none;
@@ -396,8 +397,7 @@ h3 {
         padding: 20px;
     }
 
-    .rm-detail2 p,
-    a {
+    .rm-detail2 p, a {
         color: black;
         margin-bottom: 0;
         font-size: 100%;
@@ -408,7 +408,7 @@ h3 {
     .title2-rm h3 {
         font-size: 150%;
     }
-
+    
     .rm-detail2 a:hover {
         color: #580101;
         text-decoration: underline;
@@ -416,7 +416,6 @@ h3 {
 }
 
 @media screen and (max-width: 1013px) {
-
     /*Slide Dessert*/
     .sd-img2 img {
         width: 24.6%;
@@ -426,12 +425,19 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
-
-    /*Tablet Recommendation*/
+/*Tablet Recommendation*/
     .rcmd2 .restaurant {
         width: 100%;
         height: 500px;
         object-fit: cover;
+    }
+
+    .i .img-i {
+        width: 20%;
+    }
+
+    .i .title-i {
+        width: 70%;
     }
 }
 
@@ -442,7 +448,6 @@ h3 {
 }
 
 @media screen and (max-width: 814px) {
-
     /*Slide Dessert*/
     .sd-img img {
         width: 32.9%;
@@ -492,8 +497,21 @@ h3 {
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
+    .img-p-n {
+        display: none;
+    }
 
+    .footer-center {
+        align-items: center;
+    }
+
+    .f-p-end {
+        padding-right: 0% !important;
+    }
+}
+
+@media screen and (max-width: 765px) {
     /*Slide Dessert*/
     .sd-img2 img {
         width: 24.5%;
@@ -521,7 +539,6 @@ h3 {
 }
 
 @media screen and (max-width: 700px) {
-
     /*Tablet Recommendation*/
     .rcmd2 .restaurant {
         width: 100%;
@@ -537,11 +554,27 @@ h3 {
 
     .step-box {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .step-img img {
         padding: 0;
+    }
+
+    .i .img-i {
+        width: 25%;
+    }
+
+    .i .title-i {
+        width: 65%;
+    }
+
+    .r .img-r {
+        width: 15%;
+    }
+    
+    .line2-r {
+        width: 75%;
     }
 }
 
@@ -552,7 +585,6 @@ h3 {
 }
 
 @media screen and (max-width: 630px) {
-
     /*Slide Dessert*/
     .sd-img img {
         width: 32.8%;
@@ -581,7 +613,6 @@ h3 {
 }
 
 @media screen and (max-width: 615px) {
-
     /*Slide Dessert*/
     .sd-img2 img {
         width: 24.4%;
@@ -614,7 +645,6 @@ h3 {
 }
 
 @media screen and (max-width: 515px) {
-
     /*Slide Dessert*/
     .sd-img img {
         width: 32.7%;
@@ -648,6 +678,22 @@ h3 {
 
     .ingredients {
         margin-top: 40px;
+    }
+
+    .i .img-i {
+        width: 18%;
+    }
+
+    .i .title-i {
+        width: 82%;
+    }
+
+    .r .img-r {
+        width: 20%;
+    }
+    
+    .line2-r {
+        width: 70%;
     }
 
     /*Steps*/

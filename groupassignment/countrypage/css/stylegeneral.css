@@ -4,7 +4,7 @@ body {
 
 /*Header*/
 .sidenav {
-    height: 200%;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -19,13 +19,13 @@ body {
     padding: 8px 8px 8px 10px;
     text-decoration: none;
     font-size: 198%;
-    color: #818181;
+    color: #818181 !important;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover,.sidenav a.active {
-    color: #f1f1f1;
+    color: #f1f1f1 !important;
 }
 
 .sidenav .closebtn {
@@ -38,10 +38,11 @@ body {
 
 .navb {
     display: flex;
+    height: 100%;
 }
 
 .navbar svg {
-    width: 70%;
+    width: 200px;
 }
 rect { fill: #FE0304; }
 text { 
@@ -49,20 +50,12 @@ text {
 	font-weight: 100; 
 	text-transform: uppercase;
 	letter-spacing: 0px;
-	fill: #FFE5F8;
-}
-
-.h-top {
-    position: fixed;
-    height: 65px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 9;
-    align-items: flex-start !important;
+	fill: rgb(244, 173, 41);
 }
 
 .image-col {
     display: flex;
+    height: 50%;
 }
 
 .menu-link {
@@ -70,21 +63,28 @@ text {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
+}
+.menu-link2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    overflow:scroll;
 }
 .dessert {
     width: 40%;
 }
 .image {
-    width: 40%;
+    width: 50%;
 }
 
 #main {
     font-size: 200%;
     transition: margin-left .5s;
     padding: 16px;
-    padding-top: 80px;
-    padding-right: 43px;
+    padding-top: 50px;
 }
 #main span {
     position: static;
@@ -99,6 +99,7 @@ text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 }
 #f-img {
     display: none;
@@ -109,6 +110,7 @@ text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 }
 #i-img {
     display: none;
@@ -119,6 +121,7 @@ text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 }
 #c-img {
     display: none;
@@ -129,36 +132,61 @@ text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 }
 #j-dessert a{
     font-size: 176%;
 }
 #j-dessert a:hover{
-    color: pink;
+    color: pink !important;
 }
 #f-dessert a{
     font-size: 176%;
 }
 #f-dessert a:hover{
-    color: rgb(212, 113, 77);
+    color: rgb(212, 113, 77) !important;
 }
 #i-dessert a{
     font-size: 176%;
 }
 #i-dessert a:hover{
-    color: beige;
+    color: beige !important;
 }
 #c-dessert a{
     font-size: 176%;
 }
 #c-dessert a:hover{
-    color:#FE0304;
+    color:#FE0304 !important;
 }
 
 span {
     position: absolute;
     left: 50%;
     transform-origin: 0 100px;
+}
+
+.h-top {
+    position: fixed;
+    height: 65px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start !important;
+}
+
+.h-top2 {
+    top: -10px;
+    left: -1px;
+    padding-left: 0 !important;
+}
+
+.sub-menu a{
+    font-size: 110% !important;
+    padding: 0;
+}
+
+.sub-menu {
+    color: #bababa;
 }
 
 
@@ -169,9 +197,6 @@ span {
     padding-top: 5%;
 }
 
-.footer .design {
-    padding-left:10%;
-}
 .footer a {
     background: linear-gradient(0deg, white, white) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
@@ -199,24 +224,25 @@ span {
     line-height: 1;
     font-size: 108% !important;
     line-height: 155%;
+    padding-left: 0%;
 }
 
 .footer a:hover {
     color: white;
 }
 /*Footer-Logo*/
-.footer svg { width: 100%; }
+.footer svg { width: 315px; }
 rect { fill: #FE0304; }
 text { 
   font-size: 40px;
 	font-weight: 100; 
 	text-transform: uppercase;
 	letter-spacing: 0px;
-	fill: #FFE5F8;
+	fill: rgb(244, 173, 41);
 }
 .footer .flogo{
     position: absolute;
-    bottom: 65%;
+    bottom: 62%;
     width: 90%;
     left: 5%;
 }
@@ -253,7 +279,9 @@ text {
 }
 
 
-
+.navbar2 {
+    display: none !important;
+}
 
 
 /*Responsive-Mobile*/
@@ -263,7 +291,7 @@ text {
         width: 60%;
     }
     .navbar svg {
-        width: 65%;
+        width: 130px;
     }
     #main {
         font-size: 180%;
@@ -274,7 +302,7 @@ text {
         bottom: 95%;
         width: 20%;
     }
-    .footer .design {
+    .footer {
         padding-top: 7%;
         padding-bottom: 5%;
         padding-left: 5%;
@@ -300,9 +328,15 @@ text {
 
     /*Footer-Logo*/
     .footer .flogo{
-        bottom: 88%;
-        left: 10%;
+        bottom: 86%;
+        left: 5%;
     }
-    .footer svg { width: 85%; }
+    .footer svg { width: 294px; }
     
+    .navbar2 {
+        display: block !important;
+    }
+    .navbar1 {
+        display: none !important;
+    }
 }
