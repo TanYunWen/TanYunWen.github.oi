@@ -24,7 +24,8 @@ body {
     transition: 0.3s;
 }
 
-.sidenav a:hover,.sidenav a.active {
+.sidenav a:hover,
+.sidenav a.active {
     color: #f1f1f1 !important;
 }
 
@@ -44,13 +45,17 @@ body {
 .navbar svg {
     width: 200px;
 }
-rect { fill: #FE0304; }
-text { 
-  font-size: 40px;
-	font-weight: 100; 
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	fill: rgb(244, 173, 41);
+
+rect {
+    fill: #FE0304;
+}
+
+text {
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    fill: rgb(244, 173, 41);
 }
 
 .image-col {
@@ -65,17 +70,20 @@ text {
     flex-direction: column;
     width: 50%;
 }
+
 .menu-link2 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    overflow:scroll;
+    overflow: scroll;
 }
+
 .dessert {
     width: 40%;
 }
+
 .image {
     width: 50%;
 }
@@ -86,6 +94,7 @@ text {
     padding: 16px;
     padding-top: 50px;
 }
+
 #main span {
     position: static;
 }
@@ -94,6 +103,7 @@ text {
     display: none;
     background-color: #111;
 }
+
 #j-dessert {
     display: flex;
     justify-content: center;
@@ -101,10 +111,12 @@ text {
     flex-direction: column;
     width: 50%;
 }
+
 #f-img {
     display: none;
     background-color: #111;
 }
+
 #f-dessert {
     display: flex;
     justify-content: center;
@@ -112,10 +124,12 @@ text {
     flex-direction: column;
     width: 50%;
 }
+
 #i-img {
     display: none;
     background-color: #111;
 }
+
 #i-dessert {
     display: flex;
     justify-content: center;
@@ -123,10 +137,12 @@ text {
     flex-direction: column;
     width: 50%;
 }
+
 #c-img {
     display: none;
     background-color: #111;
 }
+
 #c-dessert {
     display: flex;
     justify-content: center;
@@ -134,29 +150,37 @@ text {
     flex-direction: column;
     width: 50%;
 }
-#j-dessert a{
+
+#j-dessert a {
     font-size: 176%;
 }
-#j-dessert a:hover{
+
+#j-dessert a:hover {
     color: pink !important;
 }
-#f-dessert a{
+
+#f-dessert a {
     font-size: 176%;
 }
-#f-dessert a:hover{
+
+#f-dessert a:hover {
     color: rgb(212, 113, 77) !important;
 }
-#i-dessert a{
+
+#i-dessert a {
     font-size: 176%;
 }
-#i-dessert a:hover{
+
+#i-dessert a:hover {
     color: beige !important;
 }
-#c-dessert a{
+
+#c-dessert a {
     font-size: 176%;
 }
-#c-dessert a:hover{
-    color:#FE0304 !important;
+
+#c-dessert a:hover {
+    color: #FE0304 !important;
 }
 
 span {
@@ -180,7 +204,7 @@ span {
     padding-left: 0 !important;
 }
 
-.sub-menu a{
+.sub-menu a {
     font-size: 110% !important;
     padding: 0;
 }
@@ -214,7 +238,7 @@ span {
     --bg-h: 2px !important;
 }
 
-.f-title-font h4{
+.f-title-font h4 {
     font-size: 150%;
 }
 
@@ -230,30 +254,39 @@ span {
 .footer a:hover {
     color: white;
 }
+
 /*Footer-Logo*/
-.footer svg { width: 315px; }
-rect { fill: #FE0304; }
-text { 
-  font-size: 40px;
-	font-weight: 100; 
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	fill: rgb(244, 173, 41);
+.footer svg {
+    width: 315px;
 }
-.footer .flogo{
+
+rect {
+    fill: #FE0304;
+}
+
+text {
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    fill: rgb(244, 173, 41);
+}
+
+.footer .flogo {
     position: absolute;
     bottom: 62%;
     width: 90%;
     left: 5%;
 }
-.footer .noHover a{
+
+.footer .noHover a {
     background: linear-gradient(0deg, 0deg, 0deg) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     --bg-h: 100%;
 }
 
 /*Button-Animation*/
-.wrapper{
+.wrapper {
     animation: slide1 1s ease-in-out infinite;
 }
 
@@ -286,28 +319,36 @@ text {
 
 /*Responsive-Mobile*/
 @media screen and (max-width:767px) {
+
     /*Header*/
     .navbar-brand {
         width: 60%;
     }
+
     .navbar svg {
         width: 130px;
     }
+
     #main {
         font-size: 180%;
     }
 
     /*Footer*/
-    .footer img{
+    .footer img {
         bottom: 95%;
         width: 20%;
     }
+
     .footer {
         padding-top: 7%;
         padding-bottom: 5%;
         padding-left: 5%;
     }
-    .footer .japan, .france, .italy, .china {
+
+    .footer .japan,
+    .france,
+    .italy,
+    .china {
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -317,25 +358,31 @@ text {
         padding-left: 0 !important;
         padding-top: 15%;
     }
+
     .f-m-change {
         text-align: center;
         padding-left: 24% !important;
         padding-right: 24% !important;
     }
+
     .f-m-space {
         margin-top: 2%;
     }
 
     /*Footer-Logo*/
-    .footer .flogo{
+    .footer .flogo {
         bottom: 86%;
         left: 5%;
     }
-    .footer svg { width: 294px; }
-    
+
+    .footer svg {
+        width: 294px;
+    }
+
     .navbar2 {
         display: block !important;
     }
+
     .navbar1 {
         display: none !important;
     }

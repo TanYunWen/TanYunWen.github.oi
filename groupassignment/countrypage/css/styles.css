@@ -479,6 +479,7 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (879px wide or less)*/
 @media screen and (max-width: 879px) {
+
     /*yang zhi gan lu*/
     #dessert3 {
         padding-bottom: 160px;
@@ -590,7 +591,10 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less)*/
 @media screen and (max-width: 700px) {
-    #c_dragonbc, #c_sugarch, #c_yangzgl {
+
+    #c_dragonbc,
+    #c_sugarch,
+    #c_yangzgl {
         margin-left: 10px;
     }
 
@@ -614,7 +618,7 @@ a {
 
     #dessert3 .see-more-btn2 {
         top: 60%;
-    }    
+    }
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (633px wide or less)*/
@@ -634,7 +638,9 @@ a {
         display: none;
     }
 
-    #c_dragonbc, #c_sugarch, #c_yangzgl {
+    #c_dragonbc,
+    #c_sugarch,
+    #c_yangzgl {
         margin-left: 0px;
     }
 
@@ -750,6 +756,7 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
+
     .b-content2 p,
     .b-content3 p,
     .b-content4 p {
