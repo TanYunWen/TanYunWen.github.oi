@@ -13,6 +13,7 @@ body {
 
 .time-line {
     margin-top: 200px;
+    z-index: 9;
 }
 
 .icon {
