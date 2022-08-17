@@ -333,10 +333,13 @@ a {
         font-size: 85%;
     }
 
-    #dessert1,
+    #dessert1 {
+        padding-bottom: 15%;
+    }
+
     #dessert2,
     #dessert3 {
-        padding-bottom: 18%;
+        padding-bottom: 20%;
     }
 
     /*dragon beard candy*/
@@ -458,7 +461,6 @@ a {
         top: 65.5%;
     }
 }
-}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (883px wide or less)*/
 @media screen and (max-width: 884px) {
@@ -472,6 +474,15 @@ a {
     .b-content3 p,
     .b-content4 p {
         font-size: 70%;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (879px wide or less)*/
+@media screen and (max-width: 879px) {
+
+    /*yang zhi gan lu*/
+    #dessert3 {
+        padding-bottom: 160px;
     }
 }
 
@@ -522,6 +533,33 @@ a {
     }
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (763px wide or less)*/
+@media screen and (max-width: 763px) {
+    #dessert1 .see-more-btn2 {
+        margin-top: 40px;
+    }
+
+    #dessert3 {
+        padding-bottom: 23%;
+    }
+
+    #dessert3 .see-more-btn2 {
+        margin-top: 35px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (763px wide or less)*/
+@media screen and (max-width: 747px) {
+    #dessert3 {
+        padding-bottom: 28%;
+    }
+
+    #dessert3 .see-more-btn2 {
+        margin-top: 40px;
+    }
+}
+
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (730px wide or less)*/
 @media screen and (max-width: 730px) {
     h1 {
@@ -541,12 +579,21 @@ a {
     }
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less)*/
+@media screen and (max-width: 700px) {
+    #c_dragonbc, #c_sugarch, #c_yangzgl {
+        margin-left: 10px;
+    }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (715px wide or less)*/
-@media screen and (max-width: 715px) {
     .name {
-        padding-left: 20px;
-        margin-top: 3px;
+        margin-left: 30px;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (641px wide or less)*/
+@media screen and (max-width: 641px) {
+    .name h1 {
+        font-size: 120%;
     }
 }
 
@@ -559,11 +606,16 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (593px wide or less)*/
 @media screen and (max-width: 593px) {
-    .navbar-brand svg {
-        display: flex;
-        /* text-align: center; */
-        margin: auto;
-        margin-right: 0px;
+    .h-top {
+        padding-right: 50px
+    }
+
+    .time-line {
+        display: none;
+    }
+
+    #c_dragonbc, #c_sugarch, #c_yangzgl {
+        margin-left: 0px;
     }
 
     #main {
@@ -617,6 +669,7 @@ a {
 
     .story {
         margin: 20px;
+        text-align: center;
     }
 
     .product-making .row {
@@ -632,6 +685,9 @@ a {
         flex-direction: column;
         margin: auto;
         text-align: center;
+        width: 90%;
+        margin: 0px 20px;
+        margin-left: 0;
     }
 
     .desktop-dessert-img {
@@ -668,13 +724,15 @@ a {
     }
 }
 
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (500px wide or less)*/
+@media screen and (max-width: 500px) {
+    .h-top {
+        padding-right: 45px
+    }
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
-    .time-line {
-        display: none;
-    }
-
     .b-content2 p,
     .b-content3 p,
     .b-content4 p {
@@ -713,7 +771,7 @@ a {
         padding-right: 25px;
     }
 
-    .navbar-brand svg {
-        margin-right: 55px;
+    .h-top {
+        padding-right: 35px
     }
 }
