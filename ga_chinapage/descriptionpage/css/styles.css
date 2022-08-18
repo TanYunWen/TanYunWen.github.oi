@@ -290,6 +290,14 @@ li {
     margin-left: 75%;
 }
 
+.prev-btn {
+    margin-left: 10px;
+}
+
+.next-btn {
+    margin-right: 42px;
+}
+
 @keyframes slide1 {
 
     0%,
@@ -321,19 +329,9 @@ li {
     }
 }
 
-@media screen and (max-width: 590px) {
-    .nextbtn1 a, .nextbtn2 a {
-        font-size: 90%;
-    }
-}
-
 @media screen and (max-width: 414px) {
     .nextbtn {
         margin-bottom: 120px;
-    }
-
-    .nextbtn1 a, .nextbtn2 a {
-        font-size: 70%;
     }
 }
 
