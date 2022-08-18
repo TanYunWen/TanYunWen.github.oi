@@ -25,7 +25,7 @@ body {
     font-size: 110% !important;
 }
 
-ul {
+.time-line ul {
     height: 300px;
     width: 300px;
     margin: 0;
@@ -34,7 +34,7 @@ ul {
     overflow: hidden;
 }
 
-ul::before {
+.time-line ul::before {
     height: 133%;
     width: 133%;
     display: block;
@@ -43,14 +43,14 @@ ul::before {
     left: 10px;
 }
 
-li {
+.time-line li {
     margin: 18px 0;
     font-weight: bold;
     color: #ef8993;
     overflow: hidden;
 }
 
-li::before {
+.time-line li::before {
     height: 20px;
     width: 20px;
     content: "";
@@ -62,17 +62,17 @@ li::before {
     margin-right: 6px;
 }
 
-li:hover:before {
+.time-line li:hover:before {
     background-color: white;
 }
 
-li span {
+.time-line li span {
     position: relative;
     left: -100%;
     transition: left 300ms ease-in;
 }
 
-li:hover span {
+.time-line li:hover span {
     left: 0;
 }
 
@@ -259,7 +259,6 @@ a {
 
 /*Responsive-Mobile*/
 @media screen and (max-width:767px) {
-
     /*Footer*/
     .footer img {
         bottom: 95%;
@@ -304,6 +303,10 @@ a {
 
     svg {
         width: 85%;
+    }
+
+    .time-line {
+        display: none;
     }
 }
 
@@ -548,98 +551,10 @@ a {
     }
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (763px wide or less)*/
-@media screen and (max-width: 763px) {
-    #dessert1 .see-more-btn2 {
-        margin-top: 40px;
-    }
-
-    #dessert3 {
-        padding-bottom: 23%;
-    }
-
-    #dessert3 .see-more-btn2 {
-        margin-top: 35px;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (763px wide or less)*/
-@media screen and (max-width: 747px) {
-    #dessert3 {
-        padding-bottom: 28%;
-    }
-
-    #dessert3 .see-more-btn2 {
-        margin-top: 40px;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (730px wide or less)*/
-@media screen and (max-width: 730px) {
-    h1 {
-        font-size: 140%;
-        margin-top: 5%;
-    }
-
-    .b-content2 p {
-        font-size: 55%;
-        margin-top: 10%;
-    }
-
-    /*sugar coated haws*/
-    .b-content3 p {
-        font-size: 55%;
-        margin-top: 15%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (700px wide or less)*/
-@media screen and (max-width: 700px) {
-
-    #c_dragonbc,
-    #c_sugarch,
-    #c_yangzgl {
-        margin-left: 10px;
-    }
-
-    .name {
-        margin-left: 30px;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (661px wide or less)*/
-@media screen and (max-width: 661px) {
-    #dessert2 .see-more-btn2 {
-        top: 68%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (650px wide or less)*/
-@media screen and (max-width: 650px) {
-    .name h1 {
-        font-size: 120%;
-    }
-
-    #dessert3 .see-more-btn2 {
-        top: 60%;
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (633px wide or less)*/
-@media screen and (max-width: 633px) {
-    h1 {
-        font-size: 120%;
-    }
-}
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (593px wide or less)*/
-@media screen and (max-width: 593px) {
+@media screen and (max-width: 767px) {
     .h-top {
         padding-right: 50px
-    }
-
-    .time-line {
-        display: none;
     }
 
     #c_dragonbc,
@@ -760,6 +675,9 @@ a {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (414px wide or less)*/
 @media screen and (max-width: 414px) {
+    .h-top {
+        padding-right: 35px;
+    }
 
     .b-content2 p,
     .b-content3 p,
