@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ch, en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>China</title>
-    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Sugar-Coated Haws</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
@@ -64,10 +64,10 @@
                         <div class="image" id="j-img">
                             <div class="image-col">
                                 <div id="j-dessert" class="dessert">
-                                    <a href="j_japan.html">Main</a>
-                                    <a href="j_wagashi.html">Wagashi</a>
-                                    <a href="j_anmitsu.html">Anmitsu</a>
-                                    <a href="j_mochi.html">Mochi</a>
+                                    <a href="japan.html">Main</a>
+                                    <a href="wagashi.html">Wagashi</a>
+                                    <a href="anmitsu.html">Anmitsu</a>
+                                    <a href="mochi.html">Mochi</a>
                                 </div>
                                 <img src="images/jd1.jpg" width="50%">
                             </div>
@@ -85,10 +85,10 @@
                             </div>
                             <div class="image-col">
                                 <div id="f-dessert" class="dessert">
-                                    <a href="f_country.html">Main</a>
-                                    <a href="f_mousse.html">Mousse</a>
-                                    <a href="f_napoleon.html">Napoleon</a>
-                                    <a href="f_parisbrest.html">Paris-Brest</a>
+                                    <a href="country.html">Main</a>
+                                    <a href="mousse.html">Mousse</a>
+                                    <a href="napoleon.html">Napoleon</a>
+                                    <a href="parisbrest.html">Paris-Brest</a>
                                 </div>
                                 <img src="images/fd3.jpg" width="50%">
                             </div>
@@ -103,10 +103,10 @@
                             <div class="image-col">
                                 <img src="images/id3.jpg" width="50%">
                                 <div id="i-dessert" class="dessert">
-                                    <a href="i_italy.html">Main</a>
-                                    <a href="i_affogato.html">Affogato</a>
-                                    <a href="i_panettone.html">Panettone</a>
-                                    <a href="i_tiramisu.html">Tiramisu</a>
+                                    <a href="italy.html">Main</a>
+                                    <a href="affogato.html">Affogato</a>
+                                    <a href="panettone.html">Panettone</a>
+                                    <a href="tiramisu.html">Tiramisu</a>
                                 </div>
                             </div>
                         </div>
@@ -116,10 +116,10 @@
                             <div class="image-col">
                                 <img src="images/cd1.jpg" width="50%">
                                 <div id="c-dessert" class="dessert">
-                                    <a href="c_countrypage.html">Main</a>
-                                    <a href="c_dragonbc.html">Dragon Beard Candy</a>
-                                    <a href="c_sugarch.html">Sugar-Coated Haws</a>
-                                    <a href="c_yangzgl.html">Yang Zhi Gan Lu</a>
+                                    <a href="countrypage.html">Main</a>
+                                    <a href="dragonbc.html">Dragon Beard Candy</a>
+                                    <a href="sugarch.html">Sugar-Coated Haws</a>
+                                    <a href="yangzgl.html">Yang Zhi Gan Lu</a>
                                 </div>
                             </div>
                             <div class="image-col">
@@ -182,31 +182,39 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
                     <div class="navb">
                         <div class="menu-link2">
-                            <a href="index.html" style="margin-top:244px ;">Home</a>
-                            <a href="j_japan.html">Japan</a>
-                            <ul class="sub-menu">
-                                <li><a href="j_wagashi.html">Wagashi</a></li>
-                                <li><a href="j_anmitsu.html">Anmitsu</a></li>
-                                <li><a href="j_mochi.html">Mochi</a></li>
-                            </ul>
-                            <a href="f_country.html">France</a>
-                            <ul class="sub-menu">
-                                <li><a href="f_mousse.html">Mousse</a></li>
-                                <li><a href="f_napoleon.html">Napoleon</a></li>
-                                <li><a href="f_parisbrest.html">Paris-Brest</a></li>
-                            </ul>
-                            <a href="i_italy.html">Italy</a>
-                            <ul class="sub-menu">
-                                <li><a href="i_affogato.html">Affogato</a></li>
-                                <li><a href="i_panettone.html">Panettone</a></li>
-                                <li><a href="i_tiramisu.html">Tiramisu</a></li>
-                            </ul>
-                            <a href="c_countrypage.html">China</a>
-                            <ul class="sub-menu">
-                                <li><a href="c_dragonbc.html">Dragon Beard Candy</a></li>
-                                <li><a href="c_sugarch.html">Sugar-Coated Haws</a></li>
-                                <li><a href="c_yangzgl.html">Yang Zhi Gan Lu</a></li>
-                            </ul>
+                            <a href="index.html">Home</a>
+                            <a type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-content="<a href='#'> Japan </a>
+                                <ul>
+                                    <li><a href='wagashi.html'> Wagashi </a></li>
+                                    <li><a href='anmitsu.html'>Anmitsu</a></li>
+                                    <li><a href='mochi.html'>Mochi</a></li>
+                                </ul>" data-bs-html="true">Japan
+                            </a>
+
+                            <a type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-content="<a href='france.html'> France </a>
+                                <ul>
+                                    <li><a href='mousse.html'> Mousse</a></li> 
+                                    <li><a href='napoleon.html'>Napoleon</a></li>
+                                    <li><a href='parisbrest.html'>Paris-Brest</a></li>
+                                </ul>" data-bs-html="true">France
+                            </a>
+
+                            <a type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-content="<a href='#'> Italy </a>
+                                <ul>
+                                    <li><a href='affogato.html'> Affogato</a></li>
+                                    <li><a href='panettone.html'>Panettone</a></li>
+                                    <li><a href='tiramisu.html'>Tiramisu</a></li>
+                                </ul>" data-bs-html="true">Italy
+                            </a>
+
+                            <a type="button" class="btn btn-lg" data-bs-toggle="popover" data-bs-content="<a href='#'> China </a>
+                                <ul>
+                                    <li><a href='dragonbc.html'> Dragon Beard Candy</a></li>
+                                    <li><a href='sugarch.html'>Sugar-Coated Haws</a></li>
+                                    <li><a href='yangzgl.html'>Yang Zhi Gan Lu</a></li>
+                                </ul>" data-bs-html="true">China
+                            </a>
+
                             <a href="indexchef.html">Chef</a>
                             <a href="indexcontact.html">Contact</a>
                         </div>
@@ -220,228 +228,720 @@
         </nav>
     </div>
 
-    <!-- 3 china dessert -->
-    <div class="container-fluid mb-5 p-0 dessert-container">
-        <div class="row " id="dessert">
-            <div class="time-line position-fixed col-md-1 ms-3">
-                <ul>
-                    <a href="#dessert1" class="size">
-                        <li><span>Dragon Beard Candy</span></li>
-                    </a>
-                    <a href="#dessert2" class="size">
-                        <li><span>Sugar-Coated Haws</span></li>
-                    </a>
-                    <a href="#dessert3" class="size">
-                        <li><span>Yang Zhi Gan Lu</span></li>
-                    </a>
-                </ul>
+    <!-- Detail -->
+    <div class="detail2 container-fluid p-0">
+        <!-- big image -->
+        <img src="images/c_sugarch_bgslideimg.jpg" width="100%" alt="Sugar-Coated Haws">
+
+        <!-- Story -->
+        <div class="story">
+            <div class="title">
+                <h1>The story of Sugar-Coated Haws</h1>
             </div>
 
-            <div class="box col-md-12">
-                <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-offset="20">
+            <div class="line">
+                <img src="images/c_line1.png" width="35%" alt="line">
+            </div>
 
-                    <!-- Dragon Beard Candy -->
-                    <div class="dragonbc container-fluid p-0 ps-5">
-                        <div class="row" id="dessert1">
-                            <div class="col-sm-7 content1">
-                                <div class="col">
-                                    <div class="col">
-                                        <div class="row flag-name">
-                                            <div class="col-sm-1 mt-1 flag">
-                                                <img src="images/c_flag.png" width="60px">
-                                            </div>
+            <div class="row story-content m-0 mb-1 p-5 pt-0">
+                <div class="col story-content1">
+                    <p>Candied haws originated in the Song Dynasty of China. </p>
+                    <p>During the Song Dynasty, the emperor's favorite concubine fell ill. People have tried various
+                        methods, but to no avail. Seeing that his favorite concubine was getting more and more haggard,
+                        the emperor became anxious and could only seek medical advice.
+                    </p>
+                </div>
 
-                                            <div class="col-sm-9 name">
-                                                <h1>Dragon Beard Candy</h1>
-                                            </div>
-                                        </div>
-
-                                        <div class="title-line">
-                                            <img src="images/c_title-line.png" width="100%">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-10 story">
-                                        <p>Legend has it that Dragon Beard Candy was invented by a court chef during
-                                            the
-                                            Han
-                                            Dynasty
-                                            in
-                                            China who one day entertained the emperor by going through the
-                                            complicated
-                                            steps
-                                            of
-                                            making a
-                                            new dessert.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col product-making">
-                                    <div class="row">
-                                        <div class="col mt-4 b-content2">
-                                            <p>Dragon Beard Candy Making - Chinese Street Food</p>
-                                        </div>
-
-                                        <div class="col mt-4 me-3 product-img">
-                                            <img src="images/c_dragonbc2.jpg" width="90%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col" id="c_dragonbc">
-                                <div class="desktop-dessert-img">
-                                    <img src="images/c_dessert/c_dragonch.png" width="100%">
-                                </div>
-                                <div class="phone-dessert-img">
-                                    <img src="images/c_dessert/c_dragonbc2.png" width="80%">
-                                </div>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn">
-                                <a href="c_dragonbc.html">See More →</a>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn2">
-                                <a href="c_dragonbc.html">See More →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sugar-Coated Haws -->
-                    <div class="sugarch container-fluid2 p-0 ps-5">
-                        <div class="row mt-5" id="dessert2">
-                            <div class="col-sm-7 content1">
-                                <div class="col">
-                                    <div class="col">
-                                        <div class="row flag-name">
-                                            <div class="col-sm-1 mt-1 flag">
-                                                <img src="images/c_flag.png" width="60px">
-                                            </div>
-
-                                            <div class="col-sm-9 name">
-                                                <h1>Sugar-Coated Haws</h1>
-                                            </div>
-                                        </div>
-
-                                        <div class="title-line">
-                                            <img src="images/c_title-line.png" width="100%">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-10 story">
-                                        <p>Bing Tang Hulu (Sugar-Coated Haws)is a traditional Chinese snack that can
-                                            be
-                                            dated
-                                            all
-                                            the
-                                            way back to the Song Dynasty (an imperial dynasty of China that began in
-                                            960
-                                            and
-                                            lasted
-                                            until 1279). Today, you can find Tanghulu in every major city in China:
-                                            Beijing,
-                                            Tianjin,
-                                            and Shanghai. </p>
-                                    </div>
-                                </div>
-
-                                <div class="col product-making">
-                                    <div class="row">
-                                        <div class="col mt-4 b-content3">
-                                            <p>Homemade Candied Haws</p>
-                                        </div>
-
-                                        <div class="col mt-3 me-3 product-img">
-                                            <img src="images/c_sugarch.jpg" width="90%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col" id="c_sugarch">
-                                <div class="desktop-dessert-img">
-                                    <img src="images/c_dessert/c_sugarch.png" width="100%" />
-                                </div>
-                                <div class="phone-dessert-img">
-                                    <img src="images/c_dessert/c_sugarch2.png" width="80%">
-                                </div>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn">
-                                <a href="c_sugarch.html">See More →</a>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn2">
-                                <a href="c_sugarch.html">See More →</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Yang Zhi Gan Lu -->
-                    <div class="yangzgl container-fluid3 mb-5 p-0 ps-5">
-                        <div class="row mt-5" id="dessert3">
-                            <div class="col-sm-7 content1">
-                                <div class="col">
-                                    <div class="col">
-                                        <div class="row flag-name">
-                                            <div class="col-sm-1 mt-1 flag">
-                                                <img src="images/c_flag.png" width="60px">
-                                            </div>
-
-                                            <div class="col-sm-9 name">
-                                                <h1>Yang Zhi Gan Lu</h1>
-                                            </div>
-                                        </div>
-
-                                        <div class="title-line">
-                                            <img src="images/c_title-line.png" width="100%">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-10 story">
-                                        <p>The dessert “Yang Zhi Gan Lu” origins in Singapore.
-                                            It said to be invented by Lei Garden in 1984 when it opened its first
-                                            branch
-                                            in
-                                            Singapore.</p>
-                                    </div>
-                                </div>
-
-                                <div class="col product-making">
-                                    <div class="row">
-                                        <div class="col mt-4 b-content4">
-                                            <p>Yang Zhi Gan Lu Making</p>
-                                        </div>
-
-                                        <div class="col mt-4 me-3 product-img">
-                                            <img src="images/c_yangzgl.jpg" width="90%">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col" id="c_yangzgl">
-                                <div class="desktop-dessert-img">
-                                    <img src="images/c_dessert/c_yangzgl.png" width="100%">
-                                </div>
-                                <div class="phone-dessert-img">
-                                    <img src="images/c_dessert/c_yangzhiganlu2.png" width="80%">
-                                </div>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn">
-                                <a href="c_yangzgl.html">See More →</a>
-                            </div>
-
-                            <div class="btn wrapper button arrow1 see-more-btn2">
-                                <a href="c_yangzgl.html">See More →</a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="col story-content2">
+                    <p>The imperial doctor entered the palace to diagnose the pulse of the imperial concubine, saying:
+                        "Just boil with rock sugar and hawthorn, eat five to ten pieces before each meal, and it will be
+                        fine without half a month of illness." People followed suit. Soon, the concubine's illness was
+                        cured. The practice of candied haws has spread to the people.
+                    </p>
                 </div>
             </div>
+
+            <div class="line2">
+                <img src="images/c_line2.png" width="35%" alt="line">
+            </div>
+
+            <div class="dividing-line">
+                <img src="images/c_dividing-line.png" width="50%" alt="dividing-line">
+            </div>
+        </div>
+
+        <!-- Recipe -->
+        <div class="recipe2 ps-5 pe-5">
+            <div class="title">
+                <h2>Recipe</h2>
+            </div>
+
+            <!-- Ingredients -->
+            <div class="row i-box">
+                <div class="col pe-3">
+                    <img src="images/cd_r_sugarch.jpg" width="100%" alt="Sugar-Coated Haws">
+                </div>
+
+                <div class="col ps-3 ingredients">
+                    <div class="row i align-items-center">
+                        <div class="img-i">
+                            <img src="images/cd_r.png" width="100%" alt="Ingredients">
+                        </div>
+
+                        <div class="title-i">
+                            <h3>Ingredients:-</h3>
+                        </div>
+                    </div><br>
+
+                    <ul>
+                        <li>20 hawthorn</li>
+                        <li>200 g sugar</li>
+                        <li>200 g water</li>
+                        <li>40 g Sticky rice</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="accordion accordion-flush steps-box pt-5" id="accordionFlushExample">
+                <div class="row r align-items-center">
+                    <div class="img-r">
+                        <img src="images/cd_s.png" width="100%" alt="Steps">
+                    </div>
+
+                    <div class="title-r">
+                        <h3>Steps</h3>
+                    </div>
+
+                    <div class="line2-r">
+                        <img src="images/c_line2.png" width="35%" alt="line">
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Step 1
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Wash and dry the hawthorn.</p>
+                            </div>
+
+                            <div class="step-img">
+                                <img src="images/cd_s1_sugarch.png" width="100%" alt="Hawthorn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Step 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Use a knife to cut off the pedicle.</p>
+                            </div>
+
+                            <div class="step-img">
+                                <img src="images/cd_s2_sugarch.png" width="100%"
+                                    alt="Use a knife to cut off the pedicle.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Step 3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Cut the hawthorn from the middle and remove the hawthorn core.</p>
+                            </div>
+
+                            <div class="step-img">
+                                <img src="images/cd_s3_sugarch.png" width="100%"
+                                    alt="Cut the hawthorn from the middle and remove the hawthorn core.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Step 4
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Each hawthorn is filled with bean paste and glutinous rice fillings, and skewered
+                                    with a string.</p>
+                            </div>
+
+                            <div class="step-img">
+                                <img src="images/cd_s4_sugarch.png" width="100%"
+                                    alt="Each hawthorn is filled with bean paste and glutinous rice fillings, and skewered with a string.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            Step 5
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Put the sugar and water in a thick bottom small pot and boil it, then turn it to low
+                                    heat and boil it slowly to 150 degrees. At this time, the color of sugar is
+                                    colorless and transparent. If you don't have a thermometer, you can boil the sugar
+                                    to a slight amber color.</p>
+                            </div>
+
+                            <div class="step-img">
+                                <img src="images/cd_s5_sugarch.png" width="100%"
+                                    alt="Put the sugar and water in a thick bottom small pot and boil it。 If you don’t have a thermometer, you can boil the sugar to a slight amber color.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Step 6
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body step-box">
+                            <div class="step-content">
+                                <p>Use a small spoon to scoop up the boiled syrup and evenly pour it on the hawthorn
+                                    skewers. At this time, move quickly, otherwise, the sugar will easily become
+                                    condensed. Put the candied gourds on oiled paper and wait for them to solidify
+                                    before
+                                    eating. Finally, you get home cooking Sugar-coated haws.</p>
+                            </div>
+
+                            <div class="row accordion-item-img2 step-img">
+                                <div class="col pe-0">
+                                    <img src="images/cd_s6_sugarch.png" width="100%"
+                                        alt="Use a small spoon to scoop up the boiled syrup and evenly pour it on the hawthorn skewers.">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dividing-line pt-5 ps-0 pe-0">
+        <img src="images/c_dividing-line.png" width="50%" alt="dividing-line">
+    </div>
+
+    <!-- Slide Dessert -->
+    <div id="carouselExampleControls" class="carousel slide imgslider img-p-n" data-bs-ride="carousel"
+        data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item sd-img active">
+                <img class="slider-image" src="images/cd_sd1.jpg" alt="Coconut And Osmanthus Jelly">
+                <img class="slider-image" src="images/cd_sd2.jpg" alt="Donkey Rolls">
+                <img class="slider-image" src="images/cd_sd3.jpg" alt="Nian Gao “rice cake">
+            </div>
+
+            <div class="carousel-item sd-img">
+                <img class="slider-image" src="images/cd_sd4.jpg" alt="Fa Gao">
+                <img class="slider-image" src="images/cd_sd5.jpg" alt="Red Tortoise Cake">
+                <img class="slider-image" src="images/cd_sd6.jpg" alt="Lotus Shortbread">
+            </div>
+
+            <div class="carousel-item sd-img">
+                <img class="slider-image" src="images/cd_sd8.jpg" alt=" Sesame Balls">
+                <img class="slider-image" src="images/cd_sd9.jpg" alt="Chinese Almond Cookies">
+                <img class="slider-image" src="images/cd_sd10.jpg" alt="Fortune Cookies">
+            </div>
+
+            <div class="carousel-item sd-img2">
+                <img class="slider-image" src="images/cd_sd7.jpg" alt="Chinese Cucumber Cold cake">
+                <img class="slider-image" src="images/cd_sd11.jpg" alt="Chinese Almond Cookies">
+                <img class="slider-image" src="images/cd_sd12.jpg" alt="Sugar painting">
+                <img class="slider-image" src="images/cd_sd13.jpg" alt="Sachima">
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommendation -->
+    <!-- Desktop Recommendation -->
+    <div class="recommendation p-5">
+        <div class="title">
+            <h2>Recommendation</h2>
+        </div>
+
+        <div class="col rm p-3">
+            <div class="row rcmd m-0">
+                <div class="col rm-img">
+                    <img src="images/recommendation4.jpg" width="100%" alt="Kang Ji Bingtanghulu">
+                </div>
+
+                <div class="col rm-content">
+                    <h3>Kang Ji Bingtanghulu</h3>
+
+                    <div class="col ps-3 rm-detail">
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/address.png" width="100%" alt="Address">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="https://www.google.com/maps/@1.3140781,103.8791455,3a,75y,260.96h,78.65t/data=!3m6!1e1!3m4!1sq05GilLlmockPa2tDiFTPA!2e0!7i16384!8i8192"
+                                        target="_blank">Singapore, Lor 19 Geylang, No. 33 SG#01-02 Zip Code: 388502</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/time.png" width="100%" alt="Clock">
+                            </div>
+
+                            <div class="title-rm">
+                                <p>Mon-Sun: 12:00-20:00</p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/phone.png" width="100%" alt="Phone">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="tel:+6596556979">+6596556979</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/website-url.png" width="100%" alt="Website-Url">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="https://www.burpple.com/kang-ji-hawthorn"
+                                        target="_blank">https://www.burpple.com/kang-ji-hawthorn</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col rm p-3">
+            <div class="row rcmd m-0">
+                <div class="col rm-img">
+                    <img src="images/recommendation5.jpg" width="100%" alt="Old Beijing Bingtang Haws">
+                </div>
+
+                <div class="col rm-content">
+                    <h3>Old Beijing Bingtang Haws</h3>
+
+                    <div class="col ps-3 rm-detail">
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/address.png" width="100%" alt="Address">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="https://www.google.com/maps/dir/2.9865974,101.7931183/%E8%80%81%E5%8C%97%E4%BA%AC%E7%B3%96%E8%91%AB%E8%8A%A6/@20.440957,89.4234805,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x35f04d7238197295:0xb4ec146223bd6f4b!2m2!1d116.381795!2d39.87897"
+                                        target="_blank">China, Beijing, Xicheng District, Taoranting Road No. 41</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/time.png" width="100%" alt="Clock">
+                            </div>
+
+                            <div class="title-rm">
+                                <p>Mon-Sun: 11:00 - 15:00<br>Mon-Sun: 18:00 - 23:00</p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/phone.png" width="100%" alt="Phone">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="tel:+852 6488 6467">+852 6488 6467</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/facebook.png" width="100%" alt="Facebook">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="https://www.facebook.com/SugarCoatedHaws/"
+                                        target="_blank">https://www.facebook.com/SugarCoatedHaws/</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col rm p-3 rbottom">
+            <div class="row rcmd m-0">
+                <div class="col rm-img">
+                    <img src="images/recommendation6.jpg" width="100%" alt="Hu Lu De">
+                </div>
+
+                <div class="col rm-content">
+                    <h3>Hu Lu De</h3>
+
+                    <div class="col ps-3 rm-detail">
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/address.png" width="100%" alt="Address">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="https://ditu.so.com/?pid=ae843d04e0a2f6d5&src=pc_shenbian"
+                                        target="_blank">1st Floor, OSK Wumart Supermarket, No. 528, Dongsi North Street,
+                                        Dongcheng District, Beijing</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/time.png" width="100%" alt="Clock">
+                            </div>
+
+                            <div class="title-rm">
+                                <p>Mon-Sun: 10:00 - 19:00</p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/phone.png" width="100%" alt="Phone">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="tel:13801091689">13801091689</a></p>
+                            </div>
+                        </div>
+
+                        <div class="row rm align-items-center">
+                            <div class="img-rm">
+                                <img src="images/website-url.png" width="100%" alt="Website-Url">
+                            </div>
+
+                            <div class="title-rm">
+                                <p><a href="http://ditu.so.com/shenghuo/detail?pguid=ae843d04e0a2f6d5&src=pc_shenbian"
+                                        target="_blank">http://ditu.so.com/shenghuo/detail?pguid=ae843d04e0a2f6d5&src=pc_shenbian</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tablet Recommendation -->
+    <div class="recommendation2">
+        <div class="title">
+            <h2>Recommendation</h2>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide r-cs ps-5 pe-5" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rm">
+                <div class="carousel-item active rcmd2">
+                    <img src="images/recommendation4.jpg" class="d-block w-100 restaurant" alt="Kang Ji Bingtanghulu">
+
+                    <div class="col rm-content">
+                        <div class="rm2">
+                            <div class="flagimg-rm">
+                                <img src="images/c_flag.png" width="80px" alt="China Flag">
+                            </div>
+
+                            <div class="title2-rm">
+                                <h3>Kang Ji Bingtanghulu</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            <button class="btn collapsed btn-res addmargin" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                See Details
+                            </button>
+                        </p>
+
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="rm-detail2 p-2">
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/address.png" width="40px" alt="Address">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="https://www.google.com/maps/@1.3140781,103.8791455,3a,75y,260.96h,78.65t/data=!3m6!1e1!3m4!1sq05GilLlmockPa2tDiFTPA!2e0!7i16384!8i8192"
+                                                    target="_blank">Singapore, Lor 19 Geylang, No. 33 SG#01-02 Zip Code:
+                                                    388502</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/time.png" width="40px" alt="Clock">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p>Mon-Sun: 12:00-20:00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/phone.png" width="40px" alt="Phone">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="tel:+6596556979">+6596556979</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/website-url.png" width="40px" alt="Website-Url">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="https://www.burpple.com/kang-ji-hawthorn"
+                                                    target="_blank">https://www.burpple.com/kang-ji-hawthorn</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item rcmd2">
+                    <img src="images/recommendation5.jpg" class="d-block w-100 restaurant"
+                        alt="Old Beijing Bingtang Haws">
+
+                    <div class="col rm-content">
+                        <div class="rm2">
+                            <div class="flagimg-rm">
+                                <img src="images/c_flag.png" width="80px" alt="China Flag">
+                            </div>
+
+                            <div class="title2-rm">
+                                <h3>Old Beijing Bingtang Haws</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            <button class="btn collapsed btn-res" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">
+                                See Details
+                            </button>
+                        </p>
+
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <div class="rm-detail2 p-2">
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/address.png" width="40px" alt="Address">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="https://www.google.com/maps/dir/2.9865974,101.7931183/%E8%80%81%E5%8C%97%E4%BA%AC%E7%B3%96%E8%91%AB%E8%8A%A6/@20.440957,89.4234805,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x35f04d7238197295:0xb4ec146223bd6f4b!2m2!1d116.381795!2d39.87897"
+                                                    target="_blank">China, Beijing, Xicheng District, Taoranting Road
+                                                    No. 41</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/time.png" width="40px" alt="Clock">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p>Mon-Sun: 11:00 - 15:00<br>Mon-Sun: 18:00 - 23:00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/phone.png" width="40px" alt="Phone">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="tel:+852 6488 6467">+852 6488 6467</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/facebook.png" width="40px" alt="Facebook">
+                                        </div>
+
+                                        <div class="title2-rm w-100">
+                                            <p><a href="https://www.facebook.com/SugarCoatedHaws/"
+                                                    target="_blank">https://www.facebook.com/SugarCoatedHaws/</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item rcmd2">
+                    <img src="images/recommendation6.jpg" class="d-block w-100 restaurant" alt="Hu Lu De">
+
+                    <div class="col rm-content">
+                        <div class="rm2">
+                            <div class="flagimg-rm">
+                                <img src="images/c_flag.png" width="80px" alt="China Flag">
+                            </div>
+
+                            <div class="title2-rm">
+                                <h3>Hu Lu De</h3>
+                            </div>
+                        </div>
+
+                        <p>
+                            <button class="btn collapsed btn-res" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample3">
+                                See Details
+                            </button>
+                        </p>
+
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <div class="rm-detail2 p-2">
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/address.png" width="40px" alt="Address">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="https://ditu.so.com/?pid=ae843d04e0a2f6d5&src=pc_shenbian"
+                                                    target="_blank">1st Floor, OSK Wumart Supermarket, No. 528, Dongsi
+                                                    North Street, Dongcheng District, Beijing</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/time.png" width="40px" alt="Clock">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p>Mon-Sun: 10:00 - 19:00</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/phone.png" width="40px" alt="Phone">
+                                        </div>
+
+                                        <div class="title2-rm">
+                                            <p><a href="tel:13801091689">13801091689</a></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rm3">
+                                        <div class="img-rm2">
+                                            <img src="images/website-url.png" width="40px" alt="Website-Url">
+                                        </div>
+
+                                        <div class="title2-rm w-100">
+                                            <p><a href="http://ditu.so.com/shenghuo/detail?pguid=ae843d04e0a2f6d5&src=pc_shenbian"
+                                                    target="_blank">http://ditu.so.com/shenghuo/detail?pguid=ae843d04e0a2f6d5&src=pc_shenbian</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev prev-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next next-btn" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Next and Previous button -->
+    <div class="nextbtn">
+        <div class="nextbtn1 wrapper .arrow">
+            <a href="dragonbc.html">&emsp; ← Dragon Beard Candy</a>
+        </div>
+
+        <div class="nextbtn2 wrapper .arrow">
+            <a href="yangzgl.html">Yang Zhi Gan Lu → &emsp;</a>
         </div>
     </div>
 
@@ -451,8 +951,7 @@
             <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 500 500">
                     <defs>
-                        <path
-                            d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                        <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
                             id="textcircle">
                             <animateTransform attributeName="transform" begin="0s" dur="30s" type="rotate"
                                 from="0 250 250" to="360 250 250" repeatCount="indefinite" />
@@ -476,7 +975,7 @@
             </a>
         </div>
         <div class="row py-5 d-flex justify-content-between f-title-font">
-            <div class="col-md-4 d-flex flex-column justify-content-center f-p">
+            <div class="col-md-4 d-flex flex-column justify-content-center f-p footer-center">
                 <h4>Designer</h4>
                 <a class="underline" href="https://tehsiawtian.github.io/">Teh Siaw Tian</a>
                 <a class="underline" href="https://kittyhuongcheeshin.github.io/">Kitty Huong Chee Shin</a>
@@ -485,37 +984,38 @@
             </div>
             <div class="col-md-8 f-m-change">
                 <div class="row d-flex">
-                    <div class="japan col-md d-flex flex-column justify-content-center f-m-space">
-                        <a class="underline" href="j_japan.html">
+                    <div class="japan col-md d-flex flex-column justify-content-center f-m-space footer-center">
+                        <a class="underline" href="japan.html">
                             <h4>Japan</h4>
                         </a>
-                        <a class="underline" href="j_wagashi.html">Wagashi</a>
-                        <a class="underline" href="j_anmitsu.html">Anmitsu</a>
-                        <a class="underline" href="j_mochi.html">Mochi</a>
+                        <a class="underline" href="wagashi.html">Wagashi</a>
+                        <a class="underline" href="anmitsu.html">Anmitsu</a>
+                        <a class="underline" href="mochi.html">Mochi</a>
                     </div>
-                    <div class="france col-md d-flex flex-column justify-content-center f-m-space">
-                        <a class="underline" href="f_country.html">
+                    <div class="france col-md d-flex flex-column justify-content-center f-m-space footer-center">
+                        <a class="underline" href="country.html">
                             <h4>France</h4>
                         </a>
-                        <a class="underline" href="f_mousse.html">Mousse</a>
-                        <a class="underline" href="f_napoleon.html">Napoleon</a>
-                        <a class="underline" href="f_parisbrest.html">Paris-Brest</a>
+                        <a class="underline" href="mousse.html">Mousse</a>
+                        <a class="underline" href="napoleon.html">Napoleon</a>
+                        <a class="underline" href="parisbrest.html">Paris-Brest</a>
                     </div>
-                    <div class="italy col-md d-flex flex-column justify-content-center f-m-space">
-                        <a class="underline" href="i_italy.html">
+                    <div class="italy col-md d-flex flex-column justify-content-center f-m-space footer-center">
+                        <a class="underline" href="italy.html">
                             <h4>Italy</h4>
                         </a>
-                        <a class="underline" href="i_affogato.html">Affogato</a>
-                        <a class="underline" href="i_panettone.html">Panettone</a>
-                        <a class="underline" href="i_tiramisu.html.html">Tiramisu</a>
+                        <a class="underline" href="affogato.html">Affogato</a>
+                        <a class="underline" href="panettone.html">Panettone</a>
+                        <a class="underline" href="tiramisu.html.html">Tiramisu</a>
                     </div>
-                    <div class="china col-md-4 d-flex flex-column justify-content-center f-p-end f-m-space">
-                        <a class="underline" href="c_countrypage.html">
+                    <div
+                        class="china col-md-4 d-flex flex-column justify-content-center f-p-end f-m-space footer-center">
+                        <a class="underline" href="china.html">
                             <h4>China</h4>
                         </a>
-                        <a class="underline" href="c_dragonbc.html">Dragon Beard Candy</a>
-                        <a class="underline" href="c_sugarch.html">Sugar-Coated Haws</a>
-                        <a class="underline" href="c_yangzgl.html">Yang Zhi Gan Lu</a>
+                        <a class="underline" href="dragonbc.html">Dragon Beard Candy</a>
+                        <a class="underline" href="sugarch.html">Sugar-Coated Haws</a>
+                        <a class="underline" href="yangzgl.html">Yang Zhi Gan Lu</a>
                     </div>
                 </div>
             </div>
@@ -538,9 +1038,17 @@
             document.getElementById("main").style.marginLeft = "0";
         }
 
+        function openNav1() {
+            document.getElementById("mySidenav1").style.width = "85%";
+        }
+
+        function closeNav1() {
+            document.getElementById("mySidenav1").style.width = "0";
+        }
+
         $(document).ready(function () {
             $(".menu-link a").on({
-                mouseenter: function () {
+                click: function () {
                     var idString = $(this).attr("id")
                     $(".image").hide();
                     switch (idString) {
@@ -561,45 +1069,17 @@
                             break;
                     }
                 },
-                mouseleave: function () {
-                    var idString = $(this).attr("class")
-                    if ($(".menu-link a").hasClass("active")) {
-                        var idString = $(".menu-link a.active").attr("id");
-                        $(".image").hide();
-                        switch (idString) {
-                            case "hoverme-j":
-                                $("#j-img").show();
-                                break;
-                            case "hoverme-f":
-                                $("#f-img").show();
-                                break;
-                            case "hoverme-i":
-                                $("#i-img").show();
-                                break;
-                            case "hoverme-c":
-                                $("#c-img").show();
-                                break;
-                            default:
-                                $("#home").show();
-                                break;
-                        }
-                    }
-                    else {
-                        $(".image").hide();
-                        $("#home").show();
-                    }
-                }
-            });
-            $(".menu-link a").click(function () {
-                $(".menu-link a").removeClass("active");
-                $(this).addClass("active");
             });
         });
-
 
         $(function () {
             $('#work').on('activate.bs.scrollspy')
         });
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
     </script>
 </body>
 
